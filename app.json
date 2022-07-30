@@ -1,0 +1,29 @@
+{
+  "id": "76c31db5-2675-4155-884a-de2bc4a4d410",
+  "name": "GeneralDevelopment",
+  "publisher": "Keith How",
+  "version": "1.0.0.1",
+  "brief": "General Development",
+  "description": "General Development",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50059
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "9.0"
+}
