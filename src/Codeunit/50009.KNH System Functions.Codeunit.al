@@ -7,7 +7,7 @@ codeunit 50009 "KNH System Functions"
     var
         selection: Integer;
         options: Text[50];
-        functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,EncryptText,Substring,Trim,Replace,PadRight,InsertString,RandomizeNumber,RoundingNumber,Evaluation,FormatDateInteger,FormatDateText,CopyString,ShowMessage,StrPosition,StrLength,CalculateDate,CreateGUID,DateToDMY';
+        functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,EncryptText,Substring,Trim,Replace,PadRight,InsertString,RandomizeNumber,RoundingNumber,Evaluation,FormatDateInteger,FormatDateText,FormatDateText2,CopyString,ShowMessage,StrPosition,StrLength,CalculateDate,CreateGUID,DateToDMY,MyError,MyLastError';
         selectionTxt: Label 'Choose one of the following options:';
     begin
         Options := functionTxt;
@@ -40,19 +40,25 @@ codeunit 50009 "KNH System Functions"
             13:
                 FormatDateText();
             14:
-                CopyString();
+                FormatDateText2();
             15:
-                ShowMessage();
+                CopyString();
             16:
-                StrPosition();
+                ShowMessage();
             17:
-                StrLength();
+                StrPosition();
             18:
-                CalculateDate();
+                StrLength();
             19:
-                CreateGUID();
+                CalculateDate();
             20:
+                CreateGUID();
+            21:
                 DateToDMY();
+            22:
+                MyError();
+            23:
+                MyLastError();
             else
                 exit;
         end;
@@ -200,15 +206,28 @@ codeunit 50009 "KNH System Functions"
         myDate: Date;
         myTime: Time;
     begin
+        myDate := 20220415D;
         Message(Format(myDate, 0, 9) + 'T' + FORMAT(myTime, 0, 9))
     end;
 
     local procedure FormatDateText()
     var
-        DateTxt: Label 'Today is %1';
+        myDate: Date;
+        myTime: Time;
     begin
-        Message(DateTxt, Format(Today, 0, '<Month Text> <Day> <Year, 4>'));
-        //Today is April 15 2022
+        myDate := 20220415D;
+        Message(Format(myDate, 0, '<Month Text> <Day> <Year, 4>'));
+        //April 15 2022
+    end;
+
+    local procedure FormatDateText2()
+    var
+        myDate: Date;
+        myTime: Time;
+    begin
+        myDate := 20220415D;
+        Message(Format(myDate, 0, '<Year, 4> <Month> <Day Text>, <Day>'));
+        //2022 04 Friday 15
     end;
 
     #endregion
@@ -284,6 +303,17 @@ codeunit 50009 "KNH System Functions"
         month := Date2DMY(inputDate, 2);
         year := Date2DMY(inputDate, 3);
         Message(myText, Day, Month, Year);
+    end;
+
+    local procedure MyError()
+    begin
+        Error('My codeunit does not work.');
+    end;
+
+    local procedure MyLastError()
+    begin
+        ClearLastError();
+        Message('The last error was error code: ' + GetLastErrorCode() + ' error text ' + GetLastErrorText());
     end;
 
     #endregion

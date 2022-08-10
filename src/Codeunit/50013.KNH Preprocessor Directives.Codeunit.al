@@ -5,7 +5,7 @@
 /// region directive - used to define a block of code
 /// 
 /// </summary>
-codeunit 50005 "KNH Preprocessor Directives"
+codeunit 50013 "KNH Preprocessor Directives"
 {
     #region mycode
 

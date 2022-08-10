@@ -20,7 +20,7 @@ pageextension 50001 "KNH Order Processing" extends "Order Processor Role Center"
             {
                 ApplicationArea = All;
                 Caption = 'Sample Code';
-                RunObject = codeunit "KNH Sample Code";
+                RunObject = codeunit "KNH Loop Variations";
             }
         }
         addafter("Sample Code")
@@ -29,7 +29,7 @@ pageextension 50001 "KNH Order Processing" extends "Order Processor Role Center"
             {
                 ApplicationArea = All;
                 Caption = 'Dictionary';
-                RunObject = codeunit "KNH Test Dictionary";
+                RunObject = codeunit "KNH Dictionary";
             }
         }
         addafter("Dictionary")
