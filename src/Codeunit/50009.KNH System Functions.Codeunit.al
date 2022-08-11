@@ -201,15 +201,25 @@ codeunit 50009 "KNH System Functions"
         Message('The date is - ' + Format(MyDate)); //convert back to string
     end;
 
+    //Format(Value: Any [, Length: Integer] [, FormatNumber: Integer])
+    //FormatNumber --> 0,1,2,3,4,9
     local procedure FormatDateInteger()
     var
         myDate: Date;
         myTime: Time;
     begin
         myDate := 20220415D;
-        Message(Format(myDate, 0, 9) + 'T' + FORMAT(myTime, 0, 9))
+        myTime := 110540T;
+        Message(Format(myDate, 0, 9));
+        //2022-04-15
+        Message(Format(myDate, 0, 9) + 'T' + FORMAT(myTime, 0, 9));
+        //2022-04-15T11:05:40
     end;
 
+    //Format(Value: Any, Length: Integer, FormatString: Text)
+    //if Length = 0 then the entire value is returned (default).
+    //if Length > 0 then the returned string will be exactly Length characters.
+    //If Length < 0 then the returned string will not have leading or trailing spaces.
     local procedure FormatDateText()
     var
         myDate: Date;
@@ -226,7 +236,7 @@ codeunit 50009 "KNH System Functions"
         myTime: Time;
     begin
         myDate := 20220415D;
-        Message(Format(myDate, 0, '<Year, 4> <Month> <Day Text>, <Day>'));
+        Message(Format(myDate, 0, '<Year, 4> <Month> <Weekday Text> <Day>'));
         //2022 04 Friday 15
     end;
 
