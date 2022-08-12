@@ -6,8 +6,6 @@ permissionset 50001 "KNH Gen Dev Perms"
     Assignable = true;
     Caption = 'General Dev Permission Set', MaxLength = 30;
     Permissions =
-        table "KNH Blob" = X,
-        tabledata "KNH Blob" = RMID,
         codeunit "KNH Variant Test" = X,
         codeunit "KNH Streaming" = X,
         codeunit "KNH Letters" = X,
