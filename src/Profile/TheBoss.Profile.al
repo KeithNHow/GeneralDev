@@ -1,17 +1,17 @@
 /// <summary>
-/// Profile "The Boss"
+/// Profile "TheBoss"
 /// </summary>
-Profile "The Boss"
+Profile TheBoss
 {
     Description = '';
     Caption = 'The Boss';
     ProfileDescription = 'Changes to make this role center more suitable for the boss.';
     RoleCenter = "Business Manager Role Center";
     Promoted = true;
-    Customizations = BossCustomizations;
+    Customizations = BossCustomization1, BossCustomization2;
 }
 
-pagecustomization BossCustomizations customizes "Customer List"
+pagecustomization BossCustomization1 customizes "Customer List"
 {
     layout
     {
@@ -34,7 +34,7 @@ pagecustomization BossCustomizations customizes "Customer List"
     }
 }
 
-pagecustomization AccountManager customizes "Customer Card"
+pagecustomization BossCustomization2 customizes "Customer Card"
 {
     layout
     {

@@ -1,7 +1,7 @@
 /// <summary>
 /// Page Demo Order Proc. Extends Order Processor Role Center 9006
 /// </summary>
-pageextension 50001 "KNH Order Processing" extends "Order Processor Role Center"
+pageextension 50001 "KNH_Order_Processing" extends "Order Processor Role Center"
 {
     actions
     {
@@ -10,8 +10,9 @@ pageextension 50001 "KNH Order Processing" extends "Order Processor Role Center"
             action("Load")
             {
                 ApplicationArea = All;
+                ToolTip = 'Load';
                 Caption = 'Load';
-                RunObject = codeunit "KNH Overloads";
+                RunObject = codeunit "KNH_Overloads";
             }
         }
         addafter("Load")
@@ -19,8 +20,9 @@ pageextension 50001 "KNH Order Processing" extends "Order Processor Role Center"
             action("Sample Code")
             {
                 ApplicationArea = All;
+                ToolTip = 'Sample Code';
                 Caption = 'Sample Code';
-                RunObject = codeunit "KNH Loop Variations";
+                RunObject = codeunit "KNH_Loop_Variations";
             }
         }
         addafter("Sample Code")
@@ -28,8 +30,9 @@ pageextension 50001 "KNH Order Processing" extends "Order Processor Role Center"
             action("Dictionary")
             {
                 ApplicationArea = All;
+                ToolTip = 'Dictionary';
                 Caption = 'Dictionary';
-                RunObject = codeunit "KNH Dictionary";
+                RunObject = codeunit "KNH_Dictionary";
             }
         }
         addafter("Dictionary")
@@ -37,8 +40,9 @@ pageextension 50001 "KNH Order Processing" extends "Order Processor Role Center"
             action("SystemFunctions")
             {
                 ApplicationArea = All;
+                ToolTip = 'System Functions';
                 Caption = 'System Functions';
-                RunObject = codeunit "KNH System Functions";
+                RunObject = codeunit "KNH_System_Functions";
             }
         }
     }

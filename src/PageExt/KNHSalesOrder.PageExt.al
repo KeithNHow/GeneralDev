@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension NEU Sales Order (ID 90055) extends Record Sales Order.
 /// </summary>
-pageextension 50000 "NEU Sales Order" extends "Sales Order"
+pageextension 50000 "KNH_Sales_Order" extends "Sales Order"
 {
     actions
     {
@@ -10,6 +10,7 @@ pageextension 50000 "NEU Sales Order" extends "Sales Order"
             action(ShowJson)
             {
                 Caption = 'Show Json';
+                Tooltip = 'Show Json';
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
@@ -27,7 +28,6 @@ pageextension 50000 "NEU Sales Order" extends "Sales Order"
                     Token3: JsonToken;
                     Ja: JsonArray;
                     V: JsonValue;
-                    Txt: Text;
                 begin
                     Obj.Add('field', 'You tube video'); //add field to object
                     V.SetValue(133.456);
@@ -49,7 +49,7 @@ pageextension 50000 "NEU Sales Order" extends "Sales Order"
                             O2.Get('No', Token3); //Token becomes an object value
                             if Token3.IsValue() then begin
                                 V := Token3.AsValue();
-                                Message('Value as Date %1', CalcDate('+5D', V.AsDate()));
+                                Message('Value as Date %1', CalcDate('<+5D>', V.AsDate()));
                             end;
                         end;
                         //Obj.WriteTo(txt);
@@ -59,8 +59,4 @@ pageextension 50000 "NEU Sales Order" extends "Sales Order"
             }
         }
     }
-
-    var
-        myInt: Integer;
-
 }

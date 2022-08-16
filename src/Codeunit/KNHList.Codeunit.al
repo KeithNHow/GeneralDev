@@ -1,11 +1,10 @@
 /// <summary>
 /// Codeunit KNH Username List (ID 50011).
 /// </summary>
-codeunit 50006 "KNH List"
+codeunit 50006 "KNH_List"
 {
     var
         Names: List of [Text];
-        Counter: Integer;
 
     trigger OnRun()
 
@@ -17,7 +16,7 @@ codeunit 50006 "KNH List"
         Names.Insert(4, 'Jim');
         PrintCustomerNames(Names); //local procedure foreach loop
         NumberCount(); //local procedure for loop
-        NumberCount2(Counter); //local procedure while loop
+        NumberCount2(0); //local procedure while loop
     end;
 
     /// <summary>
@@ -42,9 +41,8 @@ codeunit 50006 "KNH List"
         Total: array[1000] of Decimal;
 
     begin
-        for I := 1 to 1000 do begin
+        for I := 1 to 1000 do
             Total[I] := I * 3;
-        end;
         Message('For loop - Array(50) = ' + Format(Total[50]))
     end;
 
@@ -54,7 +52,6 @@ codeunit 50006 "KNH List"
     /// <returns>Return value of type Integer</returns>
     local procedure NumberCount2(Counter: Integer)
     begin
-        Counter := 0;
         while Counter < 1000 do begin
             Counter := Counter + 1;
             message('While loop - ' + FORMAT(Counter));

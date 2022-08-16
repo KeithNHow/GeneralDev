@@ -3,7 +3,7 @@
 /// InStream --> Creates a stream object that you can use to read from or write to files and BLOBs.
 /// OutStream --> Creates a stream object that you can use to write to files and BLOBs.
 /// </summary>
-codeunit 50010 "KNH Streaming"
+codeunit 50010 "KNH_Streaming"
 {
     trigger OnRun()
     begin
@@ -15,7 +15,7 @@ codeunit 50010 "KNH Streaming"
     local procedure StreamImport()
     var
         myInStream: InStream;
-        myText: Text[100];
+        myText: Text;
     begin
         myText := 'I am a very old man.';
         myInStream.ReadText(myText);
@@ -24,17 +24,17 @@ codeunit 50010 "KNH Streaming"
 
     local procedure InStreamCompanyInfo()
     var
-        recCompInfo: Record "Company Information";
+        RecCompanyInformation: Record "Company Information";
         varInstream: Instream;
         varChars: Text[50];
         numChars: Integer;
-        TextStream: Label 'Number of characters read: %1. Characters read: %2.';
+        TextStreamLbl: Label 'Number of characters read: %1. Characters read: %2.', Comment = '%1 = No. of Characters. ; %2 = First three Characters.';
     begin
-        recCompInfo.Find('-');
-        recCompInfo.CalcFields(recCompInfo.Picture); //retrieves the Picture field
-        recCompInfo.Picture.CreateInStream(varInstream); //places Picture blob into stream object
+        RecCompanyInformation.Find('-');
+        RecCompanyInformation.CalcFields(RecCompanyInformation.Picture); //retrieves the Picture field
+        RecCompanyInformation.Picture.CreateInStream(varInstream); //places Picture blob into stream object
         numChars := varInstream.Read(varChars, 3);  //reads first three characters of picture stream
-        Message(TextStream, numChars, varChars);
+        Message(TextStreamLbl, numChars, varChars);
     end;
 
     local procedure StreamOutput()
@@ -43,13 +43,13 @@ codeunit 50010 "KNH Streaming"
     begin
 
         myOutStream.WriteText('<html>');
-        myOutStream.WriteText;
+        myOutStream.WriteText();
         myOutStream.WriteText('<head>');
         myOutStream.WriteText('<title>My Page</title>');
         myOutStream.WriteText('</head>');
-        myOutStream.WriteText;
+        myOutStream.WriteText();
         myOutStream.WriteText('<p>Hello world!</p>');
-        myOutStream.WriteText;
+        myOutStream.WriteText();
         myOutStream.WriteText('</html>');
     end;
 }

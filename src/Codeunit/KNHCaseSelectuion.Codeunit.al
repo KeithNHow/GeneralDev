@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH My Selectuion (ID 50007).
 /// </summary>
-codeunit 50003 "KNH Case Selectuion"
+codeunit 50003 "KNH_Case_Selectuion"
 {
     var
         I: Integer;

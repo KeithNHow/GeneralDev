@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH ConditionalSelection (ID 50001).
 /// </summary>
-codeunit 50002 "KNH Conditional Selection"
+codeunit 50002 "KNH_Conditional_Selection"
 {
     var
         Amount: Decimal;
@@ -11,6 +11,8 @@ codeunit 50002 "KNH Conditional Selection"
 
     trigger OnRun()
     begin
+        I := 10;
+        J := 20;
         if Amount < 1000 then begin
             if I > J then
                 Maximum := I

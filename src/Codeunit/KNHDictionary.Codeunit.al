@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit Dictionary (ID 50006)
 /// </summary>
-codeunit 50007 "KNH Dictionary"
+codeunit 50007 "KNH_Dictionary"
 {
     trigger OnRun()
     begin
@@ -18,12 +18,11 @@ codeunit 50007 "KNH Dictionary"
         i: Integer;
     begin
         customerName := 'Colosseum Dental Ltd'; //string length = 20
-        for i := 1 to StrLen(customerName) do begin //loop from 1 to 20
+        for i := 1 to StrLen(customerName) do //loop from 1 to 20
             if counter.Get(customerName[i], c) then
                 counter.Set(customerName[i], c + 1)
             else
                 counter.Add(customerName[i], 1);
-        end;
         Message('Characters of type s in Customer Name = ' + Format(counter.Get(customerName[4])));
     end;
 }

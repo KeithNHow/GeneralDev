@@ -1,14 +1,15 @@
 /// <summary>
 /// Codeunit KNH Loop Variations (ID 50008).
 /// </summary>
-codeunit 50005 "KNH Loop Variations"
+codeunit 50005 "KNH_Loop_Variations"
 {
     var
+        Customer: Record Customer;
         Counter: Integer;
         I: Integer;
         J: Integer;
         A: array[5, 7] of Text[30];
-        Customer: Record Customer;
+
 
     trigger OnRun()
 

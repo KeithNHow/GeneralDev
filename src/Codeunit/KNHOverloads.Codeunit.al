@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit "Overloads" (ID 50004) import text, date or integer, export text.
 /// </summary>
-codeunit 50004 "KNH Overloads"
+codeunit 50004 "KNH_Overloads"
 {
     trigger OnRun()
     begin
@@ -32,7 +32,7 @@ codeunit 50004 "KNH Overloads"
         exit(field1 * field1 * field1);
     end;
 
-    local procedure MyOverload(var field1: Integer; field2: Integer; field3: Integer): Integer
+    local procedure MyOverload(field1: Integer; field2: Integer; field3: Integer): Integer
     begin
         exit(field1 * field2 * field3);
     end;

@@ -1,10 +1,9 @@
 /// <summary>
-/// Profile "The Salesman"
+/// Profile "TheSalesman"
 /// </summary>
-profile "The Salesman"
+profile TheSalesman
 {
     ProfileDescription = 'The Boss';
     RoleCenter = "Sales Manager Role Center";
-    Customizations = BossCustomizations;
     Caption = 'Salesman';
 }

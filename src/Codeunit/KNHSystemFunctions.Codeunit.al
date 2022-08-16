@@ -1,12 +1,12 @@
 /// <summary>
 /// Codeunit KNH System Functions (ID 50009).
 /// </summary>
-codeunit 50009 "KNH System Functions"
+codeunit 50009 "KNH_System_Functions"
 {
     trigger OnRun()
     var
         selection: Integer;
-        options: Text[50];
+        options: Text;
         functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,EncryptText,Substring,Trim,Replace,PadRight,InsertString,RandomizeNumber,RoundingNumber,Evaluation,FormatDateInteger,FormatDateText,FormatDateText2,CopyString,ShowMessage,StrPosition,StrLength,CalculateDate,CreateGUID,DateToDMY,MyError,MyLastError';
         selectionTxt: Label 'Choose one of the following options:';
     begin
@@ -32,32 +32,34 @@ codeunit 50009 "KNH System Functions"
             9:
                 InsertString();
             10:
-                RoundingNumber();
+                RandomizeNumber();
             11:
-                Evaluation();
+                RoundingNumber();
             12:
-                FormatDateInteger();
+                Evaluation();
             13:
-                FormatDateText();
+                FormatDateInteger();
             14:
-                FormatDateText2();
+                FormatDateText();
             15:
-                CopyString();
+                FormatDateText2();
             16:
-                ShowMessage();
+                CopyString();
             17:
-                StrPosition();
+                ShowMessage();
             18:
-                StrLength();
+                StrPosition();
             19:
-                CalculateDate();
+                StrLength();
             20:
-                CreateGUID();
+                CalculateDate();
             21:
-                DateToDMY();
+                CreateGUID();
             22:
-                MyError();
+                DateToDMY();
             23:
+                MyError();
+            24:
                 MyLastError();
             else
                 exit;
@@ -70,6 +72,7 @@ codeunit 50009 "KNH System Functions"
         myDate: Date;
         myDateTime: DateTime;
     begin
+        myDateTime := CurrentDateTime;
         myDate := System.DT2Date(myDateTime);
         Message(Format(myDate));
     end;
@@ -79,6 +82,7 @@ codeunit 50009 "KNH System Functions"
         myTime: Time;
         myDateTime: DateTime;
     begin
+        myDateTime := CurrentDateTime;
         myTime := System.DT2Time(myDateTime);
         Message(Format(myTime));
     end;
@@ -90,6 +94,9 @@ codeunit 50009 "KNH System Functions"
         week: Integer;
         year: Integer;
     begin
+        day := 12;
+        week := 23;
+        year := 2019;
         myDate := System.DWY2Date(day, week, year);
         Message(Format(myDate));
     end;
@@ -118,8 +125,8 @@ codeunit 50009 "KNH System Functions"
 
     local procedure Trim()
     var
-        myExtract: Text[50];
-        myText: Text[50];
+        myExtract: Text;
+        myText: Text[100];
     begin
         myText := '    Here we go again. Another difficult day.    ';
         myExtract := myText.Trim();
@@ -150,15 +157,14 @@ codeunit 50009 "KNH System Functions"
     local procedure InsertString()
     var
         oldString: Text;
-        subString: Text;
+        mySubString: Text;
         newString: Text;
-        myText: Text;
         Pos: Integer;
     begin
         oldString := 'Oh God';
-        subString := 'My';
+        mySubString := 'My';
         Pos := 4;
-        newString := Text.InsStr(oldString, SubString, Pos);
+        newString := Text.InsStr(oldString, mySubString, Pos);
         Message(newString);
     end;
 
@@ -174,20 +180,20 @@ codeunit 50009 "KNH System Functions"
         Number := 100;
         Randomize(Number);
         //RANDOM - Returns a pseudo-random number
-        Number := RANDOM(Number);
-        MESSAGE(FORMAT(Number));
+        Number := Random(Number);
+        Message(Format(Number));
     end;
 
     local procedure RoundingNumber()
     var
         myNumber: Decimal;
     begin
-        myNumber := ROUND(50.3468, 0.01, '<');
-        MESSAGE(FORMAT(myNumber)); //Ans = 50.34
+        myNumber := Round(50.3468, 0.01, '<');
+        Message(Format(myNumber)); //Ans = 50.34
         myNumber := ROUND(50.3468, 0.01, '>');
-        MESSAGE(FORMAT(myNumber)); //Ans = 50.35
+        Message(Format(myNumber)); //Ans = 50.35
         myNumber := ROUND(50.3468, 0.01);
-        MESSAGE(FORMAT(myNumber)); //Ans = 50.34    
+        Message(Format(myNumber)); //Ans = 50.34    
     end;
 
     local procedure Evaluation()
@@ -223,7 +229,7 @@ codeunit 50009 "KNH System Functions"
     local procedure FormatDateText()
     var
         myDate: Date;
-        myTime: Time;
+
     begin
         myDate := 20220415D;
         Message(Format(myDate, 0, '<Month Text> <Day> <Year, 4>'));
@@ -233,7 +239,6 @@ codeunit 50009 "KNH System Functions"
     local procedure FormatDateText2()
     var
         myDate: Date;
-        myTime: Time;
     begin
         myDate := 20220415D;
         Message(Format(myDate, 0, '<Year, 4> <Month> <Weekday Text> <Day>'));
@@ -288,7 +293,7 @@ codeunit 50009 "KNH System Functions"
     var
         MyDate: Date;
     begin
-        MyDate := CalcDate('1M+CM+1D', Today()); //first of curr mth
+        MyDate := CalcDate('<1M+CM+1D>', Today()); //first of curr mth
         Message(Format(MyDate));
     end;
 
@@ -306,13 +311,13 @@ codeunit 50009 "KNH System Functions"
         day: Integer;
         month: Integer;
         year: Integer;
-        myText: Label 'Today is day %1 of month %2 of the year %3.';
+        myTxt: Label 'Today is day %1 of month %2 of the year %3.', Comment = '%1 = Day ; %2 = Week ; %3 = Year';
     begin
         inputDate := Today;
         day := Date2DMY(inputDate, 1);
         month := Date2DMY(inputDate, 2);
         year := Date2DMY(inputDate, 3);
-        Message(myText, Day, Month, Year);
+        Message(myTxt, Day, Month, Year);
     end;
 
     local procedure MyError()
