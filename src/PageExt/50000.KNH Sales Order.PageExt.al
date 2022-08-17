@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension NEU Sales Order (ID 90055) extends Record Sales Order.
 /// </summary>
-pageextension 50000 "KNH_Sales_Order" extends "Sales Order"
+pageextension 50000 "KNH Sales Order" extends "Sales Order"
 {
     actions
     {

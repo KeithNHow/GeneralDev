@@ -12,7 +12,7 @@ pageextension 50001 "KNH_Order_Processing" extends "Order Processor Role Center"
                 ApplicationArea = All;
                 ToolTip = 'Load';
                 Caption = 'Load';
-                RunObject = codeunit "KNH_Overloads";
+                RunObject = codeunit "KNH Overloads";
             }
         }
         addafter("Load")
@@ -22,7 +22,7 @@ pageextension 50001 "KNH_Order_Processing" extends "Order Processor Role Center"
                 ApplicationArea = All;
                 ToolTip = 'Sample Code';
                 Caption = 'Sample Code';
-                RunObject = codeunit "KNH_Loop_Variations";
+                RunObject = codeunit "KNH Loop Variations";
             }
         }
         addafter("Sample Code")
@@ -32,7 +32,7 @@ pageextension 50001 "KNH_Order_Processing" extends "Order Processor Role Center"
                 ApplicationArea = All;
                 ToolTip = 'Dictionary';
                 Caption = 'Dictionary';
-                RunObject = codeunit "KNH_Dictionary";
+                RunObject = codeunit "KNH Dictionary";
             }
         }
         addafter("Dictionary")
@@ -42,7 +42,7 @@ pageextension 50001 "KNH_Order_Processing" extends "Order Processor Role Center"
                 ApplicationArea = All;
                 ToolTip = 'System Functions';
                 Caption = 'System Functions';
-                RunObject = codeunit "KNH_System_Functions";
+                RunObject = codeunit "KNH System Functions";
             }
         }
     }

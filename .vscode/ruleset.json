@@ -58,9 +58,14 @@
         },
         {
             "id": "AA0215",
-            "action": "warning",
-            "Description": "Warning about ???"
-        },       
+            "action": "hidden",
+            "Description": "Warning about best practices for naming"
+        }, 
+        {
+            "id": "AA0232",
+            "action": "hidden",
+            "Description": "You can potentially increase performance if fields that are used in FlowFields are added to SumIndexedFields of the corresponding key"
+        },
         {
             "id": "AL0432",
             "action": "warning",

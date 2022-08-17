@@ -3,7 +3,7 @@
 /// InStream --> Creates a stream object that you can use to read from or write to files and BLOBs.
 /// OutStream --> Creates a stream object that you can use to write to files and BLOBs.
 /// </summary>
-codeunit 50010 "KNH_Streaming"
+codeunit 50010 "KNH Streaming"
 {
     trigger OnRun()
     begin

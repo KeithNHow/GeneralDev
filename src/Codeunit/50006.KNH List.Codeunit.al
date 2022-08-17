@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH Username List (ID 50011).
 /// </summary>
-codeunit 50006 "KNH_List"
+codeunit 50006 "KNH List"
 {
     var
         Names: List of [Text];
