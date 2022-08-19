@@ -1,7 +1,7 @@
 /// <summary>
 /// Page Demo Order Proc. Extends Order Processor Role Center 9006
 /// </summary>
-pageextension 50001 "KNH_Order_Processing" extends "Order Processor Role Center"
+pageextension 50601 "KNH_Order_Processing" extends "Order Processor Role Center"
 {
     actions
     {

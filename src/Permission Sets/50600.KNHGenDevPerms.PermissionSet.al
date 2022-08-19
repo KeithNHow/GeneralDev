@@ -1,7 +1,7 @@
 /// <summary>
 /// Unknown "KNH_GenDev_Perms" (ID 50000).
 /// </summary>
-permissionset 50000 KNH_GenDev_Perms
+permissionset 50600 KNH_GenDev_Perms
 {
     Assignable = true;
     Caption = 'KNH General Dev', MaxLength = 30;

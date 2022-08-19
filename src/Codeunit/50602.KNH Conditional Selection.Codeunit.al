@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit KNH ConditionalSelection (ID 50001).
+/// Codeunit KNH ConditionalSelection (ID 50602).
 /// </summary>
-codeunit 50002 "KNH Conditional Selection"
+codeunit 50602 "KNH Conditional Selection"
 {
     var
         Amount: Decimal;

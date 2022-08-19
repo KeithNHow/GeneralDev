@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit Dictionary (ID 50006)
+/// Codeunit Dictionary (ID 50607)
 /// </summary>
-codeunit 50007 "KNH Dictionary"
+codeunit 50607 "KNH Dictionary"
 {
     trigger OnRun()
     begin

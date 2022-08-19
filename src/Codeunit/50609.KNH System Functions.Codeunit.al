@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit KNH System Functions (ID 50009).
+/// Codeunit KNH System Functions (ID 50609).
 /// </summary>
-codeunit 50009 "KNH System Functions"
+codeunit 50609 "KNH System Functions"
 {
     trigger OnRun()
     var

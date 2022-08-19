@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit KNH Variant Test (ID 50000).
+/// Codeunit KNH Variant Test (ID 50600).
 /// </summary>
-codeunit 50000 "KNH Variant Test"
+codeunit 50600 "KNH Variant Test"
 {
     TableNo = 27; //Item
 
