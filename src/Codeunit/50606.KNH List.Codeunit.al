@@ -43,7 +43,7 @@ codeunit 50606 "KNH List"
     begin
         for I := 1 to 1000 do
             Total[I] := I * 3;
-        Message('For loop - Array(50) = ' + Format(Total[50]))
+        Message('For loop - Array(1000) = ' + Format(Total[I]))
     end;
 
     /// <summary>

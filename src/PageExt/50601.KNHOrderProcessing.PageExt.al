@@ -7,27 +7,27 @@ pageextension 50601 "KNH_Order_Processing" extends "Order Processor Role Center"
     {
         addAfter("History")
         {
-            action("Load")
+            action(OverLoad) //604
             {
                 ApplicationArea = All;
-                ToolTip = 'Load';
-                Caption = 'Load';
+                ToolTip = 'OverLoad';
+                Caption = 'OverLoad';
                 RunObject = codeunit "KNH Overloads";
             }
         }
-        addafter("Load")
+        addafter(OverLoad)
         {
-            action("Sample Code")
+            action("Copy Test") //601
             {
                 ApplicationArea = All;
-                ToolTip = 'Sample Code';
-                Caption = 'Sample Code';
+                ToolTip = 'Copy Test';
+                Caption = 'Copy Test';
                 RunObject = codeunit "KNH Loop Variations";
             }
         }
-        addafter("Sample Code")
+        addafter("Copy Test")
         {
-            action("Dictionary")
+            action(Dictionary) //607
             {
                 ApplicationArea = All;
                 ToolTip = 'Dictionary';
@@ -35,14 +35,24 @@ pageextension 50601 "KNH_Order_Processing" extends "Order Processor Role Center"
                 RunObject = codeunit "KNH Dictionary";
             }
         }
-        addafter("Dictionary")
+        addafter(Dictionary)
         {
-            action("SystemFunctions")
+            action(SystemFunctions) //609
             {
                 ApplicationArea = All;
                 ToolTip = 'System Functions';
                 Caption = 'System Functions';
                 RunObject = codeunit "KNH System Functions";
+            }
+        }
+        addafter(SystemFunctions)
+        {
+            action(TransferFields)
+            {
+                ApplicationArea = All;
+                ToolTip = 'TransferFields';
+                Caption = 'TransferFields';
+                RunObject = codeunit "KNH TransferFields";
             }
         }
     }
