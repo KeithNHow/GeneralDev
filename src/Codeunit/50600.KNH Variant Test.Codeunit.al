@@ -45,6 +45,6 @@ codeunit 50600 "KNH Variant Test"
             Message(RecordRefTxt, CustRecordRef.Number);
 
         if CustVariantId.IsRecordId then
-            Message(VariantTxt, '%1');
+            Message(VariantTxt, CustVariantId);
     end;
 }
