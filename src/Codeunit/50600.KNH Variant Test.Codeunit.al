@@ -1,5 +1,6 @@
 /// <summary>
 /// Codeunit KNH Variant Test (ID 50600).
+/// The AL variant data type can contain many AL data types.
 /// </summary>
 codeunit 50600 "KNH Variant Test"
 {
@@ -7,42 +8,43 @@ codeunit 50600 "KNH Variant Test"
 
     trigger OnRun()
     begin
-        Message(Format(Rec));
+        Test();
     end;
+
+    var
+        Customer: Record Customer;
+        Vendor: Record Vendor;
+        CustRecId: RecordId;
+        MessageTxt: Text;
 
     /// <summary>
     /// Test.
     /// </summary>
     procedure Test()
-    var
-        Customer: Record Customer;
-        Vendor: Record Vendor;
-        Item: Record Item;
     begin
         Customer.FindFirst();
-        Vendor.FindLast();
-        Item.FindFirst();
-        LogInformation(Customer);
-        LogInformation(Vendor);
-        LogInformation(Item);
+        CustRecId := Customer.RecordId;
+        ShowCustList(Customer, CustRecId);
     end;
 
-    local procedure LogInformation(LogVariant: Variant)
+    local procedure ShowCustList(CustVariant: Variant; CustVariantId: Variant) //Receive Cust as record variant
     var
-        Customer: Record Customer;
-        RecordRef: RecordRef;
+        CustRecordRef: RecordRef;
         CodeunitNo: Integer;
+        VariantTxt: Label 'Variant contains Record Id %1.', Comment = '%1 = CustVariantId';
+        RecordRefTxt: Label 'Record Reference is %1 and not 18.', Comment = '%1 = CustRecordRef';
+        ErrorTxt: Label 'You cannot pass a non-record variable to a record variant.';
     begin
-        if not LogVariant.IsRecord then
-            Error('You cannot pass a non-record variable to LogInformation');
-        RecordRef.GetTable(LogVariant);
+        if not CustVariant.IsRecord then //Check record variant exists
+            Error(ErrorTxt);
+        CustRecordRef.GetTable(CustVariant); //Gets Customer table based on the record variant
 
-        LogVariant := RecordRef;
-        if RecordRef.Number = 18 then
-            Customer := LogVariant;
-        Page.RunModal(0, LogVariant);
+        if CustRecordRef.Number = 18 then
+            Page.RunModal(0, CustVariant)
+        else
+            Message(RecordRefTxt, CustRecordRef.Number);
 
-        CodeunitNo := 50003;
-        Codeunit.Run(CodeunitNo, LogVariant); //Allows the running of a codeunit with specified table
+        if CustVariantId.IsRecordId then
+            Message(VariantTxt, '%1');
     end;
 }

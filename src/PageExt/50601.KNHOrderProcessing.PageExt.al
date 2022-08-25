@@ -55,5 +55,15 @@ pageextension 50601 "KNH_Order_Processing" extends "Order Processor Role Center"
                 RunObject = codeunit "KNH TransferFields";
             }
         }
+        addafter(TransferFields)
+        {
+            action(VariantTest)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Variant Test';
+                Caption = 'Variant Test';
+                RunObject = codeunit "KNH Variant Test";
+            }
+        }
     }
 }
