@@ -82,7 +82,7 @@ pageextension 50601 "KNH Order Processing" extends "Order Processor Role Center"
                 ApplicationArea = All;
                 ToolTip = 'Notes';
                 Caption = 'Notes';
-                RunObject = Page "KNH Notes List";
+                RunObject = Page "KNH Notes";
             }
         }
     }

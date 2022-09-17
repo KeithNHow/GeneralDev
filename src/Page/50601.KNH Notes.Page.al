@@ -1,7 +1,7 @@
 /// <summary>
 /// Page KNH Notes List (ID 50601).
 /// </summary>
-page 50601 "KNH Notes List"
+page 50601 "KNH Notes"
 {
     ApplicationArea = All;
     Caption = 'Notes List';
