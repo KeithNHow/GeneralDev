@@ -19,5 +19,8 @@ permissionset 50600 KNH_GenDev_Perms
         codeunit "KNH Streaming" = X,
         codeunit "KNH RecordRef" = X,
         codeunit "KNH Letters" = X,
-        codeunit "KNH Preprocessor Directives" = X;
+        codeunit "KNH Preprocessor Directives" = X,
+        Table "KNH Note" = X,
+        TableData "KNH Note" = RIMD,
+        Page "KNH Notes" = X;
 }

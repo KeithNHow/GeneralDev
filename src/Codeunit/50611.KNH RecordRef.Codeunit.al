@@ -76,7 +76,8 @@ codeunit 50611 "KNH RecordRef"
             RecordLink.SetCurrentKey("Record ID"); //Set key
             RecordLink.SetRange("Record ID", OppRecordRef.RecordId); //Filter records
             RecordLink.SetRange(Company, CompanyName);
-            if RecordLink.findFirst() then begin //Check if table has records
+            RecordLink.SetAutoCalcFields(Note);
+            if RecordLink.FindSet() then begin //Check if table has records
                 KNHNote.Init();
                 KNHNote."Link ID" := RecordLink."Link ID";
                 KNHNote.Description := RecordLink.Description;
