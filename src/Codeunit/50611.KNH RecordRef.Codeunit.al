@@ -8,6 +8,7 @@ codeunit 50611 "KNH RecordRef"
     trigger OnRun()
     begin
         RecordLinkExport();
+        RecordLinkExport2();
     end;
 
     /// <summary>
@@ -65,6 +66,7 @@ codeunit 50611 "KNH RecordRef"
     var
         Opportunity: Record Opportunity;
         RecordLink: Record "Record Link";
+        KNHNote: Record "KNH Note";
         OppRecordRef: RecordRef;
         Counter: Integer;
     begin
@@ -73,10 +75,17 @@ codeunit 50611 "KNH RecordRef"
             OppRecordRef.GetTable(Opportunity); //open table
             RecordLink.SetCurrentKey("Record ID"); //Set key
             RecordLink.SetRange("Record ID", OppRecordRef.RecordId); //Filter records
-            if not RecordLink.IsEmpty then begin//Check if table has records
-                RecordLink.Delete();
-                Counter += 1;
-                exit;
+            RecordLink.SetRange(Company, CompanyName);
+            if RecordLink.findFirst() then begin //Check if table has records
+                KNHNote.Init();
+                KNHNote."Link ID" := RecordLink."Link ID";
+                KNHNote.Description := RecordLink.Description;
+                KNHNote.Note := CopyStr(Format(RecordLink.Note), 1, 250);
+                KNHNote.Created := RecordLink.Created;
+                KNHNote."User ID" := RecordLink."User ID";
+                KNHNote."To User ID" := RecordLink."To User ID";
+                KNHNote.Insert();
+                //RecordLink.Delete();
             end;
         until Opportunity.Next() = 0; //Next Record
         Message(Format(Counter)); //Display record count

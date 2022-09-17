@@ -75,5 +75,15 @@ pageextension 50601 "KNH Order Processing" extends "Order Processor Role Center"
                 RunObject = codeunit "KNH RecordRef";
             }
         }
+        addafter(RecordRef)
+        {
+            action(Notes)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Notes';
+                Caption = 'Notes';
+                RunObject = Page "KNH Notes";
+            }
+        }
     }
 }
