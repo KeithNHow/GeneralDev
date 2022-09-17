@@ -8,7 +8,6 @@ codeunit 50611 "KNH RecordRef"
     trigger OnRun()
     begin
         RecordLinkExport();
-        RecordLinkExport2();
     end;
 
     /// <summary>
@@ -48,27 +47,10 @@ codeunit 50611 "KNH RecordRef"
     var
         Opportunity: Record Opportunity;
         RecordLink: Record "Record Link";
-        OppRecordRef: RecordRef;
-        Counter: Integer;
-    begin
-        Opportunity.FindSet(); //Find records
-        repeat
-            OppRecordRef.GetTable(Opportunity); //open table
-            RecordLink.SetCurrentKey("Record ID"); //Set key
-            RecordLink.SetRange("Record ID", OppRecordRef.RecordId); //Filter records
-            if not RecordLink.IsEmpty then //Check if table has records
-                Counter += 1; //Count record
-        until Opportunity.Next() = 0; //Next Record
-        Message(Format(Counter)); //Display record count
-    end;
-
-    local procedure RecordLinkExport2()
-    var
-        Opportunity: Record Opportunity;
-        RecordLink: Record "Record Link";
         KNHNote: Record "KNH Note";
         OppRecordRef: RecordRef;
         MyInStream: InStream;
+        LongText: Text;
     begin
         Opportunity.FindSet(); //Find records
         repeat
@@ -76,17 +58,20 @@ codeunit 50611 "KNH RecordRef"
             RecordLink.SetCurrentKey("Record ID"); //Set key
             RecordLink.SetRange("Record ID", OppRecordRef.RecordId); //Filter records
             RecordLink.SetRange(Company, CompanyName);
-            recordlink.SetAutoCalcFields(Note);
+            Recordlink.SetAutoCalcFields(Note);
             if RecordLink.FindSet() then begin //Check if table has records
-                KNHNote.Init();
-                KNHNote."Link ID" := RecordLink."Link ID";
-                KNHNote.Description := RecordLink.Description;
-                RecordLink.Note.CreateInStream(MyInStream);
-                MyInstream.Read(KNHNote.Note);
-                KNHNote.Created := RecordLink.Created;
-                KNHNote."User ID" := RecordLink."User ID";
-                KNHNote."To User ID" := RecordLink."To User ID";
-                KNHNote.Insert();
+                repeat
+                    KNHNote.Init();
+                    KNHNote."Link ID" := RecordLink."Link ID";
+                    KNHNote.Description := RecordLink.Description;
+                    RecordLink.Note.CreateInStream(MyInStream);
+                    MyInstream.Read(LongText);
+                    KNHNote.Note := CopyStr(Format(LongText), 1, 50);
+                    KNHNote.Created := RecordLink.Created;
+                    KNHNote."User ID" := RecordLink."User ID";
+                    KNHNote."To User ID" := RecordLink."To User ID";
+                    KNHNote.Insert();
+                until RecordLink.Next() = 0
                 //RecordLink.Delete();
             end;
         until Opportunity.Next() = 0; //Next Record
