@@ -27,16 +27,12 @@ page 50600 "KNH Notes"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Note field.';
+                    MultiLine = true;
                 }
                 field(Created; Rec.Created)
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Created field.';
-                }
-                field("To User ID"; Rec."To User ID")
-                {
-                    ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the To User ID field.';
                 }
                 field("User ID"; Rec."User ID")
                 {

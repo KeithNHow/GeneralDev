@@ -68,7 +68,7 @@ codeunit 50611 "KNH RecordRef"
         RecordLink: Record "Record Link";
         KNHNote: Record "KNH Note";
         OppRecordRef: RecordRef;
-        Counter: Integer;
+        MyInStream: InStream;
     begin
         Opportunity.FindSet(); //Find records
         repeat
@@ -76,12 +76,13 @@ codeunit 50611 "KNH RecordRef"
             RecordLink.SetCurrentKey("Record ID"); //Set key
             RecordLink.SetRange("Record ID", OppRecordRef.RecordId); //Filter records
             RecordLink.SetRange(Company, CompanyName);
-            RecordLink.SetAutoCalcFields(Note);
+            recordlink.SetAutoCalcFields(Note);
             if RecordLink.FindSet() then begin //Check if table has records
                 KNHNote.Init();
                 KNHNote."Link ID" := RecordLink."Link ID";
                 KNHNote.Description := RecordLink.Description;
-                KNHNote.Note := CopyStr(Format(RecordLink.Note), 1, 250);
+                RecordLink.Note.CreateInStream(MyInStream);
+                MyInstream.Read(KNHNote.Note);
                 KNHNote.Created := RecordLink.Created;
                 KNHNote."User ID" := RecordLink."User ID";
                 KNHNote."To User ID" := RecordLink."To User ID";
@@ -89,6 +90,5 @@ codeunit 50611 "KNH RecordRef"
                 //RecordLink.Delete();
             end;
         until Opportunity.Next() = 0; //Next Record
-        Message(Format(Counter)); //Display record count
     end;
 }
