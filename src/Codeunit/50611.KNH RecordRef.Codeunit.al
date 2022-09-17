@@ -50,14 +50,35 @@ codeunit 50611 "KNH RecordRef"
         OppRecordRef: RecordRef;
         Counter: Integer;
     begin
-        Opportunity.FindSet();
+        Opportunity.FindSet(); //Find records
         repeat
-            OppRecordRef.GetTable(Opportunity);
-            RecordLink.SetCurrentKey("Record ID");
-            RecordLink.SetRange("Record ID", OppRecordRef.RecordId);
-            if not RecordLink.IsEmpty then
+            OppRecordRef.GetTable(Opportunity); //open table
+            RecordLink.SetCurrentKey("Record ID"); //Set key
+            RecordLink.SetRange("Record ID", OppRecordRef.RecordId); //Filter records
+            if not RecordLink.IsEmpty then //Check if table has records
+                Counter += 1; //Count record
+        until Opportunity.Next() = 0; //Next Record
+        Message(Format(Counter)); //Display record count
+    end;
+
+    local procedure RecordLinkExport2()
+    var
+        Opportunity: Record Opportunity;
+        RecordLink: Record "Record Link";
+        OppRecordRef: RecordRef;
+        Counter: Integer;
+    begin
+        Opportunity.FindSet(); //Find records
+        repeat
+            OppRecordRef.GetTable(Opportunity); //open table
+            RecordLink.SetCurrentKey("Record ID"); //Set key
+            RecordLink.SetRange("Record ID", OppRecordRef.RecordId); //Filter records
+            if not RecordLink.IsEmpty then begin//Check if table has records
+                RecordLink.Delete();
                 Counter += 1;
-        until Opportunity.Next() = 0;
-        Message(Format(Counter));
+                exit;
+            end;
+        until Opportunity.Next() = 0; //Next Record
+        Message(Format(Counter)); //Display record count
     end;
 }

@@ -7,7 +7,7 @@ codeunit 50609 "KNH System Functions"
     var
         selection: Integer;
         options: Text;
-        functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,EncryptText,Substring,Trim,Replace,PadRight,InsertString,RandomizeNumber,RoundingNumber,Evaluation,FormatDateInteger,FormatDateText,FormatDateText2,CopyString,ShowMessage,StrPosition,StrLength,CalculateDate,CreateGUID,DateToDMY,MyError,MyLastError';
+        functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,EncryptText,Substring,Trim,Replace,PadRight,InsertString,RandomizeNumber,RoundingNumber,Evaluation,FormatDateInteger,FormatDateText,FormatDateText2,CopyString,ShowMessage,StrPosition,StrLength,CalculateDate,CreateGUID,DateToDMY,MyError,MyLastError,ReplaceText';
         selectionTxt: Label 'Choose one of the following options:';
     begin
         Options := functionTxt;
@@ -61,6 +61,8 @@ codeunit 50609 "KNH System Functions"
                 MyError();
             24:
                 MyLastError();
+            25:
+                ReplaceText();
             else
                 exit;
         end;
@@ -329,6 +331,20 @@ codeunit 50609 "KNH System Functions"
     begin
         ClearLastError();
         Message('The last error was error code: ' + GetLastErrorCode() + ' error text ' + GetLastErrorText());
+    end;
+
+    local procedure ReplaceText()
+    var
+        Description: text[100];
+    begin
+        Description := 'my & my < my > my "     ';
+        Description := Description.Replace('&', 'X');
+        Description := Description.Replace('<', 'X');
+        Description := Description.Replace('>', 'X');
+        Description := Description.Replace('"', 'X');
+        Description := Description.Replace(' ', '');
+        Message(Description);
+        //Result = 'myXmyXmyXmyX';
     end;
 
     #endregion
