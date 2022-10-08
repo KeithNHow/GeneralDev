@@ -18,7 +18,7 @@ table 50600 "KNH Note"
             Caption = 'Description';
             DataClassification = CustomerContent;
         }
-        field(4; Note; Text[50])
+        field(4; Note; Text[250])
         {
             Caption = 'Note';
             DataClassification = CustomerContent;

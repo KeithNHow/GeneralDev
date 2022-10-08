@@ -7,13 +7,11 @@ codeunit 50611 "KNH RecordRef"
 {
     trigger OnRun()
     begin
-        RecordLinkExport();
+        EmailRecordRef();
+        //RecordLinkExport();
     end;
 
-    /// <summary>
-    /// MyRecordRef.
-    /// </summary>
-    procedure MyRecordRef()
+    local procedure MyRecordRef()
     var
         CustRecordRef: RecordRef;
         MyFieldRef: FieldRef;
@@ -27,6 +25,42 @@ codeunit 50611 "KNH RecordRef"
             CustRecordRef.Get(CustRecordId);
             Message(Format(CustRecordRef)); //Display record content
         end;
+    end;
+
+    local procedure EmailRecordRef()
+    var
+        EmailRecordRef: RecordRef;
+        MyFieldRef: FieldRef;
+        varFilters: Text;
+        Counter: Integer;
+        FoundMsg: Label 'The filter is set on the %1 field.';
+    begin
+        EmailRecordRef.Open(Database::"Sent Email"); //Open table
+        //MyFieldRef := EmailRecordRef.Field(1); //Assign first field in table
+        //MyFieldRef.Value := ''; //Assign Value to field
+        EmailRecordRef.SetRecFilter();
+        if EmailRecordRef.FindSet() then begin
+            repeat
+                Counter += 1;
+            until EmailRecordRef.Next() = 0;
+        end;
+        Message(Format(Counter));
+    end;
+
+    local procedure CustRecordRef()
+    var
+        CustRecordRef: RecordRef;
+        MyFieldRef: FieldRef;
+        //CustRecordId: RecordId;
+        varFilters: Text;
+        FoundMsg: Label 'The filter is set on the %1 field.';
+    begin
+        CustRecordRef.Open(Database::Customer); //Open table
+        //MyFieldRef := EmailRecordRef.Field(1); //Assign first field in table
+        //MyFieldRef.Value := ''; //Assign Value to field
+        CustRecordRef.SetRecFilter();
+        varFilters := CustRecordRef.GetFilters;
+        Message(FoundMsg, varFilters);
     end;
 
     /// <summary>
