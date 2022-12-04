@@ -1,7 +1,7 @@
 /// <summary>
 /// CodeunitO "TableFilters" (ID 50614).
 /// </summary>
-codeunit 50616 TableFilters
+codeunit 50615 "KNH Table Filters"
 {
     var
         SalesHeader: Record "Sales Header";

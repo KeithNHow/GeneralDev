@@ -5,7 +5,7 @@
 ///GetLastErrorObject Method	Gets the last System.Exception object that occurred.
 ///GetLastErrorText Method	    Gets the last error that occurred in the debugger.
 /// </summary>
-codeunit 50614 ErrorHandling
+codeunit 50614 "KNH Error Handling"
 {
     var
         SalesInvHeader: Record "Sales Invoice Header";
