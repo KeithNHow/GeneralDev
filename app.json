@@ -1,0 +1,32 @@
+{
+  "id": "0a09a704-b77c-4bdc-a4dd-f8178bd5be3b",
+  "name": "General Development",
+  "publisher": "KeithHow",
+  "version": "1.0.0.11",
+  "brief": "General Development",
+  "description": "General Development",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./logo/KNH.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 50600,
+      "to": 50649
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
