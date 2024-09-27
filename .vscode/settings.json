@@ -12,6 +12,7 @@
         "editor.codeLens": true,
         "editor.semanticHighlighting.enabled": true,
     },
+    //"al.outputAnalyzerStatistics": true,
     "al.backgroundCodeAnalysis": true,
     "al.enableCodeActions": true,
     "al.packageCachePath": "./.alpackages",

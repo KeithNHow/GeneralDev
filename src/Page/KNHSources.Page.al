@@ -39,19 +39,28 @@ page 50602 "KNH Sources"
                 Caption = '&Source';
                 Image = SourceDocLine;
 
+
                 action(SourceLine)
                 {
                     ApplicationArea = All;
                     Caption = 'Source Line';
                     Image = Line;
-                    Promoted = true;
-                    PromotedCategory = Process;
-                    PromotedIsBig = true;
-                    PromotedOnly = true;
+                    //Promoted = true;
+                    //PromotedCategory = Process;
+                    //PromotedIsBig = true;
+                    //PromotedOnly = true;
                     ToolTip = 'Source lines related to Source.';
                     RunObject = page "KNH Source Lines";
                     RunPageLink = "Source Code" = field(Code);
                 }
+
+            }
+        }
+        area(Promoted)
+        {
+            actionref(SourceLine_Ref; SourceLine)
+            {
+
             }
         }
     }
