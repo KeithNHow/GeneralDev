@@ -49,4 +49,12 @@ codeunit 50643 "KNH Online File handling"
                 end;
             until CSVBuffer.Next() = 0;
     end;
+
+    procedure DownloadCSV()
+    var
+        CSVBuffer: Record "CSV Buffer";
+    begin
+        CSVBuffer.DeleteAll();
+    end;
+
 }
