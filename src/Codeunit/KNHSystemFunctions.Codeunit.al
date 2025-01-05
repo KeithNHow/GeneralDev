@@ -6,7 +6,7 @@ codeunit 50609 "KNH System Functions"
     trigger OnRun()
     var
         selection: Integer;
-        functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,DateToDMY,FormatDateInteger,FormatDateText,FormatDateInteger2,FormatDateText2,Contains,CopyString,IncString,InsertString,LowerUpperCase,PadRight,Replace,ReplaceText,Remove,Split,StrPosition,StrLength,StringSubstNo,Substring,Trim,TrimEnd,CalculateDate,CreateGUID,MyError,MyLastError,ShowMessage,ThisModule,FindCustomer,EncryptText,RandomizeNumber,RoundingNumber,Evaluation';
+        functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,DateToDMY,FormatDateInteger,FormatDateText,FormatDateInteger2,FormatDateText2,Contains,CopyString,IncString,InsertString,LowerUpperCase,PadRight,Replace,ReplaceText,Remove,Split,StrPosition,StrLength,StringSubstNo,Substring,Trim,TrimEnd,CalculateDate,CreateGUID,MyError,MyLastError,ShowMessage,ThisModule,DescendCustomerSearch,EncryptText,RandomizeNumber,RoundingNumber,Evaluation,HideSecretText';
         selectionTxt: Label 'Choose one of the following options:';
         options: Text;
     begin
@@ -79,7 +79,7 @@ codeunit 50609 "KNH System Functions"
             30:
                 ThisModule();
             31:
-                FindCustomer();
+                DescendCustomerSearch();
             32:
                 EncryptText();
             33:
@@ -88,6 +88,8 @@ codeunit 50609 "KNH System Functions"
                 RoundingNumber();
             35:
                 Evaluation();
+            36:
+                HideSecretText();
             else
                 exit;
         end;
@@ -446,7 +448,7 @@ codeunit 50609 "KNH System Functions"
         Message(Format(MyModule.Name()));
     end;
 
-    local procedure FindCustomer()
+    local procedure DescendCustomerSearch()
     var
         Customer: Record Customer;
         FirstRecord: Code[20];
@@ -458,11 +460,11 @@ codeunit 50609 "KNH System Functions"
         if Customer.Find('+') then
             repeat
                 if Counter = 0 then begin
-                    FirstRecord := Customer."No.";
+                    LastRecord := Customer."No.";
                     Counter := 1;
                 end;
             until Customer.Next(-1) = 0;
-        LastRecord := Customer."No.";
+        FirstRecord := Customer."No.";
         Message(FindCustomerMsg, FirstRecord, LastRecord);
     end;
 
@@ -498,6 +500,27 @@ codeunit 50609 "KNH System Functions"
         myText := Encrypt(myText);
         Message('Value: ' + myText);
         //Value: xxxxxx
+    end;
+
+    local procedure HideSecretText()
+    var
+        NewSecretText: SecretText;
+        NewSecretData: SecretText;
+        Text1: Text;
+        Text2: Text;
+    begin
+        Text1 := 'At';
+        Text2 := 'Bridge';
+        NewSecretText := SecretText.SecretStrSubstNo('Chelsea%1Stamford%2', Text1, Text2);
+        if NewSecretText.IsEmpty() then
+            Error('Error: SecretText is empty')
+        else
+            Message('SecretText found');
+        NewSecretData := SecretText.SecretStrSubstNo('ChelseaAtStamfordBridge');
+        if NewSecretData.IsEmpty() then
+            Error('Error: SecreData is empty')
+        else
+            Message('SecretData found');
     end;
 
     #endregion
