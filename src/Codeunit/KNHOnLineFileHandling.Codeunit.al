@@ -82,7 +82,7 @@ codeunit 50643 "KNH Online File handling"
         for i := 1 to Item.Picture.Count() do begin
             if TenantMedia.Get(Item.Picture.MediaId()) then
                 TenantMedia.CalcFields(Content);
-            if TenantMedia.Content.HasValue then begin
+            if TenantMedia.Content.HasValue() then begin
                 FileName := Item."No." + '' + Format(i) + GetImageExtension(TenantMedia);
                 TenantMedia.Content.CreateInStream(FileInStream);
                 DownloadFromStream(FileInStream, DialogTitle, ToFolder, ToFilter, FileName);
