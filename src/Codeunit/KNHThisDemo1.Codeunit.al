@@ -6,12 +6,12 @@ codeunit 50641 "KNH This Demo 1"
 {
     trigger OnRun()
     var
-        KNHThisExample: Codeunit "KNH This Demo 2";
+        KNHThisDemo2: Codeunit "KNH This Demo 2";
     begin
         this.MyInt := 5;
         this.MyVar := 'is awesome';
         this.IsNice();
-        KNHThisExample.Demo2Procedure(this);
+        KNHThisDemo2.Demo2Procedure(this);
     end;
 
     local procedure IsNice()
