@@ -1,3 +1,5 @@
+namespace KNHTest;
+
 page 50607 "KNH Prompt Dialog Test"
 {
     PageType = PromptDialog;

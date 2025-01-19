@@ -1,3 +1,5 @@
+namespace KNHTest;
+
 page 50604 "KNH Error Log"
 {
     ApplicationArea = All;

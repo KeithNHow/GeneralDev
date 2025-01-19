@@ -1,3 +1,7 @@
+namespace KNHTest;
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Receivables;
+
 report 50600 KNH_Excel_MultiTable
 {
     ApplicationArea = Basic, Suite;

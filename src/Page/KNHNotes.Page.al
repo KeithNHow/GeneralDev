@@ -1,6 +1,9 @@
 /// <summary>
 /// Page KNH_Notes List (ID 50601).
 /// </summary>
+
+namespace KNHTest;
+
 page 50601 "KNH Notes"
 {
     ApplicationArea = All;

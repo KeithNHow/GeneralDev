@@ -1,6 +1,9 @@
 /// <summary>
 /// Codeunit "KNH_Selection" (ID 50603).
 /// </summary>
+
+namespace KNHTest;
+
 codeunit 50603 "KNH Selection"
 {
     var

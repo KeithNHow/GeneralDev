@@ -1,20 +1,22 @@
 /// <summary>
 /// Codeunit "KNH_Overloads" (ID 50604) import text, date or integer, export text.
 /// </summary>
+
+namespace KNHTest;
 codeunit 50604 "KNH Overloads"
 {
     trigger OnRun()
     begin
-        field1 := 4;
-        field2 := 5;
-        field3 := 6;
+        this.field1 := 4;
+        this.field2 := 5;
+        this.field3 := 6;
 
-        field3 := MyOverload(field1, field2);
-        Message(Format(field3)); //Answer = 20
-        field3 := MyOverload(field1);
-        Message(Format(field3)); //Answer = 64
-        field3 := MyOverload(field1, field2, field3);
-        Message(Format(field3)); //Answer = 120
+        this.field3 := MyOverload(this.field1, this.field2);
+        Message(Format(this.field3)); //Answer = 20
+        this.field3 := MyOverload(this.field1);
+        Message(Format(this.field3)); //Answer = 64
+        this.field3 := MyOverload(this.field1, this.field2, this.field3);
+        Message(Format(this.field3)); //Answer = 120
     end;
 
     var

@@ -1,8 +1,10 @@
+namespace KNHTest;
+using System.Utilities;
 codeunit 50624 "KNH Use Standard Error"
 {
     trigger OnRun()
     begin
-        UseStandardError();
+        this.UseStandardError();
     end;
 
     local procedure UseStandardError()

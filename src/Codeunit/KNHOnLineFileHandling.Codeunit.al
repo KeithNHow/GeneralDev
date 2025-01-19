@@ -1,4 +1,5 @@
-//
+//namespace KNHTest;
+
 codeunit 50643 "KNH Online File handling"
 {
     //On Prem create file gives error 

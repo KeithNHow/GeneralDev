@@ -1,18 +1,19 @@
 /// <summary>
 /// Codeunit "KNH Loop Variations" (ID 50605).
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
+
 codeunit 50605 "KNH Loop Variations"
 {
+    trigger OnRun()
     var
         Customer: Record Customer;
-        Counter: Integer;
+        A: array[5, 7] of Text[30];
         I: Integer;
         J: Integer;
-        A: array[5, 7] of Text[30];
-
-
-    trigger OnRun()
-
+        Counter: Integer;
     begin
         //For loop - First record unconditional
         I := 1;
@@ -29,7 +30,7 @@ codeunit 50605 "KNH Loop Variations"
 
         //Repeat loop - First record conditional
         Counter := 0;
-        if Customer.FindFirst() then begin
+        if Customer.FindSet() then begin
             repeat
                 Counter := Counter + 1;
             until Customer.Next() <= 0;

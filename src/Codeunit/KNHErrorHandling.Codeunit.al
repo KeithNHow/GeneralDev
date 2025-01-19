@@ -5,6 +5,10 @@
 ///GetLastErrorObject Method	Gets the last System.Exception object that occurred.
 ///GetLastErrorText Method	    Gets the last error that occurred in the debugger.
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.History;
+
 codeunit 50614 "KNH Error Handling"
 {
     var
@@ -14,11 +18,11 @@ codeunit 50614 "KNH Error Handling"
 
     trigger OnRun()
     begin
-        if not SalesInvoiceHeader.Find() then
-            ErrorText := GetLastErrorText()
+        if not this.SalesInvoiceHeader.Find() then
+            this.ErrorText := GetLastErrorText()
         else begin
-            ErrorCode := CopyStr(GetLastErrorCode(), 1, 100);
-            Message(ErrorCode);
+            this.ErrorCode := CopyStr(GetLastErrorCode(), 1, 100);
+            Message(this.ErrorCode);
         end;
     end;
 }

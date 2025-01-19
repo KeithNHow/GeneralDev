@@ -1,6 +1,9 @@
 /// <summary>
 /// XmlPort "KNH Source" (ID 50600).
 /// </summary>
+
+namespace KNHTest;
+
 xmlport 50600 "KNH Source"
 {
     Caption = 'Source Import';

@@ -1,3 +1,4 @@
+namespace KNHTest;
 table 50604 "KNH Blob"
 {
     Caption = 'Blob Table';
@@ -7,11 +8,11 @@ table 50604 "KNH Blob"
     {
         field(1; Id; Integer)
         {
-
+            ToolTip = 'Primary Key';
         }
         field(2; Blobfield; Blob)
         {
-
+            ToolTip = 'Blob Field';
         }
     }
 
@@ -27,7 +28,7 @@ table 50604 "KNH Blob"
     var
         FileInStream: InStream;
     begin
-        CalcFields(Blobfield);
+        this.CalcFields(Blobfield);
         if BlobField.HasValue then begin
             Blobfield.CreateInStream(FileInStream);
             FileInStream.ReadText(Value);

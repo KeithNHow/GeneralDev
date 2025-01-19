@@ -1,6 +1,9 @@
 /// <summary>
 /// Codeunit "KNH_ErrorLog" (ID 50621).
 /// </summary>
+
+namespace KNHTest;
+
 codeunit 50621 "KNH Error Log"
 {
     TableNo = "KNH Error Log";

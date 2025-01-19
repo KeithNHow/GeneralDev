@@ -1,6 +1,9 @@
 /// <summary>
 /// Codeunit "KNH System Functions" (ID 50609).
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
 codeunit 50609 "KNH System Functions"
 {
     trigger OnRun()
@@ -15,81 +18,81 @@ codeunit 50609 "KNH System Functions"
         case selection of
             //Date Operations
             1:
-                DatefromDateTime();
+                this.DatefromDateTime();
             2:
-                TimefromDateTime();
+                this.TimefromDateTime();
             3:
-                DWYtoDate();
+                this.DWYtoDate();
             4:
-                DateToDMY();
+                this.DateToDMY();
             5:
-                FormatDateInteger();
+                this.FormatDateInteger();
             6:
-                FormatDateText();
+                this.FormatDateText();
             7:
-                FormatDateInteger2();
+                this.FormatDateInteger2();
             8:
-                FormatDateText2();
+                this.FormatDateText2();
 
             //String Operations
             9:
-                Contains();
+                this.Contains();
             10:
-                CopyString();
+                this.CopyString();
             11:
-                IncString();
+                this.IncString();
             12:
-                InsertString();
+                this.InsertString();
             13:
-                LowerUpperCase();
+                this.LowerUpperCase();
             14:
-                PadRight();
+                this.PadRight();
             15:
-                Replace();
+                this.Replace();
             16:
-                ReplaceText();
+                this.ReplaceText();
             17:
-                Remove();
+                this.Remove();
             18:
-                Split();
+                this.Split();
             19:
-                StrPosition();
+                this.StrPosition();
             20:
-                StrLength();
+                this.StrLength();
             21:
-                StringSubStNo();
+                this.StringSubStNo();
             22:
-                SubString();
+                this.SubString();
             23:
-                Trim();
+                this.Trim();
             24:
-                TrimEnd();
+                this.TrimEnd();
 
             //Sundry Operations    
             25:
-                CalculateDate();
+                this.CalculateDate();
             26:
-                CreateGUID();
+                this.CreateGUID();
             27:
-                MyError();
+                this.MyError();
             28:
-                MyLastError();
+                this.MyLastError();
             29:
-                ShowMessage();
+                this.ShowMessage();
             30:
-                ThisModule();
+                this.ThisModule();
             31:
-                DescendCustomerSearch();
+                this.DescendCustomerSearch();
             32:
-                EncryptText();
+                this.EncryptText();
             33:
-                RandomizeNumber();
+                this.RandomizeNumber();
             34:
-                RoundingNumber();
+                this.RoundingNumber();
             35:
-                Evaluation();
+                this.Evaluation();
             36:
-                HideSecretText();
+                this.HideSecretText();
             else
                 exit;
         end;

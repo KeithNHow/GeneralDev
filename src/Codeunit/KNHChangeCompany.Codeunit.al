@@ -1,6 +1,11 @@
 /// <summary>
 /// Codeunit "KNH_ChangeCompany" (ID 50622).
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
+using System.Environment;
+
 codeunit 50622 "KNH Change Company"
 {
     trigger OnRun()

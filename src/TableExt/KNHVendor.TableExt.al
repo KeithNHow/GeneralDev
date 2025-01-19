@@ -1,3 +1,6 @@
+namespace KNHTest;
+using Microsoft.Purchases.Vendor;
+
 tableextension 50602 "KNH Vendor" extends Vendor
 {
     fields

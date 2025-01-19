@@ -1,6 +1,11 @@
 /// <summary>
 /// Codeunit "KNH Convert Blob" (ID 50616).
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Foundation.Company;
+using System.Text;
+using System.Utilities;
 codeunit 50616 "KNH Convert Blob"
 {
     TableNo = "Company Information";
@@ -11,7 +16,7 @@ codeunit 50616 "KNH Convert Blob"
         FieldRef29: FieldRef;
     begin
         FieldRef29 := CRecordRef.Field(29); //Assign Picture field in table
-        ConvertBlobToBase64String(FieldRef29);
+        this.ConvertBlobToBase64String(FieldRef29);
     end;
 
     local procedure ConvertBlobToBase64String(var pFieldRef: FieldRef): Text

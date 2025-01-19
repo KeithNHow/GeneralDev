@@ -1,3 +1,6 @@
+namespace KNHTest;
+using Microsoft.Sales.Customer;
+
 tableextension 50601 "KNH Customer" extends Customer
 {
     fields

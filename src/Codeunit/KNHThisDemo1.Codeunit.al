@@ -1,8 +1,9 @@
 //This Keyword - Allow codeunits to pass a reference to this as an argument to another method.
 //This Keyword - Improve readability by signaling that a referenced symbol is a member on the object itself.
+
+namespace KNHTest;
 codeunit 50641 "KNH This Demo 1"
 {
-    /*
     trigger OnRun()
     var
         KNHThisExample: Codeunit "KNH This Demo 2";
@@ -15,12 +16,10 @@ codeunit 50641 "KNH This Demo 1"
 
     local procedure IsNice()
     begin
-        //Do something
+        Message('This codeunit ' + this.MyVar);
     end;
 
     var
         MyInt: Integer;
         MyVar: Text;
-
-    */
 }

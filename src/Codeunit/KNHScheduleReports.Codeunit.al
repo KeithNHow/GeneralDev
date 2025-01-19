@@ -1,3 +1,9 @@
+namespace KNHTest;
+using System.Threading;
+using Microsoft.Finance.GeneralLedger.Journal;
+using Microsoft.Inventory.Requisition;
+using Microsoft.Sales.Customer;
+
 codeunit 50625 "KNH Schedule Reports"
 {
     TableNo = "Job Queue Entry";

@@ -1,6 +1,9 @@
 /// <summary>
 /// Codeunit KNH Rename (ID 50619).
 /// </summary>
+
+namespace KNHTest;
+
 codeunit 50619 "KNH Rename"
 {
     TableNo = "KNH Source";

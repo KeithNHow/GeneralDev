@@ -1,6 +1,10 @@
 /// <summary>
 /// PageExt "KNH OrderProcessing" extends Order Processor Role Center 9006
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.RoleCenters;
+
 pageextension 50601 "KNH Order Processing" extends "Order Processor Role Center"
 {
     actions
@@ -153,6 +157,16 @@ pageextension 50601 "KNH Order Processing" extends "Order Processor Role Center"
                 ToolTip = 'Standard Error';
                 Caption = 'Standard Error';
                 RunObject = codeunit "KNH Use Standard Error";
+            }
+        }
+        addafter(KNH_UseStandardError)
+        {
+            action(KNH_TryFunction)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Try Function';
+                Caption = 'Try Function';
+                RunObject = codeunit "KNH Try Function";
             }
         }
     }

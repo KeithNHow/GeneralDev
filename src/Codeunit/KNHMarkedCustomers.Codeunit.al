@@ -1,4 +1,8 @@
 //Marking a record id used to find records and then refer to them at some later time in program execution. 
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
+
 codeunit 50623 "KNH Marked Customers"
 {
     trigger OnRun()

@@ -12,12 +12,15 @@
 /// Set(TKey, TValue, var TValue) - Sets the value associated with the specified key.
 /// Values() - Gets a collection containing the values in the Dictionary.
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
 codeunit 50607 "KNH Dictionary"
 {
     trigger OnRun()
     begin
-        CountUniqueCharsInCustomerName();
-        DisplayCustomerName();
+        this.CountUniqueCharsInCustomerName();
+        this.DisplayCustomerName();
     end;
     /// <summary>
     /// CountCharactersInCustomerName.

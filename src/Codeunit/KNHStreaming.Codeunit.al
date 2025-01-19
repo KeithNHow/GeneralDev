@@ -3,13 +3,16 @@
 /// InStream --> Creates a stream object that you can use to read from or write to files and BLOBs.
 /// OutStream --> Creates a stream object that you can use to write to files and BLOBs.
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Foundation.Company;
 codeunit 50610 "KNH Streaming"
 {
     trigger OnRun()
     begin
-        StreamImport();
-        InStreamCompanyInfo();
-        StreamOutput();
+        this.StreamImport();
+        this.InStreamCompanyInfo();
+        this.StreamOutput();
     end;
 
     local procedure StreamImport()

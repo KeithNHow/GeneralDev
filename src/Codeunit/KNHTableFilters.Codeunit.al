@@ -1,15 +1,18 @@
 /// <summary>
 /// Codeunit "KNH Table Filters" (ID 50614).
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.sales.document;
+
 codeunit 50615 "KNH Table Filters"
 {
+    trigger OnRun()
     var
         SalesHeader: Record "Sales Header";
         Counter: Integer;
         CountMsg: Label 'Records counted = %1', Comment = '%1 = Counter';
         Name: Text;
-
-    trigger OnRun()
     begin
         #region
         Name := 'Teddy';

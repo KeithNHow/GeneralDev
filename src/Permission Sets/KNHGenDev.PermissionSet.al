@@ -1,10 +1,10 @@
 /// <summary>
 /// PermissionSet KNH Gen Dev PermSet (ID 50601).
 /// </summary>
-permissionset 50601 "KNH Gen Dev PermSet"
+permissionset 50601 "KNH Gen Dev"
 {
     Assignable = true;
-    Caption = 'Gen Dev PermSet', MaxLength = 30;
+    Caption = 'Gen Dev';
     Permissions = table "KNH Source Line" = X,
         tabledata "KNH Source Line" = RMID,
         table "KNH Source" = X,
@@ -45,6 +45,14 @@ permissionset 50601 "KNH Gen Dev PermSet"
         codeunit "KNH Error Handling" = X,
         codeunit "KNH Field Transfer" = X,
         codeunit "KNH Loop Variations" = X,
+        codeunit "KNH Boolean Coditional" = X,
+        codeunit "KNH Online File handling" = X,
+        codeunit "KNH Schedule Reports" = X,
         codeunit "KNH Send Email" = X,
-        codeunit "KNH Schedule Reports" = X;
+        codeunit "KNH Single Instance" = X,
+        codeunit "KNH This Demo 1" = X,
+        codeunit "KNH This Demo 2" = X,
+        codeunit "KNH Try Function" = X,
+        page "KNH Get Common Longest String" = X,
+        page "KNH Prompt Dialog Test" = X;
 }

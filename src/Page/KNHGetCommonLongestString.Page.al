@@ -1,3 +1,6 @@
+namespace KNHTest;
+using Microsoft.Bank.Reconciliation;
+
 page 50614 "KNH Get Common Longest String"
 {
     PageType = Card;
@@ -11,7 +14,7 @@ page 50614 "KNH Get Common Longest String"
         {
             group(Input)
             {
-                field(FirstString; FirstString)
+                field(FirstString; this.FirstString)
                 {
                     Caption = 'First String';
                     ApplicationArea = All;
@@ -23,7 +26,7 @@ page 50614 "KNH Get Common Longest String"
                         GetLongestCommonSubstring();
                     end;
                 }
-                field(SecondString; SecondString)
+                field(SecondString; this.SecondString)
                 {
                     Caption = 'Second String';
                     ToolTip = 'Second String';
@@ -35,7 +38,7 @@ page 50614 "KNH Get Common Longest String"
                         GetLongestCommonSubstring();
                     end;
                 }
-                field(ThirdString; ThirdString)
+                field(ThirdString; this.ThirdString)
                 {
                     Caption = 'Third String';
                     ToolTip = 'Third String';
@@ -50,7 +53,7 @@ page 50614 "KNH Get Common Longest String"
             }
             group(Result)
             {
-                field(LongestCommonSubstring; LongestCommonSubstring)
+                field(LongestCommonSubstring; this.LongestCommonSubstring)
                 {
                     Caption = 'Longest Common Substring';
                     ToolTip = 'Longest Common Substring';
@@ -70,7 +73,7 @@ page 50614 "KNH Get Common Longest String"
     var
         RecordMatchMgt: Codeunit "Record Match Mgt.";
     begin
-        if (FirstString <> '') and (SecondString <> '') and (ThirdString <> '') then
-            LongestCommonSubstring := RecordMatchMgt.GetLongestCommonSubstring(RecordMatchMgt.GetLongestCommonSubstring(FirstString, SecondString), ThirdString);
+        if (this.FirstString <> '') and (this.SecondString <> '') and (this.ThirdString <> '') then
+            this.LongestCommonSubstring := RecordMatchMgt.GetLongestCommonSubstring(RecordMatchMgt.GetLongestCommonSubstring(this.FirstString, this.SecondString), this.ThirdString);
     end;
 }

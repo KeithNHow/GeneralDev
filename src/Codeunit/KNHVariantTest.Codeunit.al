@@ -2,6 +2,9 @@
 /// Codeunit KNH_VariantTest (ID 50600).
 /// The AL variant data type can contain many AL data types.
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
 codeunit 50600 "KNH Variant Test"
 {
     trigger OnRun()

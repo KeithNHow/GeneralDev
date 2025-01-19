@@ -1,6 +1,9 @@
 /// <summary>
 /// Page KNH SourceLines (ID 50603).
 /// </summary>
+
+namespace KNHTest;
+
 page 50603 "KNH Source Lines"
 {
     ApplicationArea = All;

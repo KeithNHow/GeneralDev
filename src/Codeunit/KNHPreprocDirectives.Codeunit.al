@@ -5,14 +5,18 @@
 /// region directive - used to define a block of code
 /// pragma directive - gives the compiler special inst for the compile of the file in which it appears. 
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Foundation.AuditCodes;
+
 codeunit 50613 "KNH Preproc Directives"
 {
     trigger OnRun()
     begin
         CompilerDirectiveExample();
         RegionDirectiveExample();
-        if SourceCode.FindFirst() then
-            PragmaDirectiveExample(SourceCode);
+        if this.SourceCode.FindFirst() then
+            this.PragmaDirectiveExample(SourceCode);
     end;
 
     var

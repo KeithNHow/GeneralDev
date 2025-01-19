@@ -3,11 +3,19 @@
 /// RecordRef - REFERENCES A RECORD IN A TABLE.
 /// RecordID - Contains the table number and the primary key of a table.
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
+using System.Email;
+using System.Environment.Configuration;
+using Microsoft.CRM.Opportunity;
+using System.Reflection;
+
 codeunit 50611 "KNH RecordRef"
 {
     trigger OnRun()
     begin
-        EmailRecordRef();
+        this.EmailRecordRef();
         //RecordLinkExport();
     end;
 

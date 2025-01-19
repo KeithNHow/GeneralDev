@@ -1,6 +1,10 @@
 /// <summary>
 /// PageCust "KNH_BossCustomization1".
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Sales.Customer;
+
 pagecustomization "KNH Boss Customization 1" customizes "Customer List"
 {
     layout

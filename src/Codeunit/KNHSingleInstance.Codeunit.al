@@ -1,3 +1,5 @@
+namespace KNHTest;
+
 codeunit 50626 "KNH Single Instance"
 {
     SingleInstance = true;
@@ -7,11 +9,11 @@ codeunit 50626 "KNH Single Instance"
 
     procedure SetSingleInstance(IntegerField: Integer)
     begin
-        StoredInteger := IntegerField;
+        this.StoredInteger := IntegerField;
     end;
 
     procedure GetSingleInstance(): Integer
     begin
-        exit(StoredInteger);
+        exit(this.StoredInteger);
     end;
 }

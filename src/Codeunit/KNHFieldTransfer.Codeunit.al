@@ -1,6 +1,13 @@
 /// <summary>
 /// Codeunit "KNH FieldTransfer" (ID 50617).
 /// </summary>
+
+namespace KNHTest;
+using Microsoft.Foundation.NoSeries;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.Setup;
+using Microsoft.Sales.History;
+
 codeunit 50617 "KNH Field Transfer"
 {
     trigger OnRun()

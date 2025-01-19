@@ -1,3 +1,5 @@
+namespace KNHTest;
+using Microsoft.Bank.BankAccount;
 tableextension 50600 "KNH Payment Method" extends "Payment Method"
 {
     trigger OnBeforeDelete()

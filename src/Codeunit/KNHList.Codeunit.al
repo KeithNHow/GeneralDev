@@ -19,6 +19,8 @@
 /// Set(Integer, T)	- Sets the element at the specified index.
 /// Set(Integer, T, var T) - Sets the element at the specified index.
 /// </summary>
+
+namespace KNHTest;
 codeunit 50606 "KNH List"
 {
     var

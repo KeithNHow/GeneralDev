@@ -1,6 +1,12 @@
 /// <summary>
 /// PageExtension CustomerListExt (ID 50602) extends Record Customer List.
 /// </summary>
+
+namespace KNHTest;
+using System.Text;
+using System.Email;
+using System.Utilities;
+
 codeunit 50620 "KNH Send Email"
 {
     trigger OnRun()

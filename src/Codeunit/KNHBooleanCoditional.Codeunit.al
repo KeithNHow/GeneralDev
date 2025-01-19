@@ -1,3 +1,5 @@
+namespace KNHTest;
+
 codeunit 50640 "KNH Boolean Coditional"
 {
     procedure Example()
