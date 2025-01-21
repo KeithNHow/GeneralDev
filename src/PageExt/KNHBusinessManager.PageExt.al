@@ -155,5 +155,25 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = codeunit "KNH Use Standard Error";
             }
         }
+        addafter(KNH_UseStandardError)
+        {
+            action(KNH_TryFunction)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Try Function';
+                Caption = 'Try Function';
+                RunObject = codeunit "KNH Try Function";
+            }
+        }
+        addafter(KNH_TryFunction)
+        {
+            action(KNH_Prompt)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Draft a proposal';
+                Caption = 'Draft a proposal';
+                RunObject = page "KNH Prompt Dialog";
+            }
+        }
     }
 }

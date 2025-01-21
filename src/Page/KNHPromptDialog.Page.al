@@ -12,7 +12,6 @@ page 50605 "KNH Prompt Dialog"
     DataCaptionExpression = this.UserInput;
     SourceTable = "KNH Temp Input Data";
     SourceTableTemporary = true;
-    InstructionalText = 'Enter information that describes that you want to give Copilot...', MaxLength = 250;
 
     layout
     {
@@ -22,6 +21,7 @@ page 50605 "KNH Prompt Dialog"
             {
                 ShowCaption = false;
                 MultiLine = true;
+                InstructionalText = 'Enter information that describes that you want to give Copilot...', MaxLength = 250;
             }
         }
         area(PromptOptions)
@@ -66,24 +66,20 @@ page 50605 "KNH Prompt Dialog"
                 ToolTip = 'Generate the code';
                 trigger OnAction()
                 begin
-                    // The code triggering the Copilot interaction. This is where you call the Copilot API, and get the results back. You must implement this yourself. 
-                    this.RunGeneration();
+                    // The code triggering the Copilot interaction. This is where you call the Copilot API, and get the results back.
+                    this.RunGenerate(this.CopilotGeneratingTxt);
                 end;
             }
-            systemaction(Attach)
+            systemaction(Regenerate)
             {
-                Caption = 'Attach a file';
-                ToolTip = 'Attach a file describing the job.';
+                Caption = 'Regenerate';
+                ToolTip = 'Regenerate the code';
                 trigger OnAction()
-                var
-                    InStr: InStream;
-                    Filename: Text;
                 begin
-                    UploadIntoStream('Select a file...', '', 'All files (*.*)|*.*', Filename, InStr);
-                    if Filename <> '' then;
+                    this.RunGenerate(this.CopilotReGeneratingTxt);
                 end;
             }
-            systemaction(OK)
+            systemaction(Ok)
             {
                 Caption = 'Save';
                 ToolTip = 'Save the draft.';
@@ -93,25 +89,18 @@ page 50605 "KNH Prompt Dialog"
                 Caption = 'Cancel';
                 ToolTip = 'Throw away the draft.';
             }
-            systemaction(Regenerate)
-            {
-                Caption = 'Regenerate';
-                ToolTip = 'Regenerate the code';
-                trigger OnAction()
-                begin
-                    this.RunGenerate();
-                end;
-            }
         }
     }
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     var
-        SaveCopilotJobProposal: Codeunit "KNH Save Copilot Job Proposal";
+        KNHSaveCopilotJobProposal: Codeunit "KNH Save Copilot Job Proposal";
     begin
         if CloseAction = CloseAction::OK then
-            SaveCopilotJobProposal.Save(this.CustomerNo, this.CopilotJobProposal);
+            KNHSaveCopilotJobProposal.Save(this.CustomerNo, this.CopilotJobProposal);
     end;
+
+
 
     var
         InputProjectDescription: Text;
@@ -122,14 +111,17 @@ page 50605 "KNH Prompt Dialog"
         CustomerNo: Code[20];
         CopilotJobProposal: Text;
         userinput: Text;
+        GenerateModeProgDialog: Dialog;
+        CopilotGeneratingTxt: Label 'Creating a draft for you...';
+        CopilotRegeneratingTxt: Label 'Revising the draft...';
 
     procedure RunGeneration()
     begin
 
     end;
 
-    procedure RunGenerate()
+    procedure RunGenerate(ProgressTxt: Text)
     begin
-
+        this.GenerateModeProgDialog.Open(ProgressTxt);
     end;
 }
