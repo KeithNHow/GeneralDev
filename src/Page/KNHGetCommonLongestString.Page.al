@@ -1,7 +1,7 @@
 namespace KNHTest;
 using Microsoft.Bank.Reconciliation;
 
-page 50614 "KNH Get Common Longest String"
+page 50600 "KNH Get Common Longest String"
 {
     PageType = Card;
     ApplicationArea = All;
