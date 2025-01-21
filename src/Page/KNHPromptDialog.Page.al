@@ -9,7 +9,7 @@ page 50605 "KNH Prompt Dialog"
     Extensible = false;
     PromptMode = Prompt;
     IsPreview = true;
-    DataCaptionExpression = UserInput;
+    DataCaptionExpression = this.UserInput;
     SourceTable = "KNH Temp Input Data";
     SourceTableTemporary = true;
     InstructionalText = 'Enter information that describes that you want to give Copilot...', MaxLength = 250;

@@ -174,9 +174,8 @@ pageextension 50601 "KNH Order Processing" extends "Order Processor Role Center"
             action(KNH_Prompt)
             {
                 ApplicationArea = All;
-                Caption = 'Draft a proposal';
                 ToolTip = 'Draft a proposal';
-                Image = Sparkle;
+                Caption = 'Draft a proposal';
                 RunObject = page "KNH Prompt Dialog";
             }
         }
