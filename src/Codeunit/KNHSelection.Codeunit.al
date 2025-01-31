@@ -6,12 +6,11 @@ namespace KNHTest;
 
 codeunit 50603 "KNH Selection"
 {
+    trigger OnRun()
     var
-        WhoAmI: Code[20];
         I: Integer;
         J: Integer;
-
-    trigger OnRun()
+        WhoAmI: Text;
     begin
         //Case selection
         WhoAmI := 'Mark';

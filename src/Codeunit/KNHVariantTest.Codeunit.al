@@ -9,7 +9,7 @@ codeunit 50600 "KNH Variant Test"
 {
     trigger OnRun()
     begin
-        Test();
+        this.Test();
     end;
 
     var
@@ -21,9 +21,9 @@ codeunit 50600 "KNH Variant Test"
     /// </summary>
     procedure Test()
     begin
-        Customer.FindFirst();
-        CustRecId := Customer.RecordId;
-        ShowCustList(Customer, CustRecId);
+        this.Customer.FindFirst();
+        this.CustRecId := Customer.RecordId;
+        this.ShowCustList(Customer, CustRecId);
     end;
 
     local procedure ShowCustList(pCustVariant: Variant; pCustVariantId: Variant) //Receive Cust as record variant

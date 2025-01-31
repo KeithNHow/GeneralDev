@@ -13,7 +13,7 @@ codeunit 50613 "KNH Preproc Directives"
 {
     trigger OnRun()
     begin
-        CompilerDirectiveExample();
+        this.CompilerDirectiveExample();
         RegionDirectiveExample();
         if this.SourceCode.FindFirst() then
             this.PragmaDirectiveExample(SourceCode);
