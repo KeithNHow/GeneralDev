@@ -17,7 +17,7 @@ pageextension 50620 "KNH CustomerCard" extends "Customer Card"
 
     actions
     {
-        addlast(Processing)
+        addlast(processing)
         {
             fileuploadaction(ProductImageUpload)
             {

@@ -1,6 +1,4 @@
-/// <summary>
-/// PermissionSet KNH Gen Dev PermSet (ID 50601).
-/// </summary>
+//PermissionSet KNH Gen Dev PermSet (ID 50601).
 permissionset 50601 "KNH Gen Dev"
 {
     Assignable = true;

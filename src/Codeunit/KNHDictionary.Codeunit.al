@@ -1,17 +1,15 @@
-/// <summary>
-/// Codeunit KNH Dictionary (ID 50607)
-/// REPRESENTS AN UNORDERED COLLECTION OF KEYS AND VALUES. The Dictionary data type is optimized for fast lookup of values.
-/// Add(TKey, TValue) - Adds the specified key and value to the dictionary.
-/// ContainsKey(TKey) - Determines whether the Dictionary contains the specified key.
-/// Count()	- Gets the number of key/value pairs contained in the Dictionary.
-/// Get(TKey, var TValue) - Gets the value associated with the specified key.
-/// Get(TKey) - Gets the value associated with the specified key.
-/// Keys() - Gets a collection containing the keys in the Dictionary.
-/// Remove(TKey) - Removes the value with the specified key from the Dictionary.
-/// Set(TKey, TValue) - Sets the value associated with the specified key.
-/// Set(TKey, TValue, var TValue) - Sets the value associated with the specified key.
-/// Values() - Gets a collection containing the values in the Dictionary.
-/// </summary>
+//Codeunit KNH Dictionary (ID 50607)
+//REPRESENTS AN UNORDERED COLLECTION OF KEYS AND VALUES. The Dictionary data type is optimized for fast lookup of values.
+//Add(TKey, TValue) - Adds the specified key and value to the dictionary.
+//ContainsKey(TKey) - Determines whether the Dictionary contains the specified key.
+//Count()	- Gets the number of key/value pairs contained in the Dictionary.
+//Get(TKey, var TValue) - Gets the value associated with the specified key.
+//Get(TKey) - Gets the value associated with the specified key.
+//Keys() - Gets a collection containing the keys in the Dictionary.
+//Remove(TKey) - Removes the value with the specified key from the Dictionary.
+//Set(TKey, TValue) - Sets the value associated with the specified key.
+//Set(TKey, TValue, var TValue) - Sets the value associated with the specified key.
+//Values() - Gets a collection containing the values in the Dictionary.
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;

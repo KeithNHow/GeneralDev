@@ -1,8 +1,6 @@
-/// <summary>
-/// Codeunit KNH_RecordRef (ID 50611).
-/// RecordRef - REFERENCES A RECORD IN A TABLE.
-/// RecordID - Contains the table number and the primary key of a table.
-/// </summary>
+// Codeunit KNH_RecordRef (ID 50611).
+// RecordRef        REFERENCES A RECORD IN A TABLE.
+// RecordID         Contains the table number and the primary key of a table.
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;

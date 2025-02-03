@@ -1,6 +1,4 @@
-/// <summary>
-/// PageExtension CustomerListExt (ID 50602) extends Record Customer List.
-/// </summary>
+//PageExtension CustomerListExt (ID 50602) extends Record Customer List.
 
 namespace KNHGenDev;
 using System.Text;

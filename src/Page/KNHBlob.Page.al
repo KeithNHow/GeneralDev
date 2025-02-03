@@ -1,6 +1,5 @@
-/// <summary>
-/// Page KNH Blob Card (ID 53602).
-/// </summary>
+// Page KNH Blob Card (ID 53602).
+
 namespace KNHGenDev;
 
 page 50612 KNHBlob

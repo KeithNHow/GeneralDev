@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit "KNH Loop Variations" (ID 50605).
-/// </summary>
+//Codeunit "KNH Loop Variations" (ID 50605).
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
@@ -10,10 +8,10 @@ codeunit 50605 "KNH Loop Variations"
     trigger OnRun()
     var
         Customer: Record Customer;
-        A: array[5, 7] of Text[30];
+        Counter: Integer;
         I: Integer;
         J: Integer;
-        Counter: Integer;
+        A: array[5, 7] of Text[30];
     begin
         //For loop - First record unconditional
         I := 1;

@@ -1,6 +1,4 @@
-/// <summary>
-/// PageExt "KNH OrderProcessing" extends Order Processor Role Center 9006
-/// </summary>
+//PageExt "KNH OrderProcessing" extends Order Processor Role Center 9006
 
 namespace KNHGenDev;
 using Microsoft.Sales.RoleCenters;

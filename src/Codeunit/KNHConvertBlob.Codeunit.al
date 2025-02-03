@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit "KNH Convert Blob" (ID 50616).
-/// </summary>
+//Codeunit "KNH Convert Blob" (ID 50616).
 
 namespace KNHGenDev;
 using Microsoft.Foundation.Company;

@@ -1,6 +1,4 @@
-/// <summary>
-/// Page KNH_Notes List (ID 50601).
-/// </summary>
+//Page KNH_Notes List (ID 50601).
 
 namespace KNHGenDev;
 

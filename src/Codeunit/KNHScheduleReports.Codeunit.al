@@ -24,7 +24,7 @@ codeunit 50625 "KNH Schedule Reports"
                 begin
                     this.DecryptJobQueueParameters(Rec."Parameter String");
                     CalculatePlanReqWksh.InitializeRequest(this.StartDate, this.EndDate);
-                    CalculatePlanReqWksh.SetTemplAndWorksheet(this.TemplateName, this.BatchName);
+                    CalculatePlanReqWksh.SetTemplAndWorksheet(this.TemplateName, this.batchName);
                     CalculatePlanReqWksh.Run();
                 end;
             'GENJOURNAL': //Create sales journal lines
@@ -33,7 +33,7 @@ codeunit 50625 "KNH Schedule Reports"
                     Customer.SetRange(Blocked, Customer.Blocked::" "); //Filter customers
                     CreateCustomerJournalLines.SetTableView(Customer); //Copies view from Customer table
                     CreateCustomerJournalLines.InitializeRequest(DocumentTypes, WorkDate(), WorkDate());
-                    CreateCustomerJournalLines.InitializeRequestTemplate(this.TemplateName, this.BatchName, '');
+                    CreateCustomerJournalLines.InitializeRequestTemplate(this.TemplateName, this.batchName, '');
                     CreateCustomerJournalLines.UseRequestPage(false); //Ignore request page
                     CreateCustomerJournalLines.SetDefaultDocumentNo(this.CurrentDocNo);
                     Commit(); //Commit is required to create lines
@@ -43,11 +43,11 @@ codeunit 50625 "KNH Schedule Reports"
     end;
 
     var
-        TemplateName: Code[10];
         batchName: Code[10];
+        TemplateName: Code[10];
         CurrentDocNo: Code[20];
-        StartDate: Date;
         EndDate: Date;
+        StartDate: Date;
 
     local procedure DecryptJobQueueParameters(ParameterString: Text[250])
     var
@@ -58,7 +58,7 @@ codeunit 50625 "KNH Schedule Reports"
 
         Evaluate(ParameterString, CopyStr(ParameterString, Pos + 1)); //copy all of param string after first separater to param string   
         Pos := StrPos(ParameterString, ';'); //find pos of first +
-        Evaluate(this.BatchName, CopyStr(ParameterString, 1, Pos - 1)); //copy first arg to var
+        Evaluate(this.batchName, CopyStr(ParameterString, 1, Pos - 1)); //copy first arg to var
 
         Evaluate(ParameterString, CopyStr(ParameterString, Pos + 1));
         Pos := StrPos(ParameterString, ';');
@@ -75,7 +75,7 @@ codeunit 50625 "KNH Schedule Reports"
         Pos: Integer;
     begin
         Clear(this.TemplateName);
-        Clear(this.BatchName);
+        Clear(this.batchName);
         Clear(this.CurrentDocNo);
 
         Pos := StrPos(ParameterString, ';'); //find pos of first separater
@@ -83,7 +83,7 @@ codeunit 50625 "KNH Schedule Reports"
 
         Evaluate(ParameterString, CopyStr(ParameterString, Pos + 1)); //copy all of param string after first separater to param string   
         Pos := StrPos(ParameterString, ';'); //find pos of first +
-        Evaluate(this.BatchName, CopyStr(ParameterString, 1, Pos - 1)); //copy first arg to var
+        Evaluate(this.batchName, CopyStr(ParameterString, 1, Pos - 1)); //copy first arg to var
 
         Evaluate(ParameterString, CopyStr(ParameterString, Pos + 1));
         Pos := StrPos(ParameterString, ';');

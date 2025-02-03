@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit KNH Rename (ID 50619).
-/// </summary>
+//Codeunit KNH Rename (ID 50619).
 
 namespace KNHGenDev;
 

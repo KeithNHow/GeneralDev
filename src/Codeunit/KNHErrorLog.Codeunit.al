@@ -1,9 +1,6 @@
-/// <summary>
-/// Codeunit "KNH_ErrorLog" (ID 50621).
-/// </summary>
+// Codeunit "KNH_ErrorLog" (ID 50621).
 
 namespace KNHGenDev;
-Using Microsoft.Sales.Customer;
 
 codeunit 50621 "KNH Error Log"
 {

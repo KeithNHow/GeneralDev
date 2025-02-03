@@ -1,15 +1,4 @@
-/// <summary>
-/// Codeunit KNH DataTransfer (ID 50618).
-/// Properties
-/// 1. AddConstantValue(Any, Integer)
-/// 2. AddFieldValue(Integer, Integer)
-/// 3. AddJoin(Integer, Integer) 
-/// 4. AddSourceFilter
-/// 5. CopyFields() 
-/// 6. CopyRows() 
-/// 7. SetTables(Integer, Integer)
-/// 8. UpdateAuditFields([Boolean]) - On Prem only
-/// </summary>
+///Codeunit KNH DataTransfer (ID 50618).
 
 namespace KNHGenDev;
 using Microsoft.Foundation.AuditCodes;

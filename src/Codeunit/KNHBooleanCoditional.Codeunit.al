@@ -8,7 +8,7 @@ codeunit 50640 "KNH Boolean Coditional"
         MyVar: Text;
     begin
         if MyExpression then
-            myVar := 'true'
+            MyVar := 'true'
         else
             MyVar := 'false';
 

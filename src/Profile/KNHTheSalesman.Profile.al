@@ -1,6 +1,4 @@
-/// <summary>
-/// Profile "KNH_TheSalesman"
-/// </summary>
+//Profile "KNH_TheSalesman"
 
 namespace KNHGenDev;
 using Microsoft.Sales.RoleCenters;

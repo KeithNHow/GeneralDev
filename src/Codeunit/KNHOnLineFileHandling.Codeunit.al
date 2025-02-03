@@ -1,6 +1,6 @@
 namespace KNHGenDev;
 using Microsoft.CRM.Contact;
-using Microsoft.inventory.Item;
+using Microsoft.Inventory.Item;
 using Microsoft.CRM.Interaction;
 using System.Utilities;
 using System.IO;
@@ -43,7 +43,7 @@ codeunit 50643 "KNH Online File handling"
         CSVBuffer: Record "CSV Buffer";
         Item: Record Item;
         CSVInstream: InStream;
-        DialogCaption, CSVFileName : Text;
+        CSVFileName, DialogCaption : Text;
     begin
         UploadIntoStream(DialogCaption, '', '', CSVFileName, CSVInstream);
         CSVBuffer.DeleteAll();
@@ -77,12 +77,12 @@ codeunit 50643 "KNH Online File handling"
         Item: Record Item; //app table
         TenantMedia: Record "Tenant Media"; //system table
         FileInStream: InStream;
-        DialogTitle: Text;
-        ToFolder: Text;
-        ToFilter: Text;
-        FileName: Text;
         i: Integer;
         ErrMsg: Label 'No images stored for the selectd item.';
+        DialogTitle: Text;
+        FileName: Text;
+        ToFilter: Text;
+        ToFolder: Text;
     begin
         if Item.Picture.Count() = 0 then
             Error(ErrMsg);
@@ -118,9 +118,9 @@ codeunit 50643 "KNH Online File handling"
     procedure CreateTextFile(FileName: Text)
     var
         TempBlob: Codeunit "Temp Blob";
+        CR, LF : Char;
         InStream: InStream;
         OutStream: OutStream;
-        CR, LF : char;
     begin
         CR := 13;
         LF := 10;
@@ -143,9 +143,9 @@ codeunit 50643 "KNH Online File handling"
         Attachment: Record Attachment;
         FileMgt: Codeunit "File Management";
         FileInStream: InStream;
+        DialogTitleTxt: Label 'Select file to upload';
         FileOutStream: OutStream;
         TempFileName: Text;
-        DialogTitleTxt: Label 'Select file to upload';
     begin
         if UploadIntoStream(DialogTitleTxt, '', 'All Files (*.*)|*.*', TempFileName, FileInStream) then begin
             Attachment.Init();
@@ -154,7 +154,7 @@ codeunit 50643 "KNH Online File handling"
             Attachment."Storage Pointer" := '';
             Attachment."File Extension" := CopyStr(FileMgt.GetExtension(TempFileName), 1, MaxStrLen(Attachment."File Extension"));
             Attachment."Attachment File".CreateOutStream(FileOutStream);
-            Copystream(FileOutStream, FileInStream);
+            CopyStream(FileOutStream, FileInStream);
             Attachment.Modify(true);
         end;
     end;
@@ -167,8 +167,8 @@ codeunit 50643 "KNH Online File handling"
     var
         Attachment: Record Attachment;
         FileInStream: InStream;
-        TempFileName: Text;
         ErrorAttachmentMsg: Label 'No attachment found';
+        TempFileName: Text;
     begin
         if Attachment.Get(AttachmentEntryNo) then
             if Attachment."Attachment File".HasValue then begin
@@ -197,8 +197,8 @@ codeunit 50643 "KNH Online File handling"
     procedure FindMediaOrphans()
     var
         TenantMedia: Record "Tenant Media";
-        MediaOrphans: List of [Guid];
         MediaId: Guid;
+        MediaOrphans: List of [Guid];
     begin
         MediaOrphans := Media.FindOrphans(); //Find all orphaned media
         foreach MediaId in MediaOrphans do
@@ -212,20 +212,20 @@ codeunit 50643 "KNH Online File handling"
         FileInstream: InStream;
         FileName: Text;
     begin
-        UploadIntoStream('Upload', '', 'All files (*.*)|*.*', FileName, FileInStream); //upload to instream
-        Xmlport.Import(Xmlport::"KNH Source", FileInStream); //import from instream 
+        UploadIntoStream('Upload', '', 'All files (*.*)|*.*', FileName, FileInstream); //upload to instream
+        Xmlport.Import(Xmlport::"KNH Source", FileInstream); //import from instream 
         Message('XML Import Successful');
     end;
 
     procedure RunXMLportExport()
     var
         TempBlob: Codeunit "Temp Blob";
-        OutputFileName: Text;
-        FileOutStream: OutStream;
         FileInStream: InStream;
+        FileOutStream: OutStream;
+        OutputFileName: Text;
     begin
         TempBlob.CreateOutStream(FileOutStream); //create outstream from temp blob table 
-        XMLport.Export(XMLport::"KNH Source", FileOutStream); //export records to outstream
+        Xmlport.Export(Xmlport::"KNH Source", FileOutStream); //export records to outstream
         TempBlob.CreateInStream(FileInStream); //create instream from temp blob
         OutputFileName := 'KNH Source.XML';
         DownloadFromStream(FileInStream, '', '', 'All files (*.*)|*.*', OutputFileName); //Download from instream 
@@ -234,10 +234,10 @@ codeunit 50643 "KNH Online File handling"
     procedure ImportXMLDocument()
     var
         TempBlob: Codeunit "Temp Blob";
-        TargetXMLDocument: XmlDocument;
-        XmlDec: XmlDeclaration;
         FileInStream: InStream;
         Filename: Text;
+        XmlDec: XmlDeclaration;
+        TargetXMLDocument: XmlDocument;
     begin
         TargetXMLDocument := XmlDocument.Create();
         XmlDec := XmlDeclaration.Create('1.0', 'UTF-8', '');
@@ -250,10 +250,9 @@ codeunit 50643 "KNH Online File handling"
 
     procedure XMLDocumentCreation()
     var
+        XmlDec: XmlDeclaration;
         XmlDoc: XmlDocument;
-        XmlDec: XMLDeclaration;
         Node1, Node2 : XmlElement;
-        Node: XmlNode;
     begin
         XmlDoc := XmlDocument.Create();
         XmlDec := XmlDeclaration.Create('1.0', 'UTF-8', '');
@@ -266,8 +265,6 @@ codeunit 50643 "KNH Online File handling"
     end;
 
     procedure CreatJsonSalesOrder()
-    var
-        JsonObjectHeader: JsonObject;
 
     begin
         //XXXXX

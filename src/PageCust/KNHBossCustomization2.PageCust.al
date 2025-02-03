@@ -1,6 +1,4 @@
-/// <summary>
-/// PageCust "KNH_BossCustomization2".
-/// </summary>
+//PageCust "KNH_BossCustomization2".
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;

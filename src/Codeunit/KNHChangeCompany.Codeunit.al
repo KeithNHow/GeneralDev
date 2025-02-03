@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit "KNH_ChangeCompany" (ID 50622).
-/// </summary>
+//Codeunit "KNH_ChangeCompany" (ID 50622).
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;

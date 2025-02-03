@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit "KNH Conditional Selection" (ID 50602).
-/// </summary>
+//Codeunit "KNH Conditional Selection" (ID 50602).
 
 namespace KNHGenDev;
 

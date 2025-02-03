@@ -1,9 +1,7 @@
-/// <summary>
-/// Codeunit "KNH Table Filters" (ID 50614).
-/// </summary>
+//Codeunit "KNH Table Filters" (ID 50614).
 
 namespace KNHGenDev;
-using Microsoft.sales.document;
+using Microsoft.Sales.Document;
 
 codeunit 50615 "KNH Table Filters"
 {

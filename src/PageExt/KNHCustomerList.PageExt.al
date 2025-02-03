@@ -1,10 +1,8 @@
-/// <summary>
-/// PageExtension KNH Customer List (ID 50602) extends Record Customer List.
-/// </summary>
+//PageExtension KNH Customer List (ID 50602) extends Record Customer List.
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 using Microsoft.Sales.Document;
-using system.Email;
+using System.Email;
 
 pageextension 50602 "KNH Customer List" extends "Customer List"
 {

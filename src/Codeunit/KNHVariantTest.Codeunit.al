@@ -1,7 +1,5 @@
-/// <summary>
-/// Codeunit KNH_VariantTest (ID 50600).
-/// The AL variant data type can contain many AL data types.
-/// </summary>
+//Codeunit KNH_VariantTest (ID 50600).
+//The AL variant data type can contain many AL data types.
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;

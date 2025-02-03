@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit "KNH Letters" (ID 50612) contains func 'Capitalize' which inputs text string and outputs capitalized text string
-/// </summary>
+// Codeunit "KNH Letters" (ID 50612) contains func 'Capitalize' which inputs text string and outputs capitalized text string
 
 namespace KNHGenDev;
 codeunit 50612 "KNH Letters"

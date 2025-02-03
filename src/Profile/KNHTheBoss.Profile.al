@@ -1,7 +1,5 @@
-/// <summary>
-/// Profile "KNH_TheBoss"
-/// The profile object in Dynamics 365 BC allows you to build an individual experience for each user profile. The Profile object performs a validation to check whether the specified role center page exists, and page customization objects exists, when you define a new profile object. On a page customization you can add changes to the page layout, and actions.
-/// </summary>
+//Profile "KNH_TheBoss"
+//The profile object in Dynamics 365 BC allows you to build an individual experience for each user profile. The Profile object performs a validation to check whether the specified role center page exists, and page customization objects exists, when you define a new profile object. On a page customization you can add changes to the page layout, and actions.
 
 namespace KNHGenDev;
 using Microsoft.Finance.RoleCenters;

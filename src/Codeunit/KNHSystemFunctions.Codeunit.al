@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit "KNH System Functions" (ID 50609).
-/// </summary>
+//Codeunit "KNH System Functions" (ID 50609).
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
@@ -507,8 +505,8 @@ codeunit 50609 "KNH System Functions"
 
     local procedure HideSecretText()
     var
-        NewSecretText: SecretText;
         NewSecretData: SecretText;
+        NewSecretText: SecretText;
         Text1: Text;
         Text2: Text;
     begin

@@ -1,6 +1,4 @@
-/// <summary>
-/// Codeunit "KNH FieldTransfer" (ID 50617).
-/// </summary>
+// Codeunit "KNH FieldTransfer" (ID 50617).
 
 namespace KNHGenDev;
 using Microsoft.Foundation.NoSeries;

@@ -32,7 +32,7 @@ pageextension 50621 "KNH VendorCard" extends "Vendor Card"
 
                 trigger OnAction()
                 var
-                    KNHSingleInstance: codeunit "KNH Single Instance";
+                    KNHSingleInstance: Codeunit "KNH Single Instance";
                 begin
                     Rec.IntegerField := KNHSingleInstance.GetSingleInstance();
                 end;

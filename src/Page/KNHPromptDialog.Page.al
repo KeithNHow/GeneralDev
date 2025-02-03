@@ -9,7 +9,7 @@ page 50605 "KNH Prompt Dialog"
     Extensible = false;
     PromptMode = Prompt;
     IsPreview = true;
-    DataCaptionExpression = this.UserInput;
+    DataCaptionExpression = this.userinput;
     SourceTable = "KNH Temp Input Data";
     SourceTableTemporary = true;
 
@@ -76,7 +76,7 @@ page 50605 "KNH Prompt Dialog"
                 ToolTip = 'Regenerate the code';
                 trigger OnAction()
                 begin
-                    this.RunGenerate(this.CopilotReGeneratingTxt);
+                    this.RunGenerate(this.CopilotRegeneratingTxt);
                 end;
             }
             systemaction(Ok)
@@ -103,17 +103,17 @@ page 50605 "KNH Prompt Dialog"
 
 
     var
-        InputProjectDescription: Text;
-        Tone: option;
-        Format: Option;
-        Emphasis: Option;
-        Output: Text;
         CustomerNo: Code[20];
-        CopilotJobProposal: Text;
-        userinput: Text;
         GenerateModeProgDialog: Dialog;
         CopilotGeneratingTxt: Label 'Creating a draft for you...';
         CopilotRegeneratingTxt: Label 'Revising the draft...';
+        Emphasis: Option;
+        Format: Option;
+        Tone: option;
+        CopilotJobProposal: Text;
+        InputProjectDescription: Text;
+        Output: Text;
+        userinput: Text;
 
     procedure RunGeneration()
     begin

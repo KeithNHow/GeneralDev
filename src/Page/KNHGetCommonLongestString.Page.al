@@ -65,9 +65,9 @@ page 50600 "KNH Get Common Longest String"
     }
     var
         FirstString: Text;
+        LongestCommonSubstring: Text;
         SecondString: Text;
         ThirdString: Text;
-        LongestCommonSubstring: Text;
 
     local procedure GetLongestCommonSubstring()
     var

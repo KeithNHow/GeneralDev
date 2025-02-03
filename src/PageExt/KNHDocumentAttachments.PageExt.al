@@ -2,11 +2,11 @@ namespace KNHGenDev;
 using Microsoft.Foundation.Attachment;
 using Microsoft.Sales.Customer;
 
-pageextension 50622 "KNH Document Attachments" extends "Document attachment Details"
+pageextension 50622 "KNH Document Attachments" extends "Document Attachment Details"
 {
     actions
     {
-        addlast(Processing)
+        addlast(processing)
         {
             fileuploadaction(ProductImageUpload)
             {

@@ -1,9 +1,7 @@
-/// <summary>
-/// Codeunit "KNH TransferFields" (ID 50608).
-/// </summary>
-Namespace KNHGenDev;
-Using Microsoft.Sales.Document;
-Using Microsoft.Foundation.NoSeries;
+//Codeunit "KNH TransferFields" (ID 50608).
+namespace KNHGenDev;
+using Microsoft.Sales.Document;
+using Microsoft.Foundation.NoSeries;
 
 codeunit 50608 "KNH Transfer Fields"
 {

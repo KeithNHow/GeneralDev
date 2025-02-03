@@ -9,14 +9,14 @@ codeunit 50627 "KNH Try Function"
     trigger OnRun()
     begin
         if this.MyTryMethod() then
-            message('Everything went well')
+            Message('Everything went well')
         else
-            message('Something went wrong')
+            Message('Something went wrong')
     end;
 
     [TryFunction]
     local procedure MyTryMethod()
     begin
-        error('An error occurred during the operation');
+        Error('An error occurred during the operation');
     end;
 }

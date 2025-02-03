@@ -1,6 +1,4 @@
-/// <summary>
-/// Page KNH SourceLines (ID 50603).
-/// </summary>
+//Page KNH SourceLines (ID 50603).
 
 namespace KNHGenDev;
 

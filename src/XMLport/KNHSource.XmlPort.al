@@ -1,6 +1,4 @@
-/// <summary>
-/// XmlPort "KNH Source" (ID 50600).
-/// </summary>
+//XmlPort "KNH Source" (ID 50600).
 
 namespace KNHGenDev;
 

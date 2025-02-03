@@ -1,7 +1,5 @@
-/// <summary>
-/// Codeunit "KNH_CopyTest (ID 50601).
-/// Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys.
-/// </summary>
+//Codeunit "KNH_CopyTest (ID 50601).
+//Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys.
 
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
