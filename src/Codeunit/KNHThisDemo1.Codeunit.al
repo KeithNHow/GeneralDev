@@ -8,7 +8,7 @@ codeunit 50641 "KNH This Demo 1"
     var
         KNHThisDemo2: Codeunit "KNH This Demo 2";
     begin
-        this.MyInt := 5;
+        this.MyInt := 10;
         this.MyVar := 'is awesome';
         this.IsNice();
         KNHThisDemo2.Demo2Procedure(this);
@@ -16,7 +16,7 @@ codeunit 50641 "KNH This Demo 1"
 
     local procedure IsNice()
     begin
-        Message('This codeunit ' + this.MyVar);
+        Message('This codeunit ' + this.MyVar + Format(this.MyInt));
     end;
 
     var

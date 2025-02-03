@@ -13,16 +13,17 @@ codeunit 50600 "KNH Variant Test"
     end;
 
     var
-        Customer: Record Customer;
-        CustRecId: RecordId;
 
     /// <summary>
     /// Test.
     /// </summary>
     procedure Test()
+    var
+        Customer: Record Customer;
+        CustRecId: RecordId;
     begin
-        this.Customer.FindFirst();
-        this.CustRecId := Customer.RecordId;
+        Customer.FindFirst();
+        CustRecId := Customer.RecordId;
         this.ShowCustList(Customer, CustRecId);
     end;
 
