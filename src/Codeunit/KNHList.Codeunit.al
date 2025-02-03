@@ -20,7 +20,7 @@
 /// Set(Integer, T, var T) - Sets the element at the specified index.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 codeunit 50606 "KNH List"
 {
     var

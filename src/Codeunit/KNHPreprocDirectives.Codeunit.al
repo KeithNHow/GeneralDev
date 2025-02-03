@@ -6,7 +6,7 @@
 /// pragma directive - gives the compiler special inst for the compile of the file in which it appears. 
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Foundation.AuditCodes;
 
 codeunit 50613 "KNH Preproc Directives"

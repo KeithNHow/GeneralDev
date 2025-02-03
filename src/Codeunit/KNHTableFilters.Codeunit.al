@@ -2,7 +2,7 @@
 /// Codeunit "KNH Table Filters" (ID 50614).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.sales.document;
 
 codeunit 50615 "KNH Table Filters"

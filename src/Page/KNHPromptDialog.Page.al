@@ -1,5 +1,5 @@
 //Prompt Dialog Test
-namespace KNHTest;
+namespace KNHGenDev;
 
 page 50605 "KNH Prompt Dialog"
 {

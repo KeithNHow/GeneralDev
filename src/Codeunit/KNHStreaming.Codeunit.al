@@ -4,7 +4,7 @@
 /// OutStream --> Creates a stream object that you can use to write to files and BLOBs.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Foundation.Company;
 codeunit 50610 "KNH Streaming"
 {

@@ -1,6 +1,6 @@
 //Marking a record id used to find records and then refer to them at some later time in program execution. 
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 
 codeunit 50623 "KNH Marked Customers"

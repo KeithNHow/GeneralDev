@@ -1,3 +1,7 @@
+namespace KNHGenDev;
+using Microsoft.Foundation.Attachment;
+using Microsoft.Sales.Customer;
+
 pageextension 50622 "KNH Document Attachments" extends "Document attachment Details"
 {
     actions

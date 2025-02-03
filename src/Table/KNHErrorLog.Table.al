@@ -2,7 +2,7 @@
 /// Table KNH ErrorLog (ID 50603).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Utilities;
 table 50603 "KNH Error Log"
 {

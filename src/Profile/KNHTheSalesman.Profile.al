@@ -2,7 +2,7 @@
 /// Profile "KNH_TheSalesman"
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.RoleCenters;
 
 profile "KNH_The Salesman"

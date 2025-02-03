@@ -2,7 +2,7 @@
 /// XmlPort "KNH Source" (ID 50600).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 xmlport 50600 "KNH Source"
 {

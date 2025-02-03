@@ -1,4 +1,10 @@
-//namespace KNHTest;
+namespace KNHGenDev;
+using Microsoft.CRM.Contact;
+using Microsoft.inventory.Item;
+using Microsoft.CRM.Interaction;
+using System.Utilities;
+using System.IO;
+using System.Environment;
 
 codeunit 50643 "KNH Online File handling"
 {

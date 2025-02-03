@@ -2,7 +2,7 @@
 /// Codeunit "KNH Convert Blob" (ID 50616).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Foundation.Company;
 using System.Text;
 using System.Utilities;

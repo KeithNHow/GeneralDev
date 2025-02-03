@@ -1,3 +1,6 @@
+namespace KNHGenDev;
+using microsoft.Inventory.Item;
+
 pageextension 50603 "KNH Item List" extends "Item List"
 {
     actions

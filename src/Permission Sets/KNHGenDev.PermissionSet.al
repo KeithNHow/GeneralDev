@@ -55,5 +55,8 @@ permissionset 50601 "KNH Gen Dev"
         page "KNH Source Lines" = X,
         page "KNH Notes" = X,
         page "KNH Get Common Longest String" = X,
-        page "KNH Prompt Dialog" = X;
+        page "KNH Prompt Dialog" = X,
+        codeunit "KNH List" = X,
+        codeunit "KNH Save Copilot Job Proposal" = X,
+        page KNHBlob = X;
 }

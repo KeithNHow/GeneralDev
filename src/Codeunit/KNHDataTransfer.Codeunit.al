@@ -11,7 +11,7 @@
 /// 8. UpdateAuditFields([Boolean]) - On Prem only
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Foundation.AuditCodes;
 codeunit 50618 "KNH Data Transfer"
 {

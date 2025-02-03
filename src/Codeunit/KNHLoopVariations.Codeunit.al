@@ -2,7 +2,7 @@
 /// Codeunit "KNH Loop Variations" (ID 50605).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 
 codeunit 50605 "KNH Loop Variations"

@@ -1,4 +1,4 @@
-namespace KNHTest;
+namespace KNHGenDev;
 
 codeunit 50640 "KNH Boolean Coditional"
 {

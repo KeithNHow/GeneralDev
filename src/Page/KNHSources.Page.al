@@ -2,7 +2,7 @@
 /// Page KNH Sources (ID 50602).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 page 50602 "KNH Sources"
 {

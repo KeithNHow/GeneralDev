@@ -2,7 +2,7 @@
 /// Codeunit "KNH Conditional Selection" (ID 50602).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 codeunit 50602 "KNH Conditional Selection"
 {

@@ -3,7 +3,7 @@
 /// Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 
 codeunit 50601 "KNH Copy Test"

@@ -2,7 +2,7 @@
 /// Codeunit "KNH_Selection" (ID 50603).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 codeunit 50603 "KNH Selection"
 {

@@ -2,7 +2,7 @@
 /// Table KNH Source (ID 50602).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 table 50602 "KNH Source"
 {

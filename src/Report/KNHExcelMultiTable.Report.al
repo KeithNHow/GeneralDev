@@ -1,4 +1,4 @@
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 using Microsoft.Sales.Receivables;
 

@@ -1,3 +1,5 @@
+namespace KNHGenDev;
+
 codeunit 50645 "KNH Save Copilot Job Proposal"
 {
     trigger OnRun()

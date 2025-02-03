@@ -2,7 +2,7 @@
 /// Codeunit "KNH_ChangeCompany" (ID 50622).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 using System.Environment;
 

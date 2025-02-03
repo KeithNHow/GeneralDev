@@ -3,7 +3,7 @@
 //With Try attribute the function will not throw an exception if an error occurs.
 //Message displayed is 'Something went wrong'.
 
-namespace KNHTest;
+namespace KNHGenDev;
 codeunit 50627 "KNH Try Function"
 {
     trigger OnRun()

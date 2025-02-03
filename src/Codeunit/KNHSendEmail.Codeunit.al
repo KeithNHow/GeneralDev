@@ -2,7 +2,7 @@
 /// PageExtension CustomerListExt (ID 50602) extends Record Customer List.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using System.Text;
 using System.Email;
 using System.Utilities;

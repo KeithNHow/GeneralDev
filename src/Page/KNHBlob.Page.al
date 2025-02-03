@@ -1,6 +1,8 @@
 /// <summary>
 /// Page KNH Blob Card (ID 53602).
 /// </summary>
+namespace KNHGenDev;
+
 page 50612 KNHBlob
 {
     PageType = Card;

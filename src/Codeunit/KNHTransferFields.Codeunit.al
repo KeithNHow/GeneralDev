@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit "KNH TransferFields" (ID 50608).
 /// </summary>
-Namespace KNHTest;
+Namespace KNHGenDev;
 Using Microsoft.Sales.Document;
 Using Microsoft.Foundation.NoSeries;
 

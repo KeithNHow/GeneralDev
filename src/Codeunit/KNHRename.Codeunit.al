@@ -2,7 +2,7 @@
 /// Codeunit KNH Rename (ID 50619).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 codeunit 50619 "KNH Rename"
 {

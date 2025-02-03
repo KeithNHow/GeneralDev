@@ -2,7 +2,7 @@
 /// Codeunit "KNH FieldTransfer" (ID 50617).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Foundation.NoSeries;
 using Microsoft.Sales.Document;
 using Microsoft.Sales.Setup;

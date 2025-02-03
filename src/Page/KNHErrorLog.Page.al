@@ -1,4 +1,4 @@
-namespace KNHTest;
+namespace KNHGenDev;
 
 page 50604 "KNH Error Log"
 {

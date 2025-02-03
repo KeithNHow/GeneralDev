@@ -1,4 +1,4 @@
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Bank.Reconciliation;
 
 page 50600 "KNH Get Common Longest String"

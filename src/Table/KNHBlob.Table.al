@@ -1,5 +1,6 @@
-namespace KNHTest;
+namespace KNHGenDev;
 using System.Reflection;
+
 table 50604 "KNH Blob"
 {
     Caption = 'Blob Table';

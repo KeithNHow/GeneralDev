@@ -2,7 +2,7 @@
 /// PageExt "KNH OrderProcessing" extends Order Processor Role Center 9006
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.RoleCenters;
 
 pageextension 50601 "KNH Order Processing" extends "Order Processor Role Center"

@@ -1,3 +1,5 @@
+namespace KNHGenDev;
+
 table 50605 "KNH Temp Input Data"
 {
     DataClassification = ToBeClassified;

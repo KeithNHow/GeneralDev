@@ -1,6 +1,10 @@
 /// <summary>
 /// PageExtension "KNH_SalesOrder" (ID 50600) extends Record Sales Order.
 /// </summary>
+
+namespace KNHGenDev;
+using Microsoft.Sales.Document;
+
 pageextension 50600 "KNH Sales Order" extends "Sales Order"
 {
     actions

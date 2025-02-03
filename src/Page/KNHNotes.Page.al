@@ -2,7 +2,7 @@
 /// Page KNH_Notes List (ID 50601).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 page 50601 "KNH Notes"
 {

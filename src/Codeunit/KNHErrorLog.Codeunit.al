@@ -2,7 +2,8 @@
 /// Codeunit "KNH_ErrorLog" (ID 50621).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
+Using Microsoft.Sales.Customer;
 
 codeunit 50621 "KNH Error Log"
 {

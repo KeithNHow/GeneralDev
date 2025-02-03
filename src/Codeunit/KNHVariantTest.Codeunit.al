@@ -3,7 +3,7 @@
 /// The AL variant data type can contain many AL data types.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 codeunit 50600 "KNH Variant Test"
 {

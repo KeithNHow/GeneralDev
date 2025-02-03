@@ -2,7 +2,7 @@
 /// Page KNH SourceLines (ID 50603).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 page 50603 "KNH Source Lines"
 {

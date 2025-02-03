@@ -1,3 +1,6 @@
+namespace KNHGenDev;
+using Microsoft.Purchases.Vendor;
+
 pageextension 50621 "KNH VendorCard" extends "Vendor Card"
 {
     layout

@@ -4,7 +4,7 @@
 /// RecordID - Contains the table number and the primary key of a table.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 using System.Email;
 using System.Environment.Configuration;

@@ -2,7 +2,7 @@
 /// Table KNH Note (ID 50600).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 
 table 50600 "KNH Note"
 {

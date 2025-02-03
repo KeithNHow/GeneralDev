@@ -13,7 +13,7 @@
 /// Values() - Gets a collection containing the values in the Dictionary.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 codeunit 50607 "KNH Dictionary"
 {

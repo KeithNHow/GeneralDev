@@ -1,6 +1,9 @@
 /// <summary>
 /// PageExt "KNH Business Manager" extends Business Manager Role Center 9022
 /// </summary>
+namespace KNHGenDev;
+using Microsoft.Finance.RoleCenters;
+
 pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center"
 {
     actions

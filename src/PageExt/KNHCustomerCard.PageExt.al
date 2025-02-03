@@ -1,3 +1,6 @@
+namespace KNHGenDev;
+using Microsoft.Sales.Customer;
+
 pageextension 50620 "KNH CustomerCard" extends "Customer Card"
 {
     layout

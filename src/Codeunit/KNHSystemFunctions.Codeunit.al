@@ -2,7 +2,7 @@
 /// Codeunit "KNH System Functions" (ID 50609).
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 codeunit 50609 "KNH System Functions"
 {

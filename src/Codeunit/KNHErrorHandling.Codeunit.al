@@ -6,7 +6,7 @@
 ///GetLastErrorText Method	    Gets the last error that occurred in the debugger.
 /// </summary>
 
-namespace KNHTest;
+namespace KNHGenDev;
 using Microsoft.Sales.History;
 
 codeunit 50614 "KNH Error Handling"
