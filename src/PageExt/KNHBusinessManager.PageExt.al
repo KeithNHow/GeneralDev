@@ -1,5 +1,4 @@
 //PageExt "KNH Business Manager" extends Business Manager Role Center 9022
-
 namespace KNHGenDev;
 using Microsoft.Finance.RoleCenters;
 
@@ -175,6 +174,16 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 ToolTip = 'Draft a proposal';
                 Caption = 'Draft a proposal';
                 RunObject = page "KNH Prompt Dialog";
+            }
+        }
+        addafter(KNH_TryFunction)
+        {
+            action(KNH_API)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Show Cat Fact';
+                Caption = 'Show Cat Fact';
+                RunObject = codeunit "KNH API Management";
             }
         }
     }
