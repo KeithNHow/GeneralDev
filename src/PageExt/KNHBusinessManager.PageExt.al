@@ -176,9 +176,9 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = page "KNH Prompt Dialog";
             }
         }
-        addafter(KNH_TryFunction)
+        addafter(KNH_Prompt)
         {
-            action(KNH_API)
+            action(KNH_APIManagement)
             {
                 ApplicationArea = All;
                 ToolTip = 'Show Cat Fact';
