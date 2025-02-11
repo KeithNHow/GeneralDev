@@ -6,6 +6,7 @@ codeunit 50626 "KNH Single Instance"
     trigger OnRun()
     begin
         this.GetSingleInstance();
+        Message(Format(this.StoredInteger));
     end;
 
     var
