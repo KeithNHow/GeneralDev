@@ -1,4 +1,5 @@
-//PageExtension CustomerListExt (ID 50602) extends Record Customer List.
+//Codeunit "KNH Send Email" (ID 50620).
+//Send email with attachment
 
 namespace KNHGenDev;
 using System.Text;

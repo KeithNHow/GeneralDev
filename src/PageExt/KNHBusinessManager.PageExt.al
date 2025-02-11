@@ -186,5 +186,15 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = codeunit "KNH API Management";
             }
         }
+        addafter(KNH_APIManagement)
+        {
+            action(KNH_SingleInstance)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Single Instance';
+                Caption = 'Single Instance';
+                RunObject = codeunit "KNH Single Instance";
+            }
+        }
     }
 }
