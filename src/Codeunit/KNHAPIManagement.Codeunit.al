@@ -1,4 +1,4 @@
-//Alberto Soben - new REST client
+//Old Http client and new rest client
 
 namespace KNHGenDev;
 using System.RestClient;
@@ -6,11 +6,11 @@ codeunit 50647 "KNH API Management"
 {
     trigger OnRun()
     begin
-        ShowCatFact();
-        ShowCatFact2();
+        this.ShowCatFact();
+        //this.ShowCatFact2();
     end;
 
-    //Read cat fact
+    //Show cat fact using httpclient
     procedure ShowCatFact()
     var
         HttpClient: HttpClient;
@@ -18,13 +18,14 @@ codeunit 50647 "KNH API Management"
         UrlLbl: Label 'https://catfact.ninja/fact';
         Response: Text;
     begin
-        if HttpClient.Get(UrlLbl, HttpResponseMessage) then begin
-            HttpResponseMessage.Content.ReadAs(Response);
+        if HttpClient.Get(UrlLbl, HttpResponseMessage) then begin //call url and receive response
+            HttpResponseMessage.Content.ReadAs(Response); //reads response and places in text variable
             Message(Response);
-        end;
+        end else
+            Message('Error: ' + HttpResponseMessage.ReasonPhrase);
     end;
 
-    //Show Cat fact content
+    //Show Cat fact using rest client
     procedure ShowCatFact2()
     var
         RestClient: Codeunit "Rest Client";
