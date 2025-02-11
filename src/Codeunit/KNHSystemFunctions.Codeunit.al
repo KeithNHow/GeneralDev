@@ -7,12 +7,12 @@ codeunit 50609 "KNH System Functions"
     trigger OnRun()
     var
         selection: Integer;
-        functionTxt: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,DateToDMY,FormatDateInteger,FormatDateText,FormatDateInteger2,FormatDateText2,Contains,CopyString,IncString,InsertString,LowerUpperCase,PadRight,Replace,ReplaceText,Remove,Split,StrPosition,StrLength,StringSubstNo,Substring,Trim,TrimEnd,CalculateDate,CreateGUID,MyError,MyLastError,ShowMessage,ThisModule,DescendCustomerSearch,EncryptText,RandomizeNumber,RoundingNumber,Evaluation,HideSecretText';
-        selectionTxt: Label 'Choose one of the following options:';
+        functionLbl: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,DateToDMY,FormatDateInteger,FormatDateText,FormatDateInteger2,FormatDateText2,Contains,CopyString,IncString,InsertString,LowerUpperCase,PadRight,Replace,ReplaceText,Remove,Split,StrPosition,StrLength,StringSubstNo,Substring,Trim,TrimEnd,CalculateDate,CreateGUID,MyError,MyLastError,ShowMessage,ThisModule,DescendCustomerSearch,EncryptText,RandomizeNumber,RoundingNumber,Evaluation,HideSecretText';
+        selectionLbl: Label 'Choose one of the following options:';
         options: Text;
     begin
-        options := functionTxt;
-        selection := Dialog.StrMenu(options, 1, selectionTxt);
+        options := functionLbl;
+        selection := Dialog.StrMenu(options, 1, selectionLbl);
         case selection of
             //Date Operations
             1:

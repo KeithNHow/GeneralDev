@@ -5,13 +5,24 @@ using System.RestClient;
 codeunit 50647 "KNH API Management"
 {
     trigger OnRun()
+    var
+        Selection: Integer;
+        options: Text;
+        functionLbl: Label 'Cat fact by http,Cat fact by reset';
+        selectionLbl: Label 'Choose one of the following options:';
     begin
-        this.ShowCatFact();
-        //this.ShowCatFact2();
+        options := functionLbl;
+        selection := Dialog.StrMenu(options, 1, selectionLbl);
+        case selection of
+            1:
+                HttpShowCatFact();
+            2:
+                RestShowCatFact();
+        end;
     end;
 
     //Show cat fact using httpclient
-    procedure ShowCatFact()
+    procedure HttpShowCatFact()
     var
         HttpClient: HttpClient;
         HttpResponseMessage: HttpResponseMessage;
@@ -26,7 +37,7 @@ codeunit 50647 "KNH API Management"
     end;
 
     //Show Cat fact using rest client
-    procedure ShowCatFact2()
+    procedure RestShowCatFact()
     var
         RestClient: Codeunit "Rest Client";
         UrlLbl: Label 'https://catfact.ninja/fact';
