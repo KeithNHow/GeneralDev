@@ -3,6 +3,10 @@ namespace KNHGenDev;
 codeunit 50626 "KNH Single Instance"
 {
     SingleInstance = true;
+    trigger OnRun()
+    begin
+        this.GetSingleInstance();
+    end;
 
     var
         StoredInteger: Integer;
