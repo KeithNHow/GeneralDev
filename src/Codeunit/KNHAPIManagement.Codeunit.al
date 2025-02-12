@@ -15,9 +15,9 @@ codeunit 50647 "KNH API Management"
         selection := Dialog.StrMenu(options, 1, selectionLbl);
         case selection of
             1:
-                HttpShowCatFact();
+                this.HttpShowCatFact();
             2:
-                RestShowCatFact();
+                this.RestShowCatFact();
         end;
     end;
 
