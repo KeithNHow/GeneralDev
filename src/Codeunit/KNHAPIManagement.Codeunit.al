@@ -1,7 +1,7 @@
 //Old Http client and new rest client
 
-namespace KNHGenDev;
-using System.RestClient;
+//namespace KNHGenDev;
+//using System.RestClient;
 codeunit 50647 "KNH API Management"
 {
     trigger OnRun()
@@ -41,7 +41,23 @@ codeunit 50647 "KNH API Management"
     var
         RestClient: Codeunit "Rest Client";
         UrlLbl: Label 'https://catfact.ninja/fact';
+        CatFactTxt: Text[1024];
     begin
+        CatFactTxt := CopyStr(RestClient.Get(UrlLbl).GetContent().AsText(), 1, 1024);
+        this.CreateCatFactRecord(CatFactTxt);
         Message(RestClient.Get(UrlLbl).GetContent().AsText());
+    end;
+
+    procedure CreateCatFactRecord(CatFactTxt: Text[1024])
+    var
+        CatFact: Record "KNH Cat Fact";
+    begin
+        CatFact.Init();
+        if CatFact.FindLast() then
+            CatFact."No." := CatFact."No." + 1
+        else
+            CatFact."No." := 1;
+        CatFact.Fact := CatFactTxt;
+        CatFact.Insert();
     end;
 }

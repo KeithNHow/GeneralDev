@@ -15,6 +15,8 @@ permissionset 50601 "KNH Gen Dev"
         tabledata "KNH Blob" = RMID,
         table "KNH Temp Input Data" = X,
         tabledata "KNH Temp Input Data" = RIMD,
+         tabledata "KNH Cat Fact" = RIMD,
+        table "KNH Cat Fact" = X,
         codeunit "KNH Conditional Selection" = X,
         codeunit "KNH Convert Blob" = X,
         codeunit "KNH Dictionary" = X,
@@ -56,5 +58,6 @@ permissionset 50601 "KNH Gen Dev"
         page "KNH Prompt Dialog" = X,
         codeunit "KNH List" = X,
         codeunit "KNH Save Copilot Job Proposal" = X,
-        page KNHBlob = X;
+        page KNHBlob = X,
+        codeunit "KNH API Management" = X;
 }
