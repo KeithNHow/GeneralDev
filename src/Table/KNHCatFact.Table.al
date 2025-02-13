@@ -1,3 +1,4 @@
+// Import external records using APIMgmt CU and place in Cat Fact table  
 table 50606 "KNH Cat Fact"
 {
     Caption = 'Cat Fact';

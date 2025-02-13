@@ -1,4 +1,6 @@
-// Import external records using APIMgmt CU and place in Cat Fact table  
+// Display Imported records in Cat Fact table
+// Action added to link import of records (CU API Mgmt)   
+
 namespace GeneralDev.GeneralDev;
 
 page 50606 "KNH Cat Facts"
