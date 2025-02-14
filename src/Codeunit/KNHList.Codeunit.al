@@ -21,19 +21,18 @@
 namespace KNHGenDev;
 codeunit 50606 "KNH List"
 {
+    trigger OnRun()
     var
         Names: List of [Text];
-
-    trigger OnRun()
     begin
         //List
         Names.Insert(1, 'James');
         Names.Insert(2, 'John');
         Names.Insert(3, 'Jack');
         Names.Insert(4, 'Jim');
-        PrintCustomerNames(Names); //local procedure foreach loop
-        NumberCount(); //local procedure for loop
-        NumberCount2(0); //local procedure while loop
+        this.PrintCustomerNames(Names); //local procedure foreach loop
+        this.NumberCount(); //local procedure for loop
+        this.NumberCount2(0); //local procedure while loop
     end;
 
     //PrintCustomerNames from list

@@ -24,4 +24,11 @@ table 50606 "KNH Cat Fact"
             Clustered = true;
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Fact)
+        {
+        }
+    }
 }

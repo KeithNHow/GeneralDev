@@ -42,13 +42,34 @@ codeunit 50647 "KNH API Management"
         RestClient: Codeunit "Rest Client";
         UrlLbl: Label 'https://catfact.ninja/fact';
         CatFactTxt: Text[1024];
+        FactTxt: Text;
+        WordTxt: List of [Text];
+        EndPos: Integer;
+        StartPos: Integer;
+        Counter: Integer;
+        A: Integer;
     begin
         CatFactTxt := CopyStr(RestClient.Get(UrlLbl).GetContent().AsText(), 1, 1024);
-        this.CreateCatFactRecord(CatFactTxt);
+        Counter := 0;
+        StartPos := 1;
+        if StrPos(CatFactTxt, ' ') <> 0 then
+            repeat
+                EndPos := StrPos(CatFactTxt, ' ');
+                Counter += 1;
+                WordTxt.Insert(Counter, CopyStr(CatFactTxt, StartPos, EndPos));
+                CatFactTxt := DelStr(CatFactTxt, StartPos, EndPos);
+            until StrPos(CatFactTxt, ' ') = 0;
+        Counter += 1;
+        WordTxt.Insert(Counter, CatFactTxt);
+
+        for A := 1 to Counter do begin
+            FactTxt := WordTxt.Get(A);
+            this.CreateCatFactRecord(FactTxt);
+        end;
         Message(RestClient.Get(UrlLbl).GetContent().AsText());
     end;
 
-    procedure CreateCatFactRecord(CatFactTxt: Text[1024])
+    procedure CreateCatFactRecord(FactTxt: Text)
     var
         CatFact: Record "KNH Cat Fact";
     begin
@@ -57,7 +78,7 @@ codeunit 50647 "KNH API Management"
             CatFact."No." := CatFact."No." + 1
         else
             CatFact."No." := 1;
-        CatFact.Fact := CatFactTxt;
+        CatFact.Fact := CopyStr(FactTxt, 1, 250);
         CatFact.Insert();
     end;
 }
