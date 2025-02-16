@@ -90,5 +90,6 @@ codeunit 50647 "KNH API Management"
         UrlSKLbl: Label 'https://stephen-king-api.onrender.com/api/villain/19';
     begin
         RestClient.Get(UrlSKLbl).GetContent().AsJson();
+        Message(RestClient.Get(UrlSKLbl).GetContent().AsText());
     end;
 }
