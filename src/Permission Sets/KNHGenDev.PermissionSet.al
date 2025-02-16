@@ -19,6 +19,8 @@ permissionset 50601 "KNH Gen Dev"
         table "KNH Cat Fact" = X,
         tableData "KNH Purchase Header" = RIMD,
         table "KNH Purchase Header" = X,
+        tableData "KNH Villains" = RIMD,
+        table "KNH Villains" = X,
         codeunit "KNH Conditional Selection" = X,
         codeunit "KNH Convert Blob" = X,
         codeunit "KNH Dictionary" = X,

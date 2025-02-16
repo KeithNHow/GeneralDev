@@ -8,7 +8,7 @@ codeunit 50647 "KNH API Management"
     var
         Selection: Integer;
         options: Text;
-        functionLbl: Label 'Cat fact by http,Cat fact by reset';
+        functionLbl: Label 'Cat fact by http,Cat fact by rest,Stephen King Villains';
         selectionLbl: Label 'Choose one of the following options:';
     begin
         options := functionLbl;
@@ -18,6 +18,8 @@ codeunit 50647 "KNH API Management"
                 this.HttpShowCatFact();
             2:
                 this.RestShowCatFact();
+            3:
+                this.RestShowStephenKingVillains();
         end;
     end;
 
@@ -80,5 +82,13 @@ codeunit 50647 "KNH API Management"
             CatFact."No." := 1;
         CatFact.Fact := CopyStr(FactTxt, 1, 250);
         CatFact.Insert();
+    end;
+
+    procedure RestShowStephenKingVillains()
+    var
+        RestClient: Codeunit "Rest Client";
+        UrlSKLbl: Label 'https://stephen-king-api.onrender.com/api/villain/19';
+    begin
+        RestClient.Get(UrlSKLbl).GetContent().AsJson();
     end;
 }

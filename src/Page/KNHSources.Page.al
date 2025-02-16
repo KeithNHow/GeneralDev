@@ -46,10 +46,6 @@ page 50602 "KNH Sources"
                     ApplicationArea = All;
                     Caption = 'Source Line';
                     Image = Line;
-                    //Promoted = true;
-                    //PromotedCategory = Process;
-                    //PromotedIsBig = true;
-                    //PromotedOnly = true;
                     ToolTip = 'Source lines related to Source.';
                     RunObject = page "KNH Source Lines";
                     RunPageLink = "Source Code" = field(Code);
