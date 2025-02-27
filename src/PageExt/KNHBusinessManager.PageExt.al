@@ -1,6 +1,7 @@
 //PageExt "KNH Business Manager" extends Business Manager Role Center 9022
 namespace KNHGenDev;
 using Microsoft.Finance.RoleCenters;
+using PageBackground;
 
 pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center"
 {
@@ -194,6 +195,16 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 ToolTip = 'Single Instance';
                 Caption = 'Single Instance';
                 RunObject = codeunit "KNH Single Instance";
+            }
+        }
+        addafter(KNH_SingleInstance)
+        {
+            action(KNH_BackgroundTaskTest)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Background Tasks';
+                Caption = 'Background Tasks';
+                RunObject = codeunit "KNH Background Runner";
             }
         }
     }
