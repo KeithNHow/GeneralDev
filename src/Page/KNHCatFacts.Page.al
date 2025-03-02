@@ -1,7 +1,7 @@
 // Display Imported records in Cat Fact table
 // Action added to link import of records (CU API Mgmt)   
 
-namespace GeneralDev.GeneralDev;
+namespace KNHGenDev;
 
 page 50606 "KNH Cat Facts"
 {

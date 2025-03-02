@@ -1,7 +1,7 @@
 //Old Http client and new rest client
 
-//namespace KNHGenDev;
-//using System.RestClient;
+namespace KNHGenDev;
+using System.RestClient;
 codeunit 50647 "KNH API Management"
 {
     trigger OnRun()

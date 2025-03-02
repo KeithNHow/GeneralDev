@@ -1,3 +1,6 @@
+namespace KNHGenDev;
+using KNHCustQuery;
+
 codeunit 50649 "KNH Call Cust Query"
 {
     trigger OnRun()

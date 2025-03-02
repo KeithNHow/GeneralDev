@@ -1,3 +1,7 @@
+namespace KNHCustQuery;
+using Microsoft.Sales.Customer;
+using Microsoft.CRM.Team;
+
 query 50600 "KNH Cust Query"
 {
     QueryType = Normal;
