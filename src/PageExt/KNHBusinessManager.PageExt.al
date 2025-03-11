@@ -207,5 +207,25 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = codeunit "KNH Background Runner";
             }
         }
+        addafter(KNH_BackgroundTaskTest)
+        {
+            action(KNH_ConvertBlob)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Convert Blob';
+                Caption = 'Convert Blob';
+                RunObject = codeunit "KNH Convert Blob to B64 Text";
+            }
+        }
+        addafter(KNH_ConvertBlob)
+        {
+            action(KNH_BlobDisplay)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Blob Display';
+                Caption = 'Blob Display';
+                RunObject = codeunit "KNH Blob Display As Text";
+            }
+        }
     }
 }

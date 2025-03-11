@@ -18,7 +18,7 @@ pageextension 50603 "KNH Item List" extends "Item List"
                 var
                     KNHOnLineFileHandling: Codeunit "KNH Online File handling";
                 begin
-                    KNHOnLineFileHandling.ImportItemPicture();
+                    KNHOnLineFileHandling.ImportXMLDocument();
                 end;
             }
             action(KNH_ImportItem)

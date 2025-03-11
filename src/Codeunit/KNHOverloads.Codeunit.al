@@ -4,23 +4,25 @@ namespace KNHGenDev;
 codeunit 50604 "KNH Overloads"
 {
     trigger OnRun()
-    begin
-        this.field1 := 4;
-        this.field2 := 5;
-        this.field3 := 6;
-
-        this.field3 := MyOverload(this.field1, this.field2);
-        Message(Format(this.field3)); //Answer = 20
-        this.field3 := MyOverload(this.field1);
-        Message(Format(this.field3)); //Answer = 64
-        this.field3 := MyOverload(this.field1, this.field2, this.field3);
-        Message(Format(this.field3)); //Answer = 120
-    end;
-
     var
         field1: Integer;
         field2: Integer;
         field3: Integer;
+    begin
+        field1 := 4;
+        field2 := 5;
+        field3 := 6;
+
+        field3 := MyOverload(field1, field2);
+        Message(Format(field3)); //Answer = 20
+        field3 := MyOverload(field1);
+        Message(Format(field3)); //Answer = 64
+        field3 := MyOverload(field1, field2, field3);
+        Message(Format(field3)); //Answer = 120
+    end;
+
+    var
+
 
     local procedure MyOverload(pfield1: Integer; pfield2: Integer): Integer
     begin

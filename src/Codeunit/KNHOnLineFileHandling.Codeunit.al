@@ -8,32 +8,6 @@ using System.Environment;
 
 codeunit 50643 "KNH Online File handling"
 {
-    //On Prem create file gives error 
-    [Scope('OnPrem')]
-    procedure Testfiles()
-    var
-    //MyFile: File;
-    begin
-        //MyFile.Create('C:\Temp\MyFile.txt', TextEncoding::MSDos);
-    end;
-
-    //adds a picture to an item
-    //loads client file into stream
-    //imports the picture from stream
-    procedure ImportItemPicture()
-    var
-        Item: Record Item;
-        FileInstream: InStream;
-        DialogCaption, FileName : Text;
-    begin
-        if Item.FindFirst() then
-            if UploadIntoStream(DialogCaption, '', '', FileName, FileInstream) then begin
-                Clear(Item.Picture);
-                Item.Picture.ImportStream(FileInstream, FileName);
-                Item.Modify(true);
-            end;
-    end;
-
     //imports file record into item record
     //1 - loads record from client file into stream
     //2 - imports each field value from stream into item field
