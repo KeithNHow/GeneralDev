@@ -227,5 +227,15 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = codeunit "KNH Blob Display As Text";
             }
         }
+        addafter(KNH_BlobDisplay)
+        {
+            action(KNH_Yaml2Json)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Yaml to Json';
+                Caption = 'Yaml to Json';
+                RunObject = codeunit "KNH Yaml 2 Json";
+            }
+        }
     }
 }
