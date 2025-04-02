@@ -873,6 +873,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_BlobDisplay - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 3293707499 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Yaml to Json</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Yaml2Json - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 3293707499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Yaml to Json</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Yaml2Json - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 3404354106 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>System Functions</source>
           <note from="Developer" annotates="general" priority="2"></note>
