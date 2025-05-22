@@ -33,8 +33,8 @@ xmlport 50600 "KNH Source"
 
                 trigger OnAfterInitRecord()
                 begin
-                    if SkipFirstRecord then begin
-                        SkipFirstRecord := false;
+                    if this.SkipFirstRecord then begin
+                        this.SkipFirstRecord := false;
                         currXMLport.Skip();
                     end;
                 end;
@@ -73,7 +73,7 @@ xmlport 50600 "KNH Source"
 
     trigger OnInitXmlPort()
     begin
-        SkipFirstRecord := true;
+        this.SkipFirstRecord := true;
     end;
 
     trigger OnPreXmlPort()

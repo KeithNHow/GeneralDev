@@ -1,7 +1,8 @@
 //PageExt "KNH Business Manager" extends Business Manager Role Center 9022
 namespace KNHGenDev;
 using Microsoft.Finance.RoleCenters;
-using PageBackground;
+using KNHPageBackground;
+using KNHYaml2Json;
 
 pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center"
 {
@@ -78,6 +79,16 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
             }
         }
         addafter(KNH_RecordRef)
+        {
+            action(KNH_Selection)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Selection';
+                Caption = 'Selection';
+                RunObject = codeunit "KNH Selection";
+            }
+        }
+        addafter(KNH_Selection)
         {
             action(KNH_Notes)
             {
@@ -199,16 +210,6 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
         }
         addafter(KNH_SingleInstance)
         {
-            action(KNH_BackgroundTaskTest)
-            {
-                ApplicationArea = All;
-                ToolTip = 'Background Tasks';
-                Caption = 'Background Tasks';
-                RunObject = codeunit "KNH Background Runner";
-            }
-        }
-        addafter(KNH_BackgroundTaskTest)
-        {
             action(KNH_ConvertBlob)
             {
                 ApplicationArea = All;
@@ -234,7 +235,17 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 ApplicationArea = All;
                 ToolTip = 'Yaml to Json';
                 Caption = 'Yaml to Json';
-                RunObject = codeunit "KNH Yaml 2 Json";
+                RunObject = codeunit "KNH Yaml 2 Json"; //Object found in Yaml2Json extension 
+            }
+        }
+        addafter(KNH_Yaml2Json)
+        {
+            action(KNH_BackgroundTask)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Background Tasks';
+                Caption = 'Background Tasks';
+                RunObject = codeunit "KNH Background Runner"; //Object found in BackgroundTask extension
             }
         }
     }
