@@ -208,13 +208,8 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Temp Input Data - Field MyField - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2318604242 - Method 2383863615 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
-          <source>https://catfact.ninja/fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method HttpShowCatFact - NamedType UrlLbl</note>
-        </trans-unit>
         <trans-unit id="Codeunit 2318604242 - Method 1665861916 - NamedType 363584196" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Cat fact by http,Cat fact by rest,Stephen King Villains</source>
+          <source>Show Cat fact Using http,Show Stephen King Villains using Rest,Insert Cat fact Using rest</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method OnRun - NamedType functionLbl</note>
         </trans-unit>
@@ -223,15 +218,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method OnRun - NamedType selectionLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2318604242 - Method 1621798319 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2318604242 - Method 1621419901 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
           <source>https://catfact.ninja/fact</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method RestShowCatFact - NamedType UrlLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method ShowCatFactUsingHttp - NamedType UrlLbl</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2318604242 - Method 602767197 - NamedType 1688907019" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2318604242 - Method 3152710031 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
           <source>https://stephen-king-api.onrender.com/api/villain/19</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method RestShowStephenKingVillains - NamedType UrlSKLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method ShowStephenKingVillainsUsingRest - NamedType UrlLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 2144315370 - Method 1665861916 - NamedType 3920859232" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer No. is %1</source>
@@ -1407,6 +1402,11 @@
           <source>My Customer %1 was found in %2</source>
           <note from="Developer" annotates="general" priority="2">%1 = My Customer, %2 = My Customer Table</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Captions - Method OnRun - NamedType MyMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2143714116 - Method 1990505304 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
+          <source>https://catfact.ninja/fact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Cat Facts - Method InsertCatFactsUsingRest - NamedType UrlLbl</note>
         </trans-unit>
         <trans-unit id="PermissionSet 2649999514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Gen Dev</source>

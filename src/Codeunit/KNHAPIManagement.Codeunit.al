@@ -1,4 +1,4 @@
-//Old Http client and new rest client
+//Old Http client and New rest client
 
 namespace KNHGenDev;
 using System.RestClient;
@@ -6,25 +6,28 @@ codeunit 50647 "KNH API Management"
 {
     trigger OnRun()
     var
+        KNHCatFacts: Codeunit "KNH Cat Facts";
         Selection: Integer;
         options: Text;
-        functionLbl: Label 'Cat fact by http,Cat fact by rest,Stephen King Villains';
+        functionLbl: Label 'Show Cat fact Using http,Show Stephen King Villains using Rest,Insert Cat fact Using rest';
         selectionLbl: Label 'Choose one of the following options:';
     begin
         options := functionLbl;
         selection := Dialog.StrMenu(options, 1, selectionLbl);
         case selection of
             1:
-                this.HttpShowCatFact();
+                this.ShowCatFactUsingHttp();
             2:
-                this.RestShowCatFact();
+                this.ShowStephenKingVillainsUsingRest();
             3:
-                this.RestShowStephenKingVillains();
+                KNHCatFacts.InsertCatFactUsingRest();
+            else
+                Message('Invalid selection. Please try again.');
         end;
     end;
 
     //Show cat fact using httpclient
-    procedure HttpShowCatFact()
+    procedure ShowCatFactUsingHttp()
     var
         HttpClient: HttpClient;
         HttpResponseMessage: HttpResponseMessage;
@@ -38,58 +41,13 @@ codeunit 50647 "KNH API Management"
             Message('Error: ' + HttpResponseMessage.ReasonPhrase);
     end;
 
-    //Show Cat fact using rest client
-    procedure RestShowCatFact()
+    //Show cat fact using rest client
+    procedure ShowStephenKingVillainsUsingRest()
     var
         RestClient: Codeunit "Rest Client";
-        UrlLbl: Label 'https://catfact.ninja/fact';
-        CatFactTxt: Text[1024];
-        FactTxt: Text;
-        WordTxt: List of [Text];
-        EndPos: Integer;
-        StartPos: Integer;
-        Counter: Integer;
-        A: Integer;
+        UrlLbl: Label 'https://stephen-king-api.onrender.com/api/villain/19';
     begin
-        CatFactTxt := CopyStr(RestClient.Get(UrlLbl).GetContent().AsText(), 1, 1024);
-        Counter := 0;
-        StartPos := 1;
-        if StrPos(CatFactTxt, ' ') <> 0 then
-            repeat
-                EndPos := StrPos(CatFactTxt, ' ');
-                Counter += 1;
-                WordTxt.Insert(Counter, CopyStr(CatFactTxt, StartPos, EndPos));
-                CatFactTxt := DelStr(CatFactTxt, StartPos, EndPos);
-            until StrPos(CatFactTxt, ' ') = 0;
-        Counter += 1;
-        WordTxt.Insert(Counter, CatFactTxt);
-
-        for A := 1 to Counter do begin
-            FactTxt := WordTxt.Get(A);
-            this.CreateCatFactRecord(FactTxt);
-        end;
+        RestClient.Get(UrlLbl).GetContent().AsJson();
         Message(RestClient.Get(UrlLbl).GetContent().AsText());
-    end;
-
-    procedure CreateCatFactRecord(FactTxt: Text)
-    var
-        CatFact: Record "KNH Cat Fact";
-    begin
-        CatFact.Init();
-        if CatFact.FindLast() then
-            CatFact."No." := CatFact."No." + 1
-        else
-            CatFact."No." := 1;
-        CatFact.Fact := CopyStr(FactTxt, 1, 250);
-        CatFact.Insert();
-    end;
-
-    procedure RestShowStephenKingVillains()
-    var
-        RestClient: Codeunit "Rest Client";
-        UrlSKLbl: Label 'https://stephen-king-api.onrender.com/api/villain/19';
-    begin
-        RestClient.Get(UrlSKLbl).GetContent().AsJson();
-        Message(RestClient.Get(UrlSKLbl).GetContent().AsText());
     end;
 }

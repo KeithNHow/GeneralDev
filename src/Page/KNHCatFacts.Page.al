@@ -48,9 +48,9 @@ page 50606 "KNH Cat Facts"
                 Image = Import;
                 trigger OnAction()
                 var
-                    KNHAPIManaagement: Codeunit "KNH API Management";
+                    KNHCatFacts: Codeunit "KNH Cat Facts";
                 begin
-                    KNHAPIManaagement.RestShowCatFact();
+                    KNHCatFacts.InsertCatFactUsingRest();
                 end;
             }
         }
