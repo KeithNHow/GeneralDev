@@ -1403,10 +1403,10 @@
           <note from="Developer" annotates="general" priority="2">%1 = My Customer, %2 = My Customer Table</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Captions - Method OnRun - NamedType MyMsg</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2143714116 - Method 1990505304 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Codeunit 2143714116 - Method 2374877161 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
           <source>https://catfact.ninja/fact</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Cat Facts - Method InsertCatFactsUsingRest - NamedType UrlLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Cat Facts - Method InsertCatFactUsingRest - NamedType UrlLbl</note>
         </trans-unit>
         <trans-unit id="PermissionSet 2649999514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Gen Dev</source>

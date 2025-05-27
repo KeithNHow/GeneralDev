@@ -8,10 +8,13 @@ codeunit 50605 "KNH Loop Variations"
     trigger OnRun()
     var
         Customer: Record Customer;
+        CustList: List of [Text];
+        CustomerName: Text;
         Counter: Integer;
         I: Integer;
         J: Integer;
-        A: array[5, 7] of Text[30];
+        A: array[5, 7] of Text[100];
+        X: array[5] of Text[100];
     begin
         //For loop - First record unconditional
         I := 1;
@@ -19,6 +22,20 @@ codeunit 50605 "KNH Loop Variations"
             for J := 1 to 7 do
                 A[I, J] := 'I' + Format(I) + 'J' + Format(J);
         Message('For loop ends at ' + Format(A[I, J]));
+
+        //Foreach loop - First record conditional
+        Counter := 0;
+        if Customer.FindSet() then begin
+            repeat
+                CustList.Add(Customer.Name);
+            until Customer.Next() = 0;
+
+            foreach CustomerName in CustList do begin
+                X[Counter] := Customer.Name;
+                Counter := Counter + 1;
+            end;
+            Message('Customer table contains %1 records.', Counter);
+        end;
 
         //While loop - First record unconditional
         I := 0;
