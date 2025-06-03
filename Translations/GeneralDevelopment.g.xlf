@@ -388,6 +388,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Action GetCatFact - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2206961944 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Controlhost AddIn Demo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Control Host AddIn - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Page 2206961944 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is a demo page for a Controlhost AddIn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Control Host AddIn - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Page 2206961944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Keith's Playground</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Control Host AddIn - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2206961944 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Controlhost, AddIn, Demo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Control Host AddIn - Property AdditionalSearchTerms</note>
+        </trans-unit>
         <trans-unit id="Page 4231578371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>KNH Error Log</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -517,6 +537,11 @@
           <source>Specifies the value of the User ID field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page KNH Notes - Control User ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3973491786 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Power BI Balance Sheet</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH PBI - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3552135083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Create a draft</source>
