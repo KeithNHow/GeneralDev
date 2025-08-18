@@ -8,6 +8,7 @@ report 50600 KNH_Excel_MultiTable
     UsageCategory = ReportsAndAnalysis;
     Caption = 'Excel MultiTable';
     DefaultRenderingLayout = ExcelLayout;
+    ExcelLayoutMultipleDataSheets = true;
 
     dataset
     {
