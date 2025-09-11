@@ -15,10 +15,11 @@ codeunit 50615 "KNH Table Filters"
         #region
         Name := 'Teddy';
         SalesHeader.Reset();
+        SalesHeader.SetLoadFields("Document Type", "No.", "Sell-to Customer Name"); //Only need these fields
         SalesHeader.SetCurrentKey("Document Type", "No.");
         SalesHeader.SetFilter("Document Type", '%1|%2', 2, 3);
         SalesHeader.SetRange(Status, SalesHeader.Status::Released);
-        SalesHeader.SetFilter("Sell-to Customer Name", '@' + Name + '*');
+        SalesHeader.SetFilter("Sell-to Customer Name", '@' + Name + '*'); //find Cust acc with name, ignore case
         if SalesHeader.FindSet() then begin
             repeat
                 Counter += 1;
