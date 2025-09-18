@@ -17,6 +17,7 @@ query 50600 "KNH Cust Query"
             column(Name; Name)
             {
                 ColumnFilter = Name = filter('A*');
+                ToolTip = 'Filters the Name field to include only names starting with A.';
             }
             column(SalesLCY; "Sales (LCY)")
             {

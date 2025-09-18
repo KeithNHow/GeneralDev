@@ -3,6 +3,11 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="GeneralDevelopment">
     <body>
       <group id="body">
+        <trans-unit id="Query 3748230850 - QueryColumn 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filters the Name field to include only names starting with A.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query KNH Cust Query - QueryColumn Name - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 2243987930 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Blob Table</source>
           <note from="Developer" annotates="general" priority="2"></note>
