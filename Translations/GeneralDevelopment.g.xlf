@@ -3,6 +3,71 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="GeneralDevelopment">
     <body>
       <group id="body">
+        <trans-unit id="Page 1948089687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension Set Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 2623957639 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 2580555873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Set ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Set ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 2277534386 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension 1 Value Code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 3862666514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Value ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 837057288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Value Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 1700510896 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the dimension is a global dimension.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Global Dimension No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension Set Tree Node</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Set ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Dimension Set ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 3862666514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Value ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Dimension Value ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 942667584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the In Use field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control In Use - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 777284725 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Parent Dimension Set ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Parent Dimension Set ID - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Query 3748230850 - QueryColumn 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filters the Name field to include only names starting with A.</source>
           <note from="Developer" annotates="general" priority="2"></note>
