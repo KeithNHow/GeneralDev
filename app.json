@@ -1,0 +1,58 @@
+{
+    "id": "0a09a704-b77c-4bdc-a4dd-f8178bd5be3b",
+    "name": "GeneralDevelopment",
+    "publisher": "KeithHow",
+    "version": "1.0.0.15",
+    "brief": "General Development",
+    "description": "General Development",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "./logo/KNH.jpg",
+    "dependencies": [
+        {
+            "id": "3d5495f6-36a3-4c88-b0d7-92ff3c314297",
+            "name": "PageBackgroundTask",
+            "publisher": "KeithHow",
+            "version": "1.0.0.2"
+        },
+        {
+            "id": "e9509b58-6558-436a-b945-03ada3d89692",
+            "name": "Yaml2Json",
+            "publisher": "KeithHow",
+            "version": "1.0.0.0"
+        },
+        {
+            "id": "CC11C22E-5CA3-423F-8804-88CAC6D91983",
+            "name": "Dynamics BC Excel Reports",
+            "publisher": "Microsoft",
+            "version": "26.3.36158.36193"
+        },
+        {
+            "id": "E4E86220-CAC0-4EC3-B853-7C2FA610399D",
+            "name": "PowerBI Reports",
+            "publisher": "Microsoft",
+            "version": "26.3.36158.37115"
+        }
+    ],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "27.0.0.0",
+    "idRanges": [
+        {
+            "from": 50600,
+            "to": 50699
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "runtime": "16.0",
+    "features": [
+        "NoImplicitWith",
+        "TranslationFile"
+    ]
+}
