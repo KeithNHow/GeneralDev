@@ -9,8 +9,8 @@ codeunit 50615 "KNH Table Filters"
     var
         SalesHeader: Record "Sales Header";
         Counter: Integer;
-        CountMsg: Label 'Records counted = %1', Comment = '%1 = Counter';
         Name: Text;
+        CountMsg: Label 'Records counted = %1', Comment = '%1 = Counter';
     begin
         #region
         Name := 'Teddy';

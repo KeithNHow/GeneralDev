@@ -7,9 +7,9 @@ codeunit 50609 "KNH System Functions"
     trigger OnRun()
     var
         selection: Integer;
+        options: Text;
         functionLbl: Label 'DateFromDateTime,TimeFromDateTime,DWYtoDate,DateToDMY,FormatDateInteger,FormatDateText,FormatDateInteger2,FormatDateText2,Contains,CopyString,IncString,InsertString,LowerUpperCase,PadRight,Replace,ReplaceText,Remove,Split,StrPosition,StrLength,StringSubstNo,Substring,Trim,TrimEnd,CalculateDate,CreateGUID,MyError,MyLastError,ShowMessage,ThisModule,DescendCustomerSearch,EncryptText,RandomizeNumber,RoundingNumber,Evaluation,HideSecretText';
         selectionLbl: Label 'Choose one of the following options:';
-        options: Text;
     begin
         options := functionLbl;
         selection := Dialog.StrMenu(options, 1, selectionLbl);
@@ -242,11 +242,11 @@ codeunit 50609 "KNH System Functions"
 
     local procedure LowerUpperCase();
     var
+        Lower: Text;
+        Upper: Text;
         Text1Msg: Label 'Outstanding Order Status';
         Text2Msg: Label 'The test string before UpperCase is called:\\%1', Comment = '%1 = Lower';
         Text3Msg: Label 'The string after UpperCase is called:\\%1', Comment = '%2 = Upper';
-        Lower: Text;
-        Upper: Text;
     begin
         Lower := Text1Msg;
         Message(Text2Msg, Lower);
@@ -352,10 +352,10 @@ codeunit 50609 "KNH System Functions"
     var
         Balance: Decimal;
         AccountNo: Integer;
+        Str: Text[1024];
         AfterStrSubstNoMsg: Label 'The string after StrSubstNo is called:\\%1', Comment = '%1 = Text2Txt';
         BeforeStrSubstNoMsg: Label 'The test string before StrSubstNo is called:\\%1', Comment = '%1 = String';
         Text0Txt: Label 'The balance of account %1 is $%2', Comment = '%1 = AccountNo, %2 = Balance, %3 = String';
-        Str: Text[1024];
     begin
         Str := Text0Txt;
         AccountNo := 3452;
@@ -505,10 +505,10 @@ codeunit 50609 "KNH System Functions"
 
     local procedure HideSecretText()
     var
-        NewSecretData: SecretText;
-        NewSecretText: SecretText;
         Text1: Text;
         Text2: Text;
+        NewSecretData: SecretText;
+        NewSecretText: SecretText;
     begin
         Text1 := 'At';
         Text2 := 'Bridge';

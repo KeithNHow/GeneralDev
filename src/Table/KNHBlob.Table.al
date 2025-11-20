@@ -11,11 +11,13 @@ table 50604 "KNH Blob"
         field(1; PK; Code[20])
         {
             Caption = 'PK';
+            AllowInCustomizations = Never;
         }
         field(2; "Long Description"; Blob)
         {
             Caption = 'Blob';
             DataClassification = CustomerContent;
+            AllowInCustomizations = Never;
         }
     }
 
