@@ -1,6 +1,7 @@
 table 50607 "KNH Purchase Header"
 {
     DataClassification = ToBeClassified;
+    AllowInCustomizations = AsReadWrite;
 
     fields
     {

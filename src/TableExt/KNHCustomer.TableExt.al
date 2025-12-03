@@ -10,6 +10,7 @@ tableextension 50601 "KNH Customer" extends Customer
         {
             Caption = 'Integer Field';
             DataClassification = CustomerContent;
+            AllowInCustomizations = AsReadWrite;
 
             trigger OnValidate()
             var

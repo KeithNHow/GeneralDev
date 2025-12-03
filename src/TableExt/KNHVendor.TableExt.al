@@ -9,6 +9,7 @@ tableextension 50602 "KNH Vendor" extends Vendor
         {
             Caption = 'Integer Field';
             DataClassification = CustomerContent;
+            AllowInCustomizations = AsReadWrite;
         }
     }
 }

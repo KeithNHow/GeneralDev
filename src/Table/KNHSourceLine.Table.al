@@ -8,6 +8,7 @@ table 50601 "KNH Source Line"
 {
     Caption = 'Source Lines';
     DataClassification = CustomerContent;
+    AllowInCustomizations = AsReadWrite;
 
     fields
     {
@@ -15,19 +16,16 @@ table 50601 "KNH Source Line"
         {
             Caption = 'Code';
             ToolTip = 'Code';
-            DataClassification = CustomerContent;
         }
         field(2; "Source Code"; Code[20])
         {
             Caption = 'Source Code';
             ToolTip = 'Source Code';
-            DataClassification = CustomerContent;
         }
         field(3; Description; Text[100])
         {
             Caption = 'Description';
             ToolTip = 'Description';
-            DataClassification = CustomerContent;
         }
     }
     keys

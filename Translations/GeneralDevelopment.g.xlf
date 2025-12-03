@@ -273,8 +273,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Source Line - Field Source Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 756731377 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KNH Temp Input Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Temp Input Data - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 756731377 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>MyField</source>
+          <source>My Field</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Temp Input Data - Field MyField - Property Caption</note>
         </trans-unit>

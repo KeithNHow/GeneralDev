@@ -2,6 +2,7 @@ table 50608 "KNH Villains"
 {
     Caption = 'Villains';
     DataClassification = CustomerContent;
+    AllowInCustomizations = AsReadWrite;
 
     fields
     {

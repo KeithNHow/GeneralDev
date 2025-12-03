@@ -8,6 +8,7 @@ table 50602 "KNH Source"
 {
     Caption = 'KNH Source';
     DataClassification = ToBeClassified;
+    AllowInCustomizations = AsReadWrite;
 
     fields
     {

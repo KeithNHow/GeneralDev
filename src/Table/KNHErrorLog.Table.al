@@ -8,6 +8,7 @@ table 50603 "KNH Error Log"
 {
     Caption = 'KNHErrorLog';
     DataClassification = CustomerContent;
+    AllowInCustomizations = AsReadWrite;
 
     fields
     {

@@ -3,13 +3,14 @@ namespace KNHGenDev;
 table 50605 "KNH Temp Input Data"
 {
     DataClassification = ToBeClassified;
+    AllowInCustomizations = AsReadWrite;
+    Caption = 'KNH Temp Input Data';
 
     fields
     {
         field(1; MyField; Integer)
         {
-            DataClassification = ToBeClassified;
-
+            Caption = 'My Field';
         }
     }
 
