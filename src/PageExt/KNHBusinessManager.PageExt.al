@@ -1,8 +1,8 @@
 //PageExt "KNH Business Manager" extends Business Manager Role Center 9022
 namespace KNHGenDev;
 using Microsoft.Finance.RoleCenters;
-using KNHPageBackground;
-using KNHYaml2Json;
+//using KNHPageBackground;
+//using KNHYaml2Json;
 
 pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center"
 {
@@ -228,25 +228,25 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = codeunit "KNH Blob Display As Text";
             }
         }
-        addafter(KNH_BlobDisplay)
-        {
-            action(KNH_Yaml2Json)
-            {
-                ApplicationArea = All;
-                ToolTip = 'Yaml to Json';
-                Caption = 'Yaml to Json';
-                RunObject = codeunit "KNH Yaml 2 Json"; //Object found in Yaml2Json extension 
-            }
-        }
-        addafter(KNH_Yaml2Json)
-        {
-            action(KNH_BackgroundTask)
-            {
-                ApplicationArea = All;
-                ToolTip = 'Background Tasks';
-                Caption = 'Background Tasks';
-                RunObject = codeunit "KNH Background Runner"; //Object found in BackgroundTask extension
-            }
-        }
+        //addafter(KNH_BlobDisplay)
+        //{
+        //action(KNH_Yaml2Json)
+        //{
+        //ApplicationArea = All;
+        //ToolTip = 'Yaml to Json';
+        //Caption = 'Yaml to Json';
+        //RunObject = codeunit "KNH Yaml 2 Json"; //Object found in Yaml2Json extension 
+        //}
+        //}
+        //addafter(KNH_Yaml2Json)
+        //{
+        //action(KNH_BackgroundTask)
+        //{
+        //ApplicationArea = All;
+        //ToolTip = 'Background Tasks';
+        //Caption = 'Background Tasks';
+        //RunObject = codeunit "KNH Background Runner"; //Object found in BackgroundTask extension
+        //}
+        //}
     }
 }
