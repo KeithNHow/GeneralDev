@@ -8,7 +8,7 @@ report 50600 KNH_Excel_MultiTable
     UsageCategory = ReportsAndAnalysis;
     Caption = 'Excel MultiTable';
     DefaultRenderingLayout = ExcelLayout;
-    ExcelLayoutMultipleDataSheets = true;
+    //ExcelLayoutMultipleDataSheets = true;
 
     dataset
     {
@@ -16,15 +16,15 @@ report 50600 KNH_Excel_MultiTable
         {
             RequestFilterFields = "No.";
             DataItemTableView = sorting("No.");
-            column(No; "No.")
+            column(CustomerNumber; "No.")
             {
                 IncludeCaption = true;
             }
-            column(Name; Name)
+            column(CustomerName; Name)
             {
                 IncludeCaption = true;
             }
-            column(Balance; Balance)
+            column(CustomerBalance; Balance)
             {
                 IncludeCaption = true;
             }

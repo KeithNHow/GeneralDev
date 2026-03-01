@@ -793,6 +793,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page KNHBlob - Control PK - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Report 4089685847 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Comment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report KNH_CustomerComment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 754907471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Excel MultiTable</source>
           <note from="Developer" annotates="general" priority="2"></note>
