@@ -6,8 +6,9 @@ report 50601 KNH_CustomerComment
 {
     ApplicationArea = Basic, Suite;
     UsageCategory = ReportsAndAnalysis;
-    Caption = 'Customer Comments';
+    Caption = 'Customer Comment';
     DefaultRenderingLayout = ExcelLayout;
+    //ExcelLayoutMultipleDataSheets = true;
 
     dataset
     {
@@ -68,7 +69,7 @@ report 50601 KNH_CustomerComment
         layout(ExcelLayout)
         {
             Type = Excel;
-            LayoutFile = '.\src\Report\KNHCustomerComments.xlsx';
+            LayoutFile = '.\src\Report\KNHCustomerComment.xlsx';
         }
     }
 }
