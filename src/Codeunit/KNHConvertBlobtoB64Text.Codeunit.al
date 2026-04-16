@@ -1,9 +1,12 @@
-//Codeunit "KNH Convert Blob" (ID 50616).
+///<summary>
+/// Converts a BLOB field to a Base64 encoded text string.
+///</summary>
 
 namespace KNHGenDev;
 using Microsoft.Foundation.Company;
 using System.Text;
 using System.Utilities;
+
 codeunit 50616 "KNH Convert Blob to B64 Text"
 {
     TableNo = "Company Information";
@@ -11,25 +14,27 @@ codeunit 50616 "KNH Convert Blob to B64 Text"
     trigger OnRun()
     var
         SHRecordRef: RecordRef;
-        MyFieldRef29: FieldRef;
+        MyFieldRef: FieldRef;
         MyMessage: Text[1024];
     begin
         SHRecordRef.Open(Database::"Company Information");
         if SHRecordRef.FindFirst() then begin
-            MyFieldRef29 := SHRecordRef.Field(29); //Assign work desc field in table
-            MyMessage := Copystr(this.ConvertBlobToBase64String(MyFieldRef29), 1, 1024);
+            MyFieldRef := SHRecordRef.Field(200); //Assign shortcut Dim 1 code 
+            MyMessage := CopyStr(this.ConvertBlobToBase64String(MyFieldRef), 1, 1024);
             Message(MyMessage);
         end;
     end;
 
-    local procedure ConvertBlobToBase64String(pFieldRef29: FieldRef): Text
+    local procedure ConvertBlobToBase64String(pFieldRef: FieldRef): Text
     var
         Base64Convert: Codeunit "Base64 Convert";
         TempBlob: Codeunit "Temp Blob";
         varInStream: InStream;
+        WorkDesc: Text[1024];
     begin
-        TempBlob.FromRecordRef(pFieldRef29.Record(), pFieldRef29.Number());
+        TempBlob.FromRecordRef(pFieldRef.Record(), pFieldRef.Number());
         TempBlob.CreateInStream(varInStream);
-        exit(Base64Convert.ToBase64(varInStream));
+        WorkDesc := CopyStr(Base64Convert.ToBase64(varInStream), 1, 1024);
+        exit(WorkDesc);
     end;
 }

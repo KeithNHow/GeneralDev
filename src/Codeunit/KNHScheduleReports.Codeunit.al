@@ -1,13 +1,15 @@
+/// <summary>
+/// Codeunit used to run reports from job queue. The reports will be identified by the Job Queue Category Code field on the Job Queue Entry table. The parameters for the reports will be passed in the Parameter String field on the Job Queue Entry table, and will be decrypted in the codeunit. Currently, the codeunit is used to run the "Calculate Plan - Req. Wksh." report and the "Create Customer Journal Lines" report, but it can be extended to run other reports.
+/// The codeunit will also use the System Threading namespace to run the reports in a separate thread, if necessary.The codeunit will validate the parameters before running the reports, and will throw an error if the parameters are not valid. The codeunit will be scheduled to run in the job queue, and will be triggered by the Job Queue Entry table when the scheduled time is reached.
+/// </summary>
 namespace KNHGenDev;
-using System.Threading;
 using Microsoft.Finance.GeneralLedger.Journal;
 using Microsoft.Inventory.Requisition;
 using Microsoft.Sales.Customer;
-
+using System.Threading;
 codeunit 50625 "KNH Schedule Reports"
 {
     TableNo = "Job Queue Entry";
-
     trigger OnRun()
     var
         Customer: Record Customer;

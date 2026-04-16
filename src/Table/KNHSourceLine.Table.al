@@ -1,7 +1,6 @@
 /// <summary>
-/// Table "KNH Source Lines" (ID 50601).
+/// Test Table
 /// </summary>
-
 namespace KNHGenDev;
 
 table 50601 "KNH Source Line"

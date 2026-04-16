@@ -1,5 +1,6 @@
-//Codeunit "KNH Table Filters" (ID 50614).
-
+/// <summary>
+/// Codeunit demos use of SetLoadFields function to specify which fields to load when records are read from the database. 
+///</summary>
 namespace KNHGenDev;
 using Microsoft.Sales.Document;
 

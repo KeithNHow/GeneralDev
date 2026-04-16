@@ -1,4 +1,3 @@
-//Codeunit KNH Dictionary (ID 50607)
 //REPRESENTS AN UNORDERED COLLECTION OF KEYS AND VALUES. The Dictionary data type is optimized for fast lookup of values.
 //Add(TKey, TValue) - Adds the specified key and value to the dictionary.
 //ContainsKey(TKey) - Determines whether the Dictionary contains the specified key.
@@ -20,15 +19,14 @@ codeunit 50607 "KNH Dictionary"
         this.CountUniqueCharsInCustomerName();
         this.DisplayCustomerName();
     end;
-    /// <summary>
-    /// CountCharactersInCustomerName.
-    /// </summary>
+
     local procedure CountUniqueCharsInCustomerName()
     var
         Counter: Dictionary of [Char, Integer];
         C: Integer;
         I: Integer;
         CustomerName: Text;
+        OutputTxt: Label 'Customer Name contains character s %1 times.', Comment = '%1 = number of times s appears in CustomerName';
     begin
         CustomerName := 'Colosseum Dental Ltd'; //String length = 20
         for I := 1 to StrLen(CustomerName) do //Loop from 1 to 20
@@ -36,14 +34,15 @@ codeunit 50607 "KNH Dictionary"
                 Counter.Set(CustomerName[I], C + 1) //Add 1 to dictionary cell 
             else
                 Counter.Add(CustomerName[I], 1); //Add value 1 to new dictionary cell
-        Message('Customer Name contains character s %1 times.', Counter.Get('s'));
+        Message(OutputTxt, Counter.Get('s'));
     end;
 
     procedure DisplayCustomerName()
     var
         Customer: Record Customer;
+        CustDictionary: Dictionary of [Code[20], Text];
         CustomerNo: Code[20];
-        CustDictionary: Dictionary of [Code[20], Text[100]];
+        OuputTxt: Label 'Customer Name for Customer No. %1 is %2', Comment = '%1 = CustomerNo, %2 = Customer Name';
     begin
         if Customer.FindSet() then
             repeat
@@ -52,6 +51,6 @@ codeunit 50607 "KNH Dictionary"
 
         foreach CustomerNo in CustDictionary.Keys() do
             if CustomerNo = '30000' then
-                Message('Customer Name = %1', CustDictionary.Get('30000')); //School of Fine Art
+                Message(OuputTxt, '30000', CustDictionary.Get('30000'));
     end;
 }

@@ -1,4 +1,7 @@
-///Codeunit KNH DataTransfer (ID 50618).
+/// <summary>
+/// The codeunit demonstrates how to use the DataTransfer class to copy data from one table to another.
+/// It contains two methods, CopyFields and CopyRows, which are called in the OnRun trigger.
+/// </summary>
 
 namespace KNHGenDev;
 using Microsoft.Foundation.AuditCodes;
@@ -6,12 +9,11 @@ codeunit 50618 "KNH Data Transfer"
 {
     trigger OnRun()
     begin
-        CopyFields();
-        CopyRows();
+        this.CopyFields();
+        this.CopyRows();
     end;
 
-    //Copy some values from Source Code table into the Description field of the KNHSource table. 
-    //Copy the Description field in rows where the Code field contains an A.
+    //Transfers the data from the Name field in the KNH Source table to the Description field in the Source Code table for all rows where Code field contains A.
     local procedure CopyFields()
     var
         KNHSource: Record "KNH Source";
@@ -25,9 +27,7 @@ codeunit 50618 "KNH Data Transfer"
         DataTfr.CopyFields();
     end;
 
-    //Copy the Code and Name fields in the Source Code table for all rows where Code field contains A. 
-    //Add them as new rows in the KNH Source table. 
-    //Use the AddConstantValue method to add 'X' to the Name field in the inserted rows.
+    //Transfers the data from the Code and Name fields in the Source Code table to the Code and Name fields in the KNH Source table for all rows where Code field contains A.   
     local procedure CopyRows()
     var
         KNHSource: Record "KNH Source";

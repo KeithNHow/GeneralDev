@@ -1,6 +1,8 @@
-//Codeunit "KNH Streaming" (ID 50610).
-//InStream --> Creates a stream object that you can use to read from or write to files and BLOBs.
-//OutStream --> Creates a stream object that you can use to write to files and BLOBs.
+/// <summary>
+/// Codeunit for handling streaming operations.
+/// InStream --> Creates a stream object that you can use to read from files and BLOBs.
+/// OutStream --> Creates a stream object that you can use to write to files and BLOBs.
+/// </summary>
 
 namespace KNHGenDev;
 using Microsoft.Foundation.Company;

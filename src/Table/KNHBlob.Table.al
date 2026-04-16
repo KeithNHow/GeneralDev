@@ -1,6 +1,8 @@
+/// <summary>
+/// Test Blob table 
+/// </summary>
 namespace KNHGenDev;
 using System.Reflection;
-
 table 50604 "KNH Blob"
 {
     DataClassification = CustomerContent;

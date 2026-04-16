@@ -1,3 +1,5 @@
+namespace KNHGenDev;
+
 table 50607 "KNH Purchase Header"
 {
     DataClassification = ToBeClassified;

@@ -1,4 +1,6 @@
-//Codeunit KNH Rename (ID 50619).
+/// <summary>
+/// Codeunit to rename source code and source code lines for KNH GenDev.
+/// </summary>
 
 namespace KNHGenDev;
 

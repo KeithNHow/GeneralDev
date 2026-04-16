@@ -1,10 +1,10 @@
 namespace KNHGenDev;
 using Microsoft.CRM.Contact;
-using Microsoft.Inventory.Item;
 using Microsoft.CRM.Interaction;
-using System.Utilities;
-using System.IO;
+using Microsoft.Inventory.Item;
 using System.Environment;
+using System.IO;
+using System.Utilities;
 
 codeunit 50643 "KNH Online File handling"
 {
@@ -236,15 +236,5 @@ codeunit 50643 "KNH Online File handling"
         Node2 := XmlElement.Create('Node2');
         Node2.SetAttribute('ID', '3');
         XmlDoc.Add(Node2);
-    end;
-
-    procedure CreatJsonSalesOrder()
-
-    begin
-        //XXXXX
-        //YYYYY
-        //ZZZZZ
-
-        //Another Test
     end;
 }

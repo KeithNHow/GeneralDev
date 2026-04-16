@@ -1,6 +1,8 @@
-// Codeunit "KNH_Overloads" (ID 50604) import text, date or integer, export text.
-
+/// <summary>
+/// Import text, date or integer, export text.
+/// </summary>
 namespace KNHGenDev;
+
 codeunit 50604 "KNH Overloads"
 {
     trigger OnRun()

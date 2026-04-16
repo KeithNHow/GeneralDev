@@ -1,3 +1,6 @@
+namespace KNHGenDev;
+using Microsoft.sales.Customer;
+
 codeunit 50650 "KNH Captions"
 {
     trigger OnRun()

@@ -1,7 +1,6 @@
 /// <summary>
-/// Table KNH Note (ID 50600).
+/// Test Table for adding note records.
 /// </summary>
-
 namespace KNHGenDev;
 
 table 50600 "KNH Note"

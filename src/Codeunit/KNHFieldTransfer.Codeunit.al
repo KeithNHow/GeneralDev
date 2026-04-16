@@ -1,10 +1,8 @@
-// Codeunit "KNH FieldTransfer" (ID 50617).
-
 namespace KNHGenDev;
 using Microsoft.Foundation.NoSeries;
 using Microsoft.Sales.Document;
-using Microsoft.Sales.Setup;
 using Microsoft.Sales.History;
+using Microsoft.Sales.Setup;
 
 codeunit 50617 "KNH Field Transfer"
 {

@@ -1,13 +1,12 @@
 /// <summary>
-/// Table KNH Source (ID 50602).
+/// Test Table
 /// </summary>
-
 namespace KNHGenDev;
 
 table 50602 "KNH Source"
 {
     Caption = 'KNH Source';
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
     AllowInCustomizations = AsReadWrite;
 
     fields

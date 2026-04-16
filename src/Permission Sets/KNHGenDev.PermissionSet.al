@@ -1,4 +1,5 @@
-//PermissionSet KNH Gen Dev PermSet (ID 50601).
+namespace KNHGenDev;
+
 permissionset 50601 "KNH Gen Dev"
 {
     Assignable = true;
@@ -24,7 +25,6 @@ permissionset 50601 "KNH Gen Dev"
         codeunit "KNH Conditional Selection" = X,
         codeunit "KNH Convert Blob to B64 Text" = X,
         codeunit "KNH Dictionary" = X,
-        codeunit "KNH Letters" = X,
         codeunit "KNH Variant Test" = X,
         codeunit "KNH Transfer Fields" = X,
         codeunit "KNH Table Filters" = X,

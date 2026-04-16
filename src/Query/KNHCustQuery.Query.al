@@ -1,6 +1,6 @@
-namespace KNHCustQuery;
-using Microsoft.Sales.Customer;
+namespace KNHGenDev;
 using Microsoft.CRM.Team;
+using Microsoft.Sales.Customer;
 
 query 50600 "KNH Cust Query"
 {

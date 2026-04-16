@@ -16,7 +16,7 @@ codeunit 50641 "KNH This Demo 1"
 
     local procedure IsNice()
     begin
-        Message('This codeunit ' + this.MyVar + Format(this.MyInt));
+        Message('This codeunit ' + this.MyVar + '10 out of ' + Format(this.MyInt));
     end;
 
     var

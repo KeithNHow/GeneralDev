@@ -1,3 +1,6 @@
+namespace KNHGenDev;
+using System.RestClient;
+
 codeunit 50648 "KNH Cat Facts"
 {
     //Show Cat fact using rest client

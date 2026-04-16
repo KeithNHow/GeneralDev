@@ -1,5 +1,4 @@
-namespace GeneralDev.GeneralDev;
-
+namespace KNHGenDev;
 using Microsoft.Finance.Dimension;
 
 page 50609 "KNH Dimension Set Tree Node"

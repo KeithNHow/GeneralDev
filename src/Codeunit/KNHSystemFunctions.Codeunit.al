@@ -1,5 +1,3 @@
-//Codeunit "KNH System Functions" (ID 50609).
-
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 codeunit 50609 "KNH System Functions"

@@ -1,5 +1,4 @@
-namespace GeneralDev.GeneralDev;
-
+namespace KNHGenDev;
 using Microsoft.Finance.Dimension;
 
 page 50610 "KNH Dimension Set Entries"

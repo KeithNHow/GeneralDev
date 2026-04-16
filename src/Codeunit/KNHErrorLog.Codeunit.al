@@ -1,5 +1,3 @@
-// Codeunit "KNH_ErrorLog" (ID 50621).
-
 namespace KNHGenDev;
 
 codeunit 50621 "KNH Error Log"

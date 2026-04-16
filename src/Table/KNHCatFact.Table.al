@@ -1,4 +1,8 @@
-// Import external records using APIMgmt CU and place in Cat Fact table  
+/// <summary>
+/// Cat Fact table for Import external records using APIMgmt codeunit.
+/// </summary>
+namespace KNHGenDev;
+
 table 50606 "KNH Cat Fact"
 {
     Caption = 'Cat Fact';

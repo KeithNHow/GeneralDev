@@ -1,5 +1,6 @@
 namespace KNHGenDev;
 using System.Utilities;
+
 codeunit 50624 "KNH Use Standard Error"
 {
     trigger OnRun()

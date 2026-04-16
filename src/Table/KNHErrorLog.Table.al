@@ -1,7 +1,6 @@
 /// <summary>
-/// Table KNH ErrorLog (ID 50603).
+/// Test Table for logging errors.
 /// </summary>
-
 namespace KNHGenDev;
 using Microsoft.Utilities;
 table 50603 "KNH Error Log"

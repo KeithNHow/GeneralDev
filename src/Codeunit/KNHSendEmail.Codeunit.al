@@ -1,9 +1,10 @@
-//Codeunit "KNH Send Email" (ID 50620).
-//Send email with attachment
+/// <summary>
+/// Send email with attachment. Attachment is created from a temp blob, converted to base 64 string and added to email message. Email message is then sent using the Email codeunit. The parameters for the email (recipient, subject, body, attachment name, content type) are hardcoded in this example, but can be easily modified to be passed in as parameters or read from a table.
+///</summary>
 
 namespace KNHGenDev;
-using System.Text;
 using System.Email;
+using System.Text;
 using System.Utilities;
 
 codeunit 50620 "KNH Send Email"
@@ -22,7 +23,6 @@ codeunit 50620 "KNH Send Email"
         Subject: Text;
         AttachmentName: Text[250];
         ContentType: Text[250];
-    //ContentFile: File;
     begin
         Recipient := 'kn_how@hotmail.com';
         Subject := 'Test Email';
@@ -35,7 +35,6 @@ codeunit 50620 "KNH Send Email"
         AttachmentBase64 := Base64Convert.ToBase64(MyInStream);
         EmailMessage.Create(Recipient, Subject, Body);
         EmailMessage.AddAttachment(AttachmentName, ContentType, AttachmentBase64);
-        //EmailMessage.AddAttachment(AttachmentName, ContentType, MyInstream);
         Email.Send(EmailMessage, "Email Scenario"::Default);
     end;
 }

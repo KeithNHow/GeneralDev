@@ -1,5 +1,6 @@
-//PageCust "KNH_BossCustomization1".
-
+/// <summary>
+/// This object works in combination with the KNHBoss profile. Without the profile object this page Customization does not wotk.
+/// </summary>
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 

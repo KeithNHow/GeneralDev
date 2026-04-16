@@ -1,5 +1,6 @@
-//Marking a record id used to find records and then refer to them at some later time in program execution. 
-
+/// <summary>
+/// Marking a record id used to find records and then refer to them at some later time in program execution. 
+/// </summary>
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 

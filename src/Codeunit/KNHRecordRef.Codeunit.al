@@ -1,12 +1,13 @@
-// Codeunit KNH_RecordRef (ID 50611).
-// RecordRef        REFERENCES A RECORD IN A TABLE.
-// RecordID         Contains the table number and the primary key of a table.
+/// <summary>
+/// This codeunit demonstrates how to use RecordRef and FieldRef in AL. It includes examples of opening a RecordRef, accessing field values and captions, using filters, and working with related tables. The code also shows how to prevent data deletion if a value is used in a related table.
+/// </summary>
+
 
 namespace KNHGenDev;
+using Microsoft.CRM.Opportunity;
 using Microsoft.Sales.Customer;
 using System.Email;
 using System.Environment.Configuration;
-using Microsoft.CRM.Opportunity;
 using System.Reflection;
 
 codeunit 50611 "KNH RecordRef"
@@ -17,9 +18,6 @@ codeunit 50611 "KNH RecordRef"
         //RecordLinkExport();
     end;
 
-    /// <summary>
-    /// MyRecordRef.
-    /// </summary>
     procedure MyRecordRef()
     var
         CustRecId: RecordId;
@@ -50,9 +48,6 @@ codeunit 50611 "KNH RecordRef"
         Message(Format(Counter));
     end;
 
-    /// <summary>
-    /// CustRecordReference
-    /// </summary>
     procedure CustRecordReference()
     var
         CRecordRef: RecordRef;
@@ -68,9 +63,6 @@ codeunit 50611 "KNH RecordRef"
         Message(FoundMsg, varFilters);
     end;
 
-    /// <summary>
-    /// RecordLinkRecRef.
-    /// </summary>
     procedure RecordLinkRecRef()
     var
         RecordLink: Record "Record Link";
@@ -82,9 +74,6 @@ codeunit 50611 "KNH RecordRef"
             Message('No records found in the table');
     end;
 
-    /// <summary>
-    /// RecordLinkExport.
-    /// </summary>
     procedure RecordLinkExport()
     var
         KNHNote: Record "KNH Note";
@@ -137,7 +126,6 @@ codeunit 50611 "KNH RecordRef"
         Message(Format(TempCustomer.Count));
     end;
 
-    //RecordRef example
     procedure OpenRecRef()
     var
         RecordRef: RecordRef;
@@ -145,7 +133,6 @@ codeunit 50611 "KNH RecordRef"
         RecordRef.Open(Database::Customer);
     end;
 
-    //RecordRef field value example
     procedure OpenRecRefField()
     var
         RecordRef: RecordRef;
@@ -155,7 +142,6 @@ codeunit 50611 "KNH RecordRef"
         Message(Format(RecordRef.Field(1))); //10000
     end;
 
-    //RecordRef field caption example
     procedure OpenRecRefCaption()
     var
         RecordRef: RecordRef;
@@ -176,7 +162,6 @@ codeunit 50611 "KNH RecordRef"
         Message(RecordRef.Field(28).Caption); //Fin. Charge Terms Code
     end;
 
-    //RecordRef KeyIndex example
     procedure OpenRecRefKeyIndex()
     var
         RecordRef: RecordRef;
@@ -186,8 +171,6 @@ codeunit 50611 "KNH RecordRef"
         Message(Format(RecordRef.KeyIndex(2))); //Field3 = Search Name
     end;
 
-    //FieldRef - Provides a way to interact with the fields of a table
-    //FieldRef example
     procedure OpenRecField()
     var
         RecordRef: RecordRef;

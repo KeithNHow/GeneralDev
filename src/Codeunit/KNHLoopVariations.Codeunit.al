@@ -27,10 +27,10 @@ codeunit 50605 "KNH Loop Variations"
         Counter := 0;
         if Customer.FindSet() then begin
             repeat
-                CustList.Add(Customer.Name);
+                CustList.Add(Customer.Name); // Add customer name to the list
             until Customer.Next() = 0;
 
-            foreach CustomerName in CustList do begin
+            foreach CustomerName in CustList do begin // Process each customer name
                 X[Counter] := Customer.Name;
                 Counter := Counter + 1;
             end;
@@ -39,8 +39,11 @@ codeunit 50605 "KNH Loop Variations"
 
         //While loop - First record unconditional
         I := 0;
-        while I < 1000 do
+        J := 0;
+        while I < 1000 do begin
             I := I + 1;
+            J := I;
+        end;
         Message('While loop ends at ' + Format(I));
 
         //Repeat loop - First record conditional

@@ -1,5 +1,3 @@
-//Codeunit "KNH_ChangeCompany" (ID 50622).
-
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 using System.Environment;

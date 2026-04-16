@@ -1,3 +1,8 @@
+/// <summary>
+/// Test tables
+/// </summary>
+namespace KNHGenDev;
+
 table 50608 "KNH Villains"
 {
     Caption = 'Villains';
