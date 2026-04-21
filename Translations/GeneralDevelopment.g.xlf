@@ -3,76 +3,6 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="GeneralDevelopment">
     <body>
       <group id="body">
-        <trans-unit id="Page 1948089687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Dimension Set Entries</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1948089687 - Control 2623957639 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension Code field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1948089687 - Control 2580555873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension Name field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Name - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1948089687 - Control 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension Set ID field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Set ID - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1948089687 - Control 2277534386 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension 1 Value Code field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1948089687 - Control 3862666514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension Value ID field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value ID - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1948089687 - Control 837057288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension Value Name field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value Name - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1948089687 - Control 1700510896 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies whether the dimension is a global dimension.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Global Dimension No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2213450379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Dimension Set Tree Node</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2213450379 - Control 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension Set ID field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Dimension Set ID - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2213450379 - Control 3862666514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Dimension Value ID field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Dimension Value ID - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2213450379 - Control 942667584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the In Use field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control In Use - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2213450379 - Control 777284725 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Parent Dimension Set ID field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Parent Dimension Set ID - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Query 3748230850 - QueryColumn 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filters the Name field to include only names starting with A.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Query KNH Cust Query - QueryColumn Name - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Table 2243987930 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Blob Table</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -92,6 +22,21 @@
           <source>PK</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Blob - Field PK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3612886541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cat Fact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3612886541 - Field 782081228 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Field Fact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3612886541 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Field No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4231578371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>KNHErrorLog</source>
@@ -213,6 +158,86 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Note - Field User ID - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 3027137289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approved Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Approved Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 3305661226 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>currency Exchange Rate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Currency Exchange Rate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 3852418296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Created Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Date Added - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 4085727052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Due Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 4286292223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Invoice Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 166038250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supplier Invoice No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Invoice No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 3035691293 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Net Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 2202932243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 2715663062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rejected Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Rejected Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 972916807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Submitted Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Submitted Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 1108276017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field VAT Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2230955275 - Field 1527594213 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Suppliuer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Vendor No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3373592852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>KNH Source</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -283,6 +308,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Temp Input Data - Field MyField - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3259256105 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Villains</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 1064760134 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>books</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field books - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 986080663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CreatedAt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field CreatedAt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 2303302321 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gender</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Gender - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3259256105 - Field 2388510493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Types</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Types - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 2318604242 - Method 1665861916 - NamedType 363584196" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Cat fact Using http,Show Stephen King Villains using Rest,Insert Cat fact Using rest</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -303,10 +373,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method ShowStephenKingVillainsUsingRest - NamedType UrlLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1561855724 - Method 1665861916 - NamedType 2127321079" size-unit="char" translate="yes" xml:space="preserve">
+          <source>My Customer %1 was found in %2</source>
+          <note from="Developer" annotates="general" priority="2">%1 = My Customer, %2 = My Customer Table</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Captions - Method OnRun - NamedType MyMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2143714116 - Method 2374877161 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
+          <source>https://catfact.ninja/fact</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Cat Facts - Method InsertCatFactUsingRest - NamedType UrlLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 2144315370 - Method 1665861916 - NamedType 3920859232" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer No. is %1</source>
-          <note from="Developer" annotates="general" priority="2">%1 = Customer2.No.</note>
+          <source>Customer No. is %1 and Address is %2</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Customer2.No., %2 = Customer2.Address</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Copy Test - Method OnRun - NamedType CustomerTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 852790687 - Method 1428601969 - NamedType 63266233" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name contains character s %1 times.</source>
+          <note from="Developer" annotates="general" priority="2">%1 = number of times s appears in CustomerName</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Dictionary - Method CountUniqueCharsInCustomerName - NamedType OutputTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 852790687 - Method 1795955187 - NamedType 333545573" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name for Customer No. %1 is %2</source>
+          <note from="Developer" annotates="general" priority="2">%1 = CustomerNo, %2 = Customer Name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Dictionary - Method DisplayCustomerName - NamedType OuputTxt</note>
         </trans-unit>
         <trans-unit id="Codeunit 1594561554 - Method 1665861916 - NamedType 1712887925" size-unit="char" translate="yes" xml:space="preserve">
           <source>Number of records in Customer table: %1\</source>
@@ -482,6 +572,71 @@
           <source>Controlhost, AddIn, Demo</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page KNH Control Host AddIn - Property AdditionalSearchTerms</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension Set Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 2623957639 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 2580555873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Set ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Set ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 2277534386 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension 1 Value Code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 3862666514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Value ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 837057288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Value Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Dimension Value Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1948089687 - Control 1700510896 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the dimension is a global dimension.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Entries - Control Global Dimension No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimension Set Tree Node</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 3322554545 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Set ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Dimension Set ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 3862666514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Dimension Value ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Dimension Value ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 942667584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the In Use field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control In Use - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2213450379 - Control 777284725 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Parent Dimension Set ID field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Dimension Set Tree Node - Control Parent Dimension Set ID - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4231578371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>KNH Error Log</source>
@@ -802,6 +957,11 @@
           <source>Excel MultiTable</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report KNH_Excel_MultiTable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 3748230850 - QueryColumn 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filters the Name field to include only names starting with A.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query KNH Cust Query - QueryColumn Name - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="XmlPort 3373592852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Source Import</source>
@@ -1323,175 +1483,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension KNH Vendor - Field IntegerField - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Profile 879412634 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Profile 2076451620 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>The Boss</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH_The Boss - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH Boss - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Profile 879412634 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Profile 2076451620 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
           <source>Changes to make this role center more suitable for the boss.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH_The Boss - Property ProfileDescription</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH Boss - Property ProfileDescription</note>
         </trans-unit>
-        <trans-unit id="Profile 1373457203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Profile 1530380409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Salesman</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH_The Salesman - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH Salesman - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Profile 1373457203 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The Boss</source>
+        <trans-unit id="Profile 1530380409 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Salesman</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH_The Salesman - Property ProfileDescription</note>
-        </trans-unit>
-        <trans-unit id="Table 3612886541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Cat Fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3612886541 - Field 782081228 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Field Fact - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3612886541 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Field No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 3027137289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Approved Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Approved Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Currency Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Currency Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 3305661226 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>currency Exchange Rate</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Currency Exchange Rate - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 3852418296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Created Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Date Added - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 4085727052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Due Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Due Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Id - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 4286292223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invoice Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Invoice Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 166038250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Supplier Invoice No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Invoice No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 3035691293 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Net Amount</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Net Amount - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 2202932243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Purchase Order No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Order No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 2715663062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Rejected Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Rejected Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 972916807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Submitted Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Submitted Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 1108276017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>VAT Amount</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field VAT Amount - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2230955275 - Field 1527594213 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Suppliuer</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Purchase Header - Field Vendor No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Villains</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 1064760134 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>books</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field books - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 986080663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>CreatedAt</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field CreatedAt - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 2303302321 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Gender</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Gender - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Id - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Name</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Name - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Notes</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Notes - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3259256105 - Field 2388510493 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Types</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Types - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1561855724 - Method 1665861916 - NamedType 2127321079" size-unit="char" translate="yes" xml:space="preserve">
-          <source>My Customer %1 was found in %2</source>
-          <note from="Developer" annotates="general" priority="2">%1 = My Customer, %2 = My Customer Table</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Captions - Method OnRun - NamedType MyMsg</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2143714116 - Method 2374877161 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
-          <source>https://catfact.ninja/fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Cat Facts - Method InsertCatFactUsingRest - NamedType UrlLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile KNH Salesman - Property ProfileDescription</note>
         </trans-unit>
         <trans-unit id="PermissionSet 2649999514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Gen Dev</source>

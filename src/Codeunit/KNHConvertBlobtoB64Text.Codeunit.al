@@ -4,22 +4,22 @@
 
 namespace KNHGenDev;
 using Microsoft.Foundation.Company;
+using Microsoft.Sales.Document;
 using System.Text;
 using System.Utilities;
 
 codeunit 50616 "KNH Convert Blob to B64 Text"
 {
-    TableNo = "Company Information";
-
     trigger OnRun()
     var
         SHRecordRef: RecordRef;
         MyFieldRef: FieldRef;
         MyMessage: Text[1024];
     begin
-        SHRecordRef.Open(Database::"Company Information");
+        SHRecordRef.Open(Database::"Sales Header");
+        SHRecordRef.SetView('Sorting ("Document Type", "No.") Order(Ascending) Where("Document Type" = const(1))');
         if SHRecordRef.FindFirst() then begin
-            MyFieldRef := SHRecordRef.Field(200); //Assign shortcut Dim 1 code 
+            MyFieldRef := SHRecordRef.Field(200); //Assign Work Description 
             MyMessage := CopyStr(this.ConvertBlobToBase64String(MyFieldRef), 1, 1024);
             Message(MyMessage);
         end;

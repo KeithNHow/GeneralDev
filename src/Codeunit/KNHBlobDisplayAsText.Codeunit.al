@@ -1,12 +1,15 @@
 namespace KNHGenDev;
 using Microsoft.Sales.Document;
+using System.Utilities;
+
 codeunit 50651 "KNH Blob Display As Text"
 {
     TableNo = "Sales Header";
 
     trigger OnRun()
     var
-        InStream: InStream;
+        TempBlob: Codeunit "Temp Blob";
+        MyInStream: InStream;
         Txt: Text;
     begin
         Rec.SetRange("Document Type", Rec."Document Type"::Invoice);
@@ -14,11 +17,12 @@ codeunit 50651 "KNH Blob Display As Text"
         Rec.SetRange("No.", '102199');
         Rec.SetAutoCalcFields("Work Description");
         if Rec.FindFirst() then begin
-            Rec."Work Description".CreateInStream(InStream, TextEncoding::UTF8);
+            Rec."Work Description".CreateInStream(MyInStream, TextEncoding::UTF8); // Creates and writes data to instream object
+            TempBlob.CreateOutStream(); // Creates an outstream object
             // Loop to read the text from the InStream
-            while not InStream.EOS do begin
-                InStream.ReadText(Txt); // Read characters
-                Message(Txt); // Display the read text
+            while not MyInStream.EOS do begin
+                MyInStream.ReadText(Txt, 5); // Reads 5 characters from instream object
+                Message(Txt); // Display the text character
             end;
         end;
     end;
