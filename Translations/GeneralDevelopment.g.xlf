@@ -1093,15 +1093,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_APIManagement - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 2798008907 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Single Instance</source>
+        <trans-unit id="PageExtension 1875559884 - Action 391207549 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Set Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_SingleInstance - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_SetSingleInstance - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 2798008907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Single Instance</source>
+        <trans-unit id="PageExtension 1875559884 - Action 391207549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Set Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_SingleInstance - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_SetSingleInstance - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 1851811910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Dictionary</source>
@@ -1112,6 +1112,16 @@
           <source>Dictionary</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Dictionary - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 1823361257 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Get Single Instance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_GetSingleInstance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 1823361257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Get Single Instance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_GetSingleInstance - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 1030236834 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Convert Blob</source>
@@ -1458,15 +1468,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Sales Order - Action KNH_ShowJson - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 15387223 - Action 2864519468 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
-          <source>Update Integer Field</source>
+        <trans-unit id="PageExtension 15387223 - Action 2739727791 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
+          <source>Get Single Instance Message</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH VendorCard - Action UpdateIntField - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH VendorCard - Action GetMessage - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 15387223 - Action 2864519468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
-          <source>Update Integer Field</source>
+        <trans-unit id="PageExtension 15387223 - Action 2739727791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
+          <source>Get Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH VendorCard - Action UpdateIntField - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH VendorCard - Action GetMessage - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 15387223 - Control 2404345096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
           <source>Specifies integer to be displayed on Vendor Card.</source>

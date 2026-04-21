@@ -14,9 +14,9 @@ tableextension 50601 "KNH Customer" extends Customer
 
             trigger OnValidate()
             var
-                KNHSingleInstance: Codeunit "KNH Single Instance";
+            //KNHSetSingleInstance: Codeunit "KNH Set Single Instance";
             begin
-                KNHSingleInstance.SetSingleInstance(IntegerField);
+                //KNHSetSingleInstance.SetSingleInstance(IntegerField);
             end;
         }
     }

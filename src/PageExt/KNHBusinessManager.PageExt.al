@@ -200,15 +200,25 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
         }
         addafter(KNH_APIManagement)
         {
-            action(KNH_SingleInstance)
+            action(KNH_SetSingleInstance)
             {
                 ApplicationArea = All;
-                ToolTip = 'Single Instance';
-                Caption = 'Single Instance';
-                RunObject = codeunit "KNH Single Instance";
+                ToolTip = 'Set Single Instance';
+                Caption = 'Set Single Instance';
+                RunObject = codeunit "KNH Set Single Instance";
             }
         }
-        addafter(KNH_SingleInstance)
+        addafter(KNH_SetSingleInstance)
+        {
+            action(KNH_GetSingleInstance)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Get Single Instance';
+                Caption = 'Get Single Instance';
+                RunObject = codeunit "KNH Get Single Instance";
+            }
+        }
+        addafter(KNH_GetSingleInstance)
         {
             action(KNH_ConvertBlob)
             {

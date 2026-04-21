@@ -19,10 +19,10 @@ pageextension 50621 "KNH VendorCard" extends "Vendor Card"
     {
         addlast("Ven&dor")
         {
-            action(UpdateIntField)
+            action(GetMessage)
             {
-                Caption = 'Update Integer Field';
-                ToolTip = 'Update Integer Field';
+                Caption = 'Get Single Instance';
+                ToolTip = 'Get Single Instance Message';
                 Promoted = true;
                 PromotedCategory = Category9;
                 PromotedIsBig = true;
@@ -31,19 +31,15 @@ pageextension 50621 "KNH VendorCard" extends "Vendor Card"
                 Image = UpdateUnitCost;
 
                 trigger OnAction()
-                var
-                    KNHSingleInstance: Codeunit "KNH Single Instance";
                 begin
-                    Rec.IntegerField := KNHSingleInstance.GetSingleInstance();
+                    TheText := KNHSetSingleInstance.GetSingleInstance();
+                    Message(TheText);
                 end;
             }
         }
     }
 
-    procedure UpdateIntegerField()
     var
-        KNHSingleInstance: Codeunit "KNH Single Instance";
-    begin
-        Rec.IntegerField := KNHSingleInstance.GetSingleInstance();
-    end;
+        KNHSetSingleInstance: Codeunit "KNH Set Single Instance";
+        TheText: Text[100];
 }
