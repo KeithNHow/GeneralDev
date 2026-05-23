@@ -383,6 +383,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Cat Facts - Method InsertCatFactUsingRest - NamedType UrlLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2896192565 - Method 1665861916 - NamedType 4197402727" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Result is %1</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Result</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Conditional Selection - Method OnRun - NamedType MyMessageLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 2144315370 - Method 1665861916 - NamedType 3920859232" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer No. is %1 and Address is %2</source>
           <note from="Developer" annotates="general" priority="2">%1 = Customer2.No., %2 = Customer2.Address</note>

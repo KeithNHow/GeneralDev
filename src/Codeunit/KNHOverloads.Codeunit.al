@@ -15,11 +15,11 @@ codeunit 50604 "KNH Overloads"
         field2 := 5;
         field3 := 6;
 
-        field3 := MyOverload(field1, field2);
+        field3 := this.MyOverload(field1, field2);
         Message(Format(field3)); //Answer = 20
-        field3 := MyOverload(field1);
+        field3 := this.MyOverload(field1);
         Message(Format(field3)); //Answer = 64
-        field3 := MyOverload(field1, field2, field3);
+        field3 := this.MyOverload(field1, field2, field3);
         Message(Format(field3)); //Answer = 120
     end;
 

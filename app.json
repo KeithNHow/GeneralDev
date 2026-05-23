@@ -2,7 +2,7 @@
     "id": "0a09a704-b77c-4bdc-a4dd-f8178bd5be3b",
     "name": "GeneralDevelopment",
     "publisher": "KeithHow",
-    "version": "27.0.0.0",
+    "version": "28.0.0.0",
     "brief": "General Development",
     "description": "General Development",
     "privacyStatement": "",
@@ -25,8 +25,8 @@
         }
     ],
     "screenshots": [],
-    "platform": "1.0.0.0",
-    "application": "27.0.0.0",
+    "platform": "28.0.0.0",
+    "application": "28.0.0.0",
     "idRanges": [
         {
             "from": 50600,
@@ -38,7 +38,7 @@
         "allowDownloadingSource": true,
         "includeSourceInSymbolFile": true
     },
-    "runtime": "16.0",
+    "runtime": "17.0",
     "features": [
         "NoImplicitWith",
         "TranslationFile"

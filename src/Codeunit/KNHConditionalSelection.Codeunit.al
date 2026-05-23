@@ -8,6 +8,8 @@ codeunit 50602 "KNH Conditional Selection"
         I: Integer;
         J: Integer;
         Maximum: Integer;
+        Result: Decimal;
+        MyMessageLbl: Label 'Result is %1', Comment = '%1 = Result';
     begin
         I := 10;
         J := 20;
@@ -17,7 +19,8 @@ codeunit 50602 "KNH Conditional Selection"
                 Maximum := I
             else
                 Maximum := J;
-            Amount := Amount * Maximum;
+            Result := Amount * Maximum; //520
+            Message(MyMessageLbl, Result);
         end;
     end;
 }
