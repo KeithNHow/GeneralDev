@@ -41,10 +41,6 @@
     "CRS.FileNamePatternExtensions": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
     "github.copilot.chat.scopeSelection": true,
-    "github.copilot.advanced": {
-    "authProvider": "github"
-    },
-    "github.copilot.chat.startDebugging.enabled": true,
-    "github.copilot.chat.generateTests.codeLens": true,
-    "github.copilot.chat.editor.temporalContext.enabled": true,
+    "d365bc-admin-mcp.settingsScope": "global",
+    "d365bc-admin-mcp.autoInstall": true
 }

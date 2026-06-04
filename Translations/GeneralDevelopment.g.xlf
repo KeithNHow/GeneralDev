@@ -23,21 +23,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Blob - Field PK - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3612886541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Cat Fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3612886541 - Field 782081228 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Field Fact - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3612886541 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table KNH Cat Fact - Field No. - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 4231578371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>KNHErrorLog</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -353,35 +338,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table KNH Villains - Field Types - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2318604242 - Method 1665861916 - NamedType 363584196" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Show Cat fact Using http,Show Stephen King Villains using Rest,Insert Cat fact Using rest</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method OnRun - NamedType functionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2318604242 - Method 1665861916 - NamedType 4037870494" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Choose one of the following options:</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method OnRun - NamedType selectionLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2318604242 - Method 1621419901 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
-          <source>https://catfact.ninja/fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method ShowCatFactUsingHttp - NamedType UrlLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2318604242 - Method 3152710031 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
-          <source>https://stephen-king-api.onrender.com/api/villain/19</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH API Management - Method ShowStephenKingVillainsUsingRest - NamedType UrlLbl</note>
-        </trans-unit>
         <trans-unit id="Codeunit 1561855724 - Method 1665861916 - NamedType 2127321079" size-unit="char" translate="yes" xml:space="preserve">
           <source>My Customer %1 was found in %2</source>
           <note from="Developer" annotates="general" priority="2">%1 = My Customer, %2 = My Customer Table</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Captions - Method OnRun - NamedType MyMsg</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 2143714116 - Method 2374877161 - NamedType 927327867" size-unit="char" translate="yes" xml:space="preserve">
-          <source>https://catfact.ninja/fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Cat Facts - Method InsertCatFactUsingRest - NamedType UrlLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 2896192565 - Method 1665861916 - NamedType 4197402727" size-unit="char" translate="yes" xml:space="preserve">
           <source>Result is %1</source>
@@ -522,41 +482,6 @@
           <source>Variant contains Record Id %1.</source>
           <note from="Developer" annotates="general" priority="2">%1 = CustVariantId</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Variant Test - Method ShowCustList - NamedType VariantTxt</note>
-        </trans-unit>
-        <trans-unit id="Page 2143714116 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Cat Facts</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2143714116 - Control 782081228 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Fact field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Control Fact - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2143714116 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the No. field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Control No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2143714116 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemCreatedAt field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Control SystemCreatedAt - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2143714116 - Control 4000648066 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the SystemCreatedBy field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Control SystemCreatedBy - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2143714116 - Action 88859964 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Get a Cat Fact from Restful API</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Action GetCatFact - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2143714116 - Action 88859964 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Get Cat Fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page KNH Cat Facts - Action GetCatFact - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2206961944 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
           <source>Controlhost AddIn Demo</source>
@@ -1088,16 +1013,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Prompt - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 807745515 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Show Cat Fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_APIManagement - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 807745515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Show Cat Fact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_APIManagement - Property Caption</note>
-        </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 391207549 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Set Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1108,16 +1023,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_SetSingleInstance - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 1851811910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Dictionary</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Dictionary - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 1851811910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Dictionary</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Dictionary - Property Caption</note>
-        </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 1823361257 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Get Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1127,6 +1032,16 @@
           <source>Get Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_GetSingleInstance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 1851811910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Dictionary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Dictionary - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 1851811910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Dictionary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Dictionary - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 1030236834 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Convert Blob</source>
