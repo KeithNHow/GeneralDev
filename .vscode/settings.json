@@ -16,13 +16,13 @@
     "al.ruleSetPath": "./.vscode/ruleset.json",
     "al.enableExternalRulesets": true,
     "al.outputAnalyzerStatistics": true,
-    "al.backgroundCodeAnalysis": true,
-    "al.enableCodeActions": true,
-    "al.packageCachePath": "./.alpackages",
-    "al-test-runner.sendDebugTelemetry": false,
-    "al.compilationOptions": {
-        "generateReportLayout": true
-    },
+    
+    //AZ AL Dev Tools
+    "alOutline.completionProviders": [],
+    "alOutline.createApiFieldsCaptions": true,
+    "alOutline.addToolTipsToPageFields": true,
+    "alOutline.enableCodeCopFixes": true,
+    "alOutline.namespacesSortOrder": ["System,Microsoft,Other"],
     "alOutline.codeCleanupActions": [
         "AddToolTips",
         "FixKeywordsCase",
@@ -34,6 +34,15 @@
         "RemoveBeginEnd",
         "RemoveUnusedVariables"
     ],
+
+    "al.backgroundCodeAnalysis": true,
+    "al.enableCodeActions": true,
+    "al.packageCachePath": "./.alpackages",
+    "al-test-runner.sendDebugTelemetry": false,
+    "al.compilationOptions": {
+        "generateReportLayout": true
+    },
+    
     "workbench.editor.enablePreview": true, //Prevents unedited files from remaining open
     "CRS.ObjectNamePrefix": "KNH",
     //"CRS.OnSaveAlFileAction": "Rename",
