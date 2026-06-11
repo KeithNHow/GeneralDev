@@ -13,6 +13,14 @@
             "enableSqlInformationDebugger": true,
             "tenant": "4a94f826-0a72-47e5-869d-d554fa01b7ec",
             "schemaUpdateMode": "Synchronize"
+        },
+        {
+            "name": "AL: Generated Download Symbols request",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "Sandbox",
+            "tenant": "4a94f826-0a72-47e5-869d-d554fa01b7ec"
         }
     ]
 }
