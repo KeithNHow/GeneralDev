@@ -52,7 +52,7 @@ permissionset 50601 "KNH Gen Dev"
         codeunit "KNH This Demo 2" = X,
         codeunit "KNH Try Function" = X,
         codeunit "KNH Blob Display As Text" = X,
-        codeunit "KNH Call Cust Query" = X,
+        codeunit "KNH Call Customer Query" = X,
         codeunit "KNH Captions" = X,
         codeunit "KNH List" = X,
         codeunit "KNH Workflow Events" = X,

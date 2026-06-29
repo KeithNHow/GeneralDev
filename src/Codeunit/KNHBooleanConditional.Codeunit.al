@@ -1,3 +1,6 @@
+///<Summary>
+///Demo of simply if then condition 
+///</Summary>
 namespace KNHGenDev;
 
 codeunit 50640 "KNH Boolean Conditional"

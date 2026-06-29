@@ -1,3 +1,6 @@
+///<Summary>
+///Single Instance property set to true. Codeunit runs the Set Single Instance function and places message in variable. A message is then displayed stating message set.
+///</Summary>
 namespace KNHGenDev;
 
 codeunit 50626 "KNH Set Single Instance"

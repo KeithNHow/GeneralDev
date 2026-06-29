@@ -1,3 +1,6 @@
+///<Summary>
+///Codeunit filters Sales Header records, calculates Work Description, finds first record instance, creates an instream to MyInStream and creates an Outstream. Outstream then looped  5 characters at a time until end of stream.
+///</Summary>
 namespace KNHGenDev;
 using Microsoft.Sales.Document;
 using System.Utilities;
@@ -22,7 +25,7 @@ codeunit 50651 "KNH Blob Display As Text"
             // Loop to read the text from the InStream
             while not MyInStream.EOS do begin
                 MyInStream.ReadText(Txt, 5); // Reads 5 characters from instream object
-                Message(Txt); // Display the text character
+                Message(Txt); // Display the text characters
             end;
         end;
     end;

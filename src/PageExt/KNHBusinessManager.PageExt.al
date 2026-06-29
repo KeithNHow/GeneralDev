@@ -28,6 +28,16 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = codeunit "KNH Loop Variations";
             }
         }
+        addafter(KNH_Loopvariations)
+        {
+            action(KNH_CallCustQuery)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Call Customer Query';
+                Caption = 'Call Customer Query';
+                RunObject = codeunit "KNH Call Customer Query";
+            }
+        }
         addafter(KNH_LoopVariations)
         {
             action(KNH_Dictionary)

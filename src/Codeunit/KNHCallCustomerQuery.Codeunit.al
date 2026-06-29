@@ -1,6 +1,6 @@
 namespace KNHGenDev;
 
-codeunit 50649 "KNH Call Cust Query"
+codeunit 50649 "KNH Call Customer Query"
 {
     trigger OnRun()
     begin
