@@ -2,7 +2,7 @@
     "id": "0a09a704-b77c-4bdc-a4dd-f8178bd5be3b",
     "name": "GeneralDevelopment",
     "publisher": "KeithHow",
-    "version": "28.0.0.0",
+    "version": "28.2.0.0",
     "brief": "General Development",
     "description": "General Development",
     "privacyStatement": "",
@@ -15,18 +15,18 @@
             "id": "CC11C22E-5CA3-423F-8804-88CAC6D91983",
             "name": "Dynamics BC Excel Reports",
             "publisher": "Microsoft",
-            "version": "26.3.36158.36193"
+            "version": "28.2.50931.51529"
         },
         {
             "id": "E4E86220-CAC0-4EC3-B853-7C2FA610399D",
             "name": "Power BI Report embeddings for Dynamics 365 Business Central",
             "publisher": "Microsoft",
-            "version": "26.3.36158.37115"
+            "version": "28.2.50931.51111"
         }
     ],
     "screenshots": [],
     "platform": "28.0.0.0",
-    "application": "28.0.0.0",
+    "application": "28.2.0.0",
     "idRanges": [
         {
             "from": 50600,
