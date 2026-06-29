@@ -1,6 +1,6 @@
 namespace KNHGenDev;
 
-codeunit 50640 "KNH Boolean Coditional"
+codeunit 50640 "KNH Boolean Conditional"
 {
     procedure Example()
     var
