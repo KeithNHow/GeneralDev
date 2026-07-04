@@ -1,5 +1,5 @@
 /// <summary>
-/// Import text, date or integer, export text.
+/// Codeunit demos use of procedure overloading. When variables 1, 2 and 3 populated answer displayed = 120. 
 /// </summary>
 namespace KNHGenDev;
 

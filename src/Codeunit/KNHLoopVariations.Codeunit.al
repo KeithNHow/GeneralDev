@@ -1,5 +1,6 @@
-//Codeunit "KNH Loop Variations" (ID 50605).
-
+///<Summary>
+///Codeunit demos different types of AL loops - For, Foreach, While, Repeat
+///</Summary>
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 

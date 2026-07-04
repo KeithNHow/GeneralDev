@@ -1,3 +1,6 @@
+///<Summary>
+///Codeunit creates an error log record.
+///</Summary>
 namespace KNHGenDev;
 
 codeunit 50621 "KNH Error Log"

@@ -1,7 +1,6 @@
 /// <summary>
 /// Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys.
 /// </summary> 
-
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 

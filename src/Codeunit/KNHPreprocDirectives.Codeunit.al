@@ -1,8 +1,8 @@
-// Codeunit "KNH PreprocessorDirectives" (ID 50613)
-// preprocessor directives can be used to make code conditional
-// compiler directive - read only if debugger in use
-// region directive - used to define a block of code
-// pragma directive - gives the compiler special inst for the compile of the file in which it appears. 
+///<Summary>
+/// compiler directive - used to make code conditional.
+/// region directive - used to define a block of code
+/// pragma directive - Gives the compiler an instruction such as ignore warning message. 
+///</Summary>
 
 namespace KNHGenDev;
 using Microsoft.Foundation.AuditCodes;

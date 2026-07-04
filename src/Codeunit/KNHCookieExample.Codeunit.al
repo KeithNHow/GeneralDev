@@ -1,3 +1,6 @@
+///<Summary>
+///Codeunit demos use of cookie method. 
+///</Summary>
 namespace KNHGenDev;
 
 codeunit 50680 KNHCookieExample

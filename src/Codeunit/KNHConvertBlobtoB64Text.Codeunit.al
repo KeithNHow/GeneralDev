@@ -3,7 +3,6 @@
 ///</summary>
 
 namespace KNHGenDev;
-using Microsoft.Foundation.Company;
 using Microsoft.Sales.Document;
 using System.Text;
 using System.Utilities;

@@ -1,3 +1,6 @@
+///<Summary>
+///Codeunit loops through each Company record in database. For each company record found company name (PK) is used to change to another company. A loop of customer records then occurs with the name 2 field modified. On exit of the loop a message is displayed.    
+///</Summary>
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 using System.Environment;

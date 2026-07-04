@@ -1,8 +1,6 @@
 /// <summary>
-/// This codeunit demonstrates how to use RecordRef and FieldRef in AL. It includes examples of opening a RecordRef, accessing field values and captions, using filters, and working with related tables. The code also shows how to prevent data deletion if a value is used in a related table.
+/// This codeunit demos how to use RecordRef and FieldRef in AL. It includes examples of opening a RecordRef, accessing field values and captions, using filters, and working with related tables. The code also shows how to prevent data deletion if a value is used in a related table.
 /// </summary>
-
-
 namespace KNHGenDev;
 using Microsoft.CRM.Opportunity;
 using Microsoft.Sales.Customer;
@@ -26,7 +24,7 @@ codeunit 50611 "KNH RecordRef"
     begin
         CustRecordRef.Open(Database::Customer); //Open table
         MyFieldRef := CustRecordRef.Field(1); //Assign first field in table
-        MyFieldRef.Value := '50000'; //Assign Value to field
+        MyFieldRef.Value := '50000'; //Assign Value to variable
         if CustRecordRef.Find('=') then begin //Find record
             CustRecId := CustRecordRef.RecordId; //Convert RecRef to RecId
             CustRecordRef.Get(CustRecId);

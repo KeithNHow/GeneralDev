@@ -1,3 +1,6 @@
+///<Summary>
+///Codeunit calls a query. If the query is open, it is read and for each instance 2 is added to C. On exit of the loop the count is displayed. 
+///</Summary>
 namespace KNHGenDev;
 
 codeunit 50649 "KNH Call Customer Query"

@@ -1,3 +1,6 @@
+///<Summary>
+///Codeunit demos use of conditional selection within AL.
+///</Summary>
 namespace KNHGenDev;
 
 codeunit 50602 "KNH Conditional Selection"
