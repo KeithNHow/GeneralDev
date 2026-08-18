@@ -363,6 +363,16 @@
           <note from="Developer" annotates="general" priority="2">%1 = CustomerNo, %2 = Customer Name</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Dictionary - Method DisplayCustomerName - NamedType OuputTxt</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2083730761 - Method 1665861916 - NamedType 267720821" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Company Name is '%1' \\Company Display Name is '%2'\\Company URL Name is '%3'</source>
+          <note from="Developer" annotates="general" priority="2">%1, %2, %3 = This message is displayed when the codeunit is run.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Display Company Name - Method OnRun - NamedType DisplayMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1175013704 - Method 1665861916 - NamedType 1856213635" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The number of Sales Invoice records created = %1</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Counter</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit KNH Field Transfer - Method OnRun - NamedType UpdateCompleteMsg</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1594561554 - Method 1665861916 - NamedType 1712887925" size-unit="char" translate="yes" xml:space="preserve">
           <source>Number of records in Customer table: %1\</source>
           <note from="Developer" annotates="general" priority="2">%1 = Count</note>
@@ -913,15 +923,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort KNH Source - Control Skip_First_Record - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 3129318846 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>OverLoad</source>
+        <trans-unit id="PageExtension 1875559884 - Action 540578068 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Display Message</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_OverLoad - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_DisplayCompanyName - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 3129318846 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>OverLoad</source>
+        <trans-unit id="PageExtension 1875559884 - Action 540578068 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Display Message</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_OverLoad - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_DisplayCompanyName - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 2927534584 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Copy Test</source>
@@ -932,6 +942,16 @@
           <source>Copy Test</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_LoopVariations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 2173257739 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Notes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 2173257739 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Notes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 2508658929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Open sources page.</source>
@@ -1023,6 +1043,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Prompt - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 3129318846 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>OverLoad</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_OverLoad - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 3129318846 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>OverLoad</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_OverLoad - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 391207549 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Set Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1032,16 +1062,6 @@
           <source>Set Single Instance</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_SetSingleInstance - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 1949997085 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Call Customer Query</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_CallCustQuery - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 1949997085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Call Customer Query</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_CallCustQuery - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 1823361257 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Get Single Instance</source>
@@ -1072,6 +1092,16 @@
           <source>Blob Display</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_BlobDisplay - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 1949997085 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Call Customer Query</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_CallCustQuery - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1875559884 - Action 1949997085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
+          <source>Call Customer Query</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_CallCustQuery - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1875559884 - Action 1851811910 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
           <source>Dictionary</source>
@@ -1132,16 +1162,6 @@
           <source>Selection</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Selection - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 2173257739 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Notes</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Notes - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1875559884 - Action 2173257739 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2458191494">
-          <source>Notes</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension KNH Business Manager - Action KNH_Notes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 34355989 - Action 2850101163 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
           <source>View a list of emails that you have sent to this customer.</source>

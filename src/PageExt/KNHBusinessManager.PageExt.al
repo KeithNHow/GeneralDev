@@ -10,6 +10,26 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
     {
         addafter(Reports)
         {
+            action(KNH_DisplayCompanyName)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Display Message';
+                Caption = 'Display Message';
+                RunObject = codeunit "KNH Display Company Name";
+            }
+        }
+        addafter(KNH_DisplayCompanyName)
+        {
+            action(KNH_LoopVariations)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Copy Test';
+                Caption = 'Copy Test';
+                RunObject = codeunit "KNH Loop Variations";
+            }
+        }
+        addafter(KNH_LoopVariations)
+        {
             action(KNH_OverLoad)
             {
                 ApplicationArea = All;
@@ -20,16 +40,6 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
         }
         addafter(KNH_OverLoad)
         {
-            action(KNH_LoopVariations)
-            {
-                ApplicationArea = All;
-                ToolTip = 'Copy Test';
-                Caption = 'Copy Test';
-                RunObject = codeunit "KNH Loop Variations";
-            }
-        }
-        addafter(KNH_Loopvariations)
-        {
             action(KNH_CallCustQuery)
             {
                 ApplicationArea = All;
@@ -38,7 +48,7 @@ pageextension 50604 "KNH Business Manager" extends "Business Manager Role Center
                 RunObject = codeunit "KNH Call Customer Query";
             }
         }
-        addafter(KNH_LoopVariations)
+        addafter(KNH_CallCustQuery)
         {
             action(KNH_Dictionary)
             {
