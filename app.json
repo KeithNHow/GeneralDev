@@ -2,7 +2,7 @@
     "id": "0a09a704-b77c-4bdc-a4dd-f8178bd5be3b",
     "name": "GeneralDevelopment",
     "publisher": "KeithHow",
-    "version": "28.4.0.0",
+    "version": "28.5.0.0",
     "brief": "General Development",
     "description": "General Development",
     "privacyStatement": "",
@@ -26,7 +26,7 @@
     ],
     "screenshots": [],
     "platform": "28.0.0.0",
-    "application": "28.4.0.0",
+    "application": "28.5.0.0",
     "idRanges": [
         {
             "from": 50600,
