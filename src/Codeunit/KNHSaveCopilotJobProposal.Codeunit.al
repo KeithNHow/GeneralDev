@@ -1,3 +1,6 @@
+/// <summary>
+/// Codeunit to save Copilot Job Proposal for KNH GenDev.
+/// </summary>
 namespace KNHGenDev;
 
 codeunit 50645 "KNH Save Copilot Job Proposal"

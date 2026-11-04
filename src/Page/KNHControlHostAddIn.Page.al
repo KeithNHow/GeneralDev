@@ -1,3 +1,6 @@
+/// <summary>
+/// This page is a demo page for a Controlhost AddIn
+/// </summary>
 namespace KNHGenDev;
 using System.Integration;
 

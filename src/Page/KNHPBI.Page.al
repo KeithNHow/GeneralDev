@@ -1,3 +1,6 @@
+/// <summary>
+/// This page is a prompt dialog for the user to initialize a Power BI Add-In
+/// </summary>
 namespace KNHGenDev;
 using System.Integration.PowerBI;
 

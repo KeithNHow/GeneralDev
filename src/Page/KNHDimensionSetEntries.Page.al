@@ -1,3 +1,6 @@
+/// <summary>
+/// This page is a list page that displays dimension records stored in the "Dimension Set Entry" table. It allows users to view and manage dimension set entries.
+/// </summary>
 namespace KNHGenDev;
 using Microsoft.Finance.Dimension;
 

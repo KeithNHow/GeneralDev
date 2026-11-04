@@ -1,4 +1,6 @@
-//Page KNH_Notes List (ID 50601).
+/// <summary>
+/// This page is a list page that displays notes stored in the "KNH Note" table. It allows users to view and manage notes.
+/// </summary>
 
 namespace KNHGenDev;
 

@@ -1,4 +1,6 @@
-//Prompt Dialog Test
+/// <summary>
+/// This page is a prompt dialog for the user to enter information to generate a draft using Copilot.
+/// </summary>
 namespace KNHGenDev;
 
 page 50605 "KNH Prompt Dialog"

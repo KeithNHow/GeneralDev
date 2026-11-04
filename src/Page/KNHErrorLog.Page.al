@@ -1,3 +1,6 @@
+/// <summary>
+/// This page is a list page that displays error logs stored in the "KNH Error Log" table. It allows users to view and manage error logs.
+/// </summary>
 namespace KNHGenDev;
 
 page 50604 "KNH Error Log"

@@ -1,3 +1,6 @@
+/// <summary>
+/// Codeunit to demonstrate use of standard error handling in AL.   
+/// </summary>
 namespace KNHGenDev;
 using System.Utilities;
 

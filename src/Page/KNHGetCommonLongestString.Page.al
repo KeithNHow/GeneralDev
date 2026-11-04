@@ -1,3 +1,6 @@
+/// <summary>
+/// This page is a card page that allows users to input three strings and retrieves the longest common substring among them using the Record Match Management codeunit.
+/// </summary>
 namespace KNHGenDev;
 using Microsoft.Bank.Reconciliation;
 

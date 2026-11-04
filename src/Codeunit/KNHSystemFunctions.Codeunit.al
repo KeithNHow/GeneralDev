@@ -1,3 +1,6 @@
+/// <summary>
+/// Codeunit to demonstrate various system functions.
+/// </summary>
 namespace KNHGenDev;
 using Microsoft.Sales.Customer;
 codeunit 50609 "KNH System Functions"

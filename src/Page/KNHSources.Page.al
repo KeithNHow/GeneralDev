@@ -1,4 +1,6 @@
-//Page KNH Sources (ID 50602).
+/// <summary>
+/// This page lists all the sources in the system.
+/// </summary>
 
 namespace KNHGenDev;
 

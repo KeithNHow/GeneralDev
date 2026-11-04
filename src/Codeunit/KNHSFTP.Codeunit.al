@@ -1,3 +1,6 @@
+/// <summary>
+/// Codeunit to test SFTP connection for KNH GenDev.
+/// </summary>
 namespace KNHGenDev;
 using System.RestClient;
 

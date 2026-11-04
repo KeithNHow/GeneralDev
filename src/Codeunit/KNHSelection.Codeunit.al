@@ -1,3 +1,6 @@
+/// <summary>
+/// Codeunit to demonstrate selection logic for KNH GenDev.
+/// </summary>
 namespace KNHGenDev;
 
 codeunit 50603 "KNH Selection"
