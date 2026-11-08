@@ -64,11 +64,12 @@ permissionset 50601 "KNH Gen Dev"
         page "KNH Get Common Longest String" = X,
         page "KNH Prompt Dialog" = X,
         page KNHBlob = X,
-        query "KNH Cust Query" = X,
-        report KNH_Excel_MultiTable = X,
-        xmlport "KNH Source" = X,
         page "KNH Control Host AddIn" = X,
         page "KNH Dimension Set Entries" = X,
         page "KNH Dimension Set Tree Node" = X,
-        page "KNH PBI" = X;
+        page "KNH PBI" = X,
+        query "KNH Cust Query" = X,
+        report KNH_Excel_MultiTable = X,
+        xmlport "KNH Source" = X;
+
 }
