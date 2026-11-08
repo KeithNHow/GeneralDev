@@ -35,6 +35,7 @@
         "RemoveUnusedVariables"
     ],
 
+    "al.useVsCodeAuthentication": false,
     "al.backgroundCodeAnalysis": true,
     "al.enableCodeActions": true,
     "al.packageCachePath": "./.alpackages",
